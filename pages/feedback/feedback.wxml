@@ -1,0 +1,18 @@
+<view class="container">
+  <view class="input-section">
+    <text>您对我们软件的意见或建议：</text>
+    <input class="input-text" type="text" placeholder="请输入您的意见或建议" bindinput="bindOpinionInput"/>
+  </view>
+  <view class="input-section">
+    <text>请您给我们的软件评分？（1~10）：</text>
+    <input class="input-text" type="number" min="1" max="10" placeholder="1~10之间评分" bindinput="bindRatingInput"/>
+  </view>
+  <view class="input-section">
+    <text>您的邮箱：</text>
+    <input class="input-text" type="text" placeholder="请输入您的邮箱" bindinput="bindEmailInput"/>
+  </view>
+  <view class="contact-info">
+    更多精彩、其他信息请联系：王先生 396767537@qq.com
+    <text bindtap="copyEmail">[点击复制邮箱]</text>
+  </view>
+</view>

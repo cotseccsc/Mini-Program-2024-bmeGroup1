@@ -1,0 +1,38 @@
+.container {
+  width: 95%; /* 设置宽度为父容器的80% */
+  height: 1420rpx; /* 设置固定高度为400rpx */
+  padding: 20rpx; /* 内边距 */
+  background: linear-gradient(45deg, #94d3ec, #eaf1ff); /* 背景颜色 */
+}
+
+.red-cross-logo {
+  width: 68%; /* 或者根据实际大小调整 */
+  margin-top: 50px;
+}
+
+.info-section {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.reference-section {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.friend-link {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.text-class {
+  white-space: pre-wrap; /* 保留换行和空格 */
+}
+
+button {
+  margin-left: 10px; /* 为按钮添加一些间距 */
+}

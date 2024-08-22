@@ -1,0 +1,29 @@
+<!--pages/about_us/about_us.wxml-->
+<view class="container">
+<text class="title">About Us:</text>
+<text>
+###Who we are
+我们是浙江大学生物医学工程与仪器科学学院智能诊疗方向短学期课程“智能医学创新实践”的第一小组全体成员。
+
+###What we do
+我们的微信小程序旨在提供针对常见运动损伤的急救指南，帮助患者在受伤后进行正确的院前处理，减少因不当处理导致的二次伤害乃至永久性损伤。
+
+###Contact Us
+Mail:396767537@qq.com
+
+###Meet Our Team
+组长：王中壬
+组员：方启源、罗梓珂、庞笑义、张吉康
+
+###Code Availability
+此项目已开源。
+欢迎Pull Request!
+如果您能Star一下就更好啦~
+———————————————————
+</text>
+
+<view class="link">
+  https://github.com/cotseccsc/Mini-Program-2024-bmeGroup1
+    <text bindtap="copyLink">[点击复制链接到剪贴板]</text>
+  </view>
+</view>
