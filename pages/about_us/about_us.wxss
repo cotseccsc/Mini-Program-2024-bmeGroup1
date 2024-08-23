@@ -12,3 +12,6 @@
   align-items: center;
 }
 
+.link{
+  color: #143bbd;
+}

@@ -1,38 +1,99 @@
-/* pages/training/training.wxss */
+/* Global Container */
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  background: linear-gradient(to bottom, #84c4f4, #c0e0f8);
-  height: 100vh;
+  width: 95%; /* 设置宽度为父容器的80% */
+  height: 1420rpx; /* 设置固定高度为400rpx */
+  padding: 20rpx; /* 内边距 */
+  background: linear-gradient(45deg, #94d3ec, #eaf1ff); /* 背景颜色 */
 }
 
-.title {
-  font-size: 22px;
-  margin-top: 20px;
-}
-
-.icon {
-  width: 24px;
-  height: 24px;
-}
-
-.button-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 20px;
-}
-
-.btn {
-  width: 250px;
-  height: 50px;
-  background-color: #ffffff;
-  border: 1px solid #cccccc;
+/* Middle Section */
+.middle-section {
+  background: linear-gradient(to bottom, #f6feff, #76bffc); /* Gradient effect */
+  padding: 15px;
   border-radius: 10px;
-  font-size: 18px;
+  width: 85%;
+  position: absolute; /* 设置绝对定位 */
+  top: 500rpx; /* 距离父容器顶部 20rpx */
+  left: 26rpx; /* 距离父容器左侧 20rpx */
+  box-shadow: 2rpx 4rpx 10rpx rgba(0, 0, 0, 0.1);
+}
+
+/* Image Block ,其中墨绿色的部分*/
+.image-block {
+  background-color: #0C676B;
+  height: 150px; /* Adjust height as needed */
+  margin-bottom: 15px;
+  border-radius: 8px; /* Rounded corners */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*中间的图片素材。。。*/
+.image {
+  width: 100%;
+  height: 95%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Buttons Container ，四个按钮外部框架*/
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  width: 21%; /* Each button takes up about a quarter of the width */
+  background: linear-gradient(to bottom, #ffffff, #ffffff); /* Gradient effect */
+  color: #0a4180; /* Text color */
   text-align: center;
-  line-height: 50px;
-  margin-bottom: 10px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 15px; /* Rounded corners */
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 2rpx 1rpx 6rpx rgba(7, 55, 87, 0.5), 
+  -2rpx -2rpx 5rpx rgba(255, 255, 255, 0.3); /* 添加多重阴影 */
+  box-shadow: 2rpx 4rpx 10rpx rgba(0, 0, 0, 0.1);
+}
+
+/* Bottom Section */
+.bottom-section {
+  background: linear-gradient(to bottom, #f6feff, #76bffc); /* Gradient effect */
+  padding: 30px;
+  position: absolute; /* 设置绝对定位 */
+  top: 1000rpx; /* 距离父容器顶部 20rpx */
+  left: 40rpx; /* 距离父容器左侧 20rpx */
+  width: 73%;
+  box-shadow: 2rpx 4rpx 10rpx rgba(0, 0, 0, 0.1);
+  border-radius: 18px;
+  height: 130rpx; /* 设置固定高度为400rpx */
+}
+
+.bottom-button {
+  background: linear-gradient(to bottom, #ffffff, #ffffff); /* Gradient effect */
+  color: #0a4180;
+  text-align: center;
+  padding: 0px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  width: 200px; /* 修改后的宽度 */
+  height: 50px;
+  position: absolute; /* 设置绝对定位 */
+  top: 95rpx; /* 距离父容器顶部 20rpx */
+  left: 141rpx; /* 距离父容器左侧 20rpx */
+}
+
+.dynamic-text {
+  position: absolute; /* 设置绝对定位 */
+  top: 30rpx; /* 距离父容器顶部 20rpx */
+  left: 210rpx; /* 距离父容器左侧 20rpx */
+  font-size: 16px; /* 根据需要调整字体大小 */
+  color: #333; /* 根据需要调整文本颜色 */
+  font-weight: bold;
 }

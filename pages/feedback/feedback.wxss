@@ -1,6 +1,6 @@
 .container {
-  width: 95%; /* 设置宽度为父容器的80% */
-  height: 1420rpx; /* 设置固定高度为400rpx */
+  width: 95%; /* 设置宽度为父容器的95% */
+  height:1430rpx;
   padding: 20rpx; /* 内边距 */
   background: linear-gradient(45deg, #94d3ec, #eaf1ff); /* 背景颜色 */
 }
@@ -26,4 +26,13 @@
 
 .contact-info text {
   color: #0072ff;
+}
+
+.send-button {
+  background-color: #0072ff;
+  color: #ffffff;
+  padding: 20rpx;
+  font-size: 28rpx;
+  border-radius: 10rpx;
+  margin-top: 40rpx;
 }

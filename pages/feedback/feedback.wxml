@@ -11,6 +11,7 @@
     <text>您的邮箱：</text>
     <input class="input-text" type="text" placeholder="请输入您的邮箱" bindinput="bindEmailInput"/>
   </view>
+  <button class="send-button" bindtap="sendFeedback">发送反馈</button>
   <view class="contact-info">
     更多精彩、其他信息请联系：王先生 396767537@qq.com
     <text bindtap="copyEmail">[点击复制邮箱]</text>

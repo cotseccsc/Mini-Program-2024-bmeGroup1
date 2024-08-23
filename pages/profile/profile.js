@@ -1,9 +1,62 @@
 // pages/profile/profile.js
+const app = getApp();
+
 Page({
-  data: {},
-  onLoad: function () {
-    // Do something when page load.
+  data: {
+    username: '',
+    isLogged: false, // 初始化页面数据
   },
+  onLoad: function() {
+    wx.showTabBar();
+    // 从本地存储获取用户名
+
+    // 从全局获取登录状态
+    this.setData({
+      isLogged: app.globalData.isLogged
+    });
+  },
+
+  onShow: function() {
+    const username = wx.getStorageSync('username');
+    if (username) {
+      this.setData({
+        username
+      });
+    }
+    this.setData({
+      isLogged: app.globalData.isLogged
+    });
+  },
+
+  showLoginPromptAndRedirect: function() {
+    wx.showModal({
+      title: '提示',
+      content: '请注册或登录！',
+      showCancel: false, // 不显示取消按钮
+      success: (res) => {
+        if (res.confirm) {
+          console.log('用户点击确定');
+          // 用户点击确定后立即跳转到登录页面
+          this.navigateToLogin();
+        }
+      }
+    });
+  },
+
+  navigateRedirect() {
+    this.showLoginPromptAndRedirect();
+  },
+
+  ExitLogin:function(){
+    app.globalData.isLogged = false;
+    this.setData({
+      isLogged: false,
+    });
+    wx.switchTab({
+      url: '/pages/profile/profile',
+    });
+  },
+
   navigateToLogin() {
     wx.navigateTo({
       url: '/pages/login/login'

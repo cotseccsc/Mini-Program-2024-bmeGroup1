@@ -1,5 +1,6 @@
 // pages/index/index.js
 const AV = require("../../libs/av-core-min.js")
+const app=getApp();
 Page({
 
   /**
@@ -42,8 +43,10 @@ Page({
         title: "注册成功",
         icon:"success"
       })
-      wx.redirectTo({
-        url: '../message/message?message=' + "Hello world!",
+      wx.setStorageSync('username', username); // 保存用户名到本地存储
+      app.globalData.isLogged = true;
+      wx.switchTab({
+        url: '../profile/profile',
       })
     }).catch(error=>{
       wx.showToast({
