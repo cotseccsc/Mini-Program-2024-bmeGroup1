@@ -19,7 +19,10 @@
     "pages/feedback/feedback",
     "pages/red_cross/red_cross",
     "pages/about_us/about_us",
-    "pages/register/register"
+    "pages/register/register",
+    "pages/quiz/quiz",
+    "pages/detailed_injury/detailed_injury",
+    "pages/traininginfo/traininginfo"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -36,26 +39,26 @@
       {
         "pagePath": "pages/index/index",
         "text": "首页",
-        "iconPath": "images/Home.png",
-        "selectedIconPath": "images/home_selected.png"
+        "iconPath": "images/navigationbar/Home.png",
+        "selectedIconPath": "images/navigationbar/home_selected.png"
       },
       {
         "pagePath": "pages/map/map",
         "text": "AED地图",
-        "iconPath": "images/map.png",
-        "selectedIconPath": "images/map_selected.png"
+        "iconPath": "images/navigationbar/map.png",
+        "selectedIconPath": "images/navigationbar/map_selected.png"
       },
       {
         "pagePath": "pages/training/training",
         "text": "急救技能训练",
-        "iconPath": "images/training.png",
-        "selectedIconPath": "images/training_selected.png"
+        "iconPath": "images/navigationbar/training.png",
+        "selectedIconPath": "images/navigationbar/training_selected.png"
       },
       {
         "pagePath": "pages/profile/profile",
         "text": "我的",
-        "iconPath": "images/profile.png",
-        "selectedIconPath": "images/profile_selected.png"
+        "iconPath": "images/navigationbar/profile.png",
+        "selectedIconPath": "images/navigationbar/profile_selected.png"
       }
     ]
   }
