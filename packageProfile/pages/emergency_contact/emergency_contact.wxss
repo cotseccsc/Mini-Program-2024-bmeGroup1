@@ -1,0 +1,23 @@
+/* pages/emergency_contact/emergency_contact.wxss */
+/* pages/emergency_contact/emergency_contact.wxss */
+.emergency-contact {
+  padding: 20px;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contact-info {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.modify-button {
+  /* 按钮样式 */
+  font-size: 20px;
+  margin-bottom: 20px;
+  color:#181111;
+}

@@ -1,0 +1,36 @@
+/* pages/emergency_contact_modify/emergency_contact_modify.wxss */
+.emergency-contact-modify {
+  padding: 20px;
+}
+
+.input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 12px; /* 增加内边距以提高输入框的高度 */
+  margin-bottom: 30px; /* 增加输入框和按钮之间的距离 */
+  width: 100%;
+  box-sizing: border-box;
+  height: 50px; /* 直接设置输入框的高度 */
+}
+
+.confirm-button {
+  margin-top: 20px; /* 增加按钮的上边距 */
+  padding: 10px; /* 增加按钮的内边距 */
+  background-color: #1aad19; /* 设置按钮背景颜色 */
+  color: white; /* 设置按钮文字颜色 */
+  border: none; /* 去除按钮边框 */
+  border-radius: 4px; /* 设置按钮的圆角 */
+}
+
+.warning0{
+  color:#ff0000;
+}
+
+.warning1{
+  color:#ff0000;
+}
+
+.warning2{
+  color:#ff0000;
+}
+
