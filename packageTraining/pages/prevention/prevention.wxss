@@ -1,0 +1,126 @@
+
+.container{
+  width: 95%; /* 设置宽度为父容器的80% */
+  height: 1950rpx; /* 设置固定高度为400rpx */
+  padding: 20rpx; /* 内边距 */
+  background-color: #b9e8fb; 
+}
+
+.img_1{
+  position: absolute; /* 设置为绝对定位 */
+  top: -240rpx; /* 距离容器顶部50rpx */
+}
+
+
+.container_1{
+  position: absolute; /* 设置为绝对定位 */
+  top: 700rpx; /* 距离容器顶部50rpx */
+  width: 95%; /* 设置宽度为父容器的80% */
+  height: 1050rpx; /* 设置固定高度为400rpx */
+  padding: 20rpx; /* 内边距 */
+  background-color: linear-gradient(to bottom, #ffffff00, #33f8ffff);
+}
+
+.content {
+  width: 700rpx;
+  background-image: linear-gradient(135deg, #fdfcfb 0%, #84ceff 100%);
+  margin: 20rpx auto;
+  padding: 30rpx;
+  box-sizing: border-box;
+  border-radius: 20rpx;
+  box-shadow: 10rpx 10rpx 20rpx #a5a3a3;
+  display: flex;
+}
+/* 后面绿色注释是开源项目的，可以先不管 */
+.content .content-box {
+  width: 100%;
+  font-size: 28rpx;
+  font-weight:inherit; /* 设置字体粗细为粗体 */
+  /* 3行省略显示省略符号来代表被修剪的文本。浏览器差异，ios(Safari)无法正常显示该文本，所以该方法不能使用*/
+  /* display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  text-overflow: ellipsis;
+  overflow: hidden; */
+  /* 设置行高与按钮高度一致 */
+  line-height: 40rpx;
+  /* 那如果需要行省略，该如何实现呢？思考一下？ */
+}
+
+.content-box::before {
+  content: '';
+  float: right;
+  /* 设置高度 */
+  height: calc(100% - 80rpx);
+  /* 或者 */
+  /* height: 100%;
+  margin-bottom: -40rpx; */
+}
+
+/* .content .content-box .content-btn {
+  width: 130rpx;
+  height: 40rpx;
+  box-sizing: border-box;
+  font-size: 23rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: right;
+  clear: both;
+  border-radius: 50rpx;
+  color: rgb(102, 202, 219);
+  border: 1rpx solid rgba(106, 164, 190, 0.774);
+} */
+
+/* .content .content-box .content-btn.btn2 {
+  border: none;
+  background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+  color: #fff;
+} */
+
+/* 上方文本设置 */
+.prompt-box {
+  position: relative;
+  top: -20px;
+  width: 220px; /* 提示框的宽度 */
+  height: 40px; /* 提示框的高度 */
+  border-radius: 15px;
+  background-color: #FFFFFF44; /* 设置背景颜色为白色 */
+  border: 1px solid #CCCCCC44; /* 设置边框颜色 */
+  display: flex; /* 使用Flexbox布局 */
+  justify-content: center; /* 水平居中文本 */
+  align-items: center; /* 垂直居中文本 */
+  margin: 50px; /* 外边距，根据实际需要调整 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 添加轻微的阴影效果 */
+  z-index: 10;
+  font-weight: bolder;
+}
+.prompt-text {
+  font-size: 18px; /* 文本大小 */
+  color: #333333; /* 文本颜色 */
+}
+
+/* 循环显示图片样式设计 */
+.swiper-container {
+  width: 95%;
+  height: 160px; /* 根据需要调整高度 */
+  position: relative;
+  top: 45px;
+
+}
+
+.swiper-item {
+  position: absolute;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px; /* 所有角的圆角为10px */
+  /* box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.3); */
+}
+
+.swiper-image {
+  height: 60%;
+  width: 100%; /* 图片宽度占满swiper-item */
+  display: block; /* 去除图片底部的空隙 */
+}

@@ -1,0 +1,35 @@
+
+<!-- 图片板块，使用了photoshop，可以后期调色我来搞 -->
+<!-- container是背景上半，包含图片和渐变部分 -->
+<view class="container">
+  <image src="/images/training/prevention/photo_scretch.png" class="img_1" style="width: 400px;"mode="widthFix"></image>
+<!-- 上方显示的文本 -->
+<view class="prompt-box">
+    <text class="prompt-text">如何进行运动前拉伸？</text>
+</view>
+<!-- 循环显示图片板块 -->
+<swiper
+  autoplay="true" 
+  interval="3000" 
+  duration="1000"
+  circular="true"
+  easing-function="easeInOutCubic"
+  previous-margin="20px"
+  next-margin="20px"
+  indicator-dots="{{true}}"
+  class="swiper-container">
+  <swiper-item class="swiper-item" wx:for="{{images}}" wx:key="unique">
+    <image src="{{item}}" mode="widthFix"  bindtap="imgClick" class="swiper-image" />
+  </swiper-item>
+</swiper>
+
+  </view>
+
+<!-- container_1s是第二块背景，保证上方渐变效果不变的情况下，可以根据文本量调整整体界面，颜色需要和container的底部颜色一致，可以使用ps中的吸取颜色工具进行设计 -->
+<view class="container_1">
+  <view class="content" wx:for="{{content}}" wx:key="list">
+    <view class="content-box">
+      {{item}}
+    </view>
+  </view>
+</view>
