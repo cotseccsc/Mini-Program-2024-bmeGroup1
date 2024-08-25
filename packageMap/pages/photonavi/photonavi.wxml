@@ -1,0 +1,3 @@
+<!--pages/photonavi/photonavi.wxml-->
+<view>请跟随图片指引</view>
+<image src="{{images}}"></image>
