@@ -1,0 +1,31 @@
+/* pages/index/index.wxss */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(to bottom, #84c4f4, #c0e0f8);
+  height: 100vh;
+}
+
+.title {
+  font-size: 22px;
+  margin-top: 20px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.btn {
+  margin-top: 20px;
+  width: 200px;
+  height: 50px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  font-size: 18px;
+  text-align: center;
+  line-height: 50px;
+}

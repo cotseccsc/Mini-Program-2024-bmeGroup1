@@ -1,0 +1,34 @@
+<view style="width:100%;height:100%;">
+  <map
+    id="map"
+    subkey="{{subKey}}"
+    style="width:100%;height:100%;"
+    longitude="{{longitude}}"
+    latitude="{{latitude}}"
+    scale="18"
+    markers="{{markers}}"
+    circles="{{circles}}"
+    polyline="{{polyLine}}"
+    polygons="{{polygons}}"
+    enable-3D="{{enable3d}}"
+    show-compass="{{showCompass}}"
+    show-location="{{showLocation}}"
+    enable-zoom="{{enableZoom}}"
+    enable-rotate="{{enableRotat}}"
+    enable-satellite="{{enableSatellite}}"
+    enable-traffic="{{enableTraffic}}"
+    enable-overlooking="{{enableOverLooking}}"
+    enable-scroll="{{enableScroll}}"
+    bindmarkertap="handleMarkerTap"
+  ></map>
+  <mp-halfScreenDialog show="{{showDialog}}" class="custom-dialog">
+      <view slot="title">{{currentMarker.name}}</view>
+      <view slot="desc">{{currentMarker.desc}}</view>
+      <view slot="footer">
+        <button type="primary" class="weui-btn1" bindtap="navi1">APP导航</button>
+        
+
+        <button type="primary" class="weui-btn2" bindtap="navi2">图片导航</button>
+      </view>  
+  </mp-halfScreenDialog>>
+</view>

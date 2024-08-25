@@ -3,26 +3,55 @@
     "pages/index/index",
     "pages/map/map",
     "pages/training/training",
-    "pages/profile/profile",
-    "pages/prevention/prevention",
-    "pages/cpr-aed/cpr-aed",
-    "pages/general-principles/general-principles",
-    "pages/open-injury/open-injury",
-    "pages/closed-injury/closed-injury",
-    "pages/concussion/concussion",
-    "pages/ankle-injury/ankle-injury",
-    "pages/login/login",
-    "pages/personal_info/personal_info",
-    "pages/emergency_contact/emergency_contact",
-    "pages/honor_info/honor_info",
-    "pages/volunteer_cabin/volunteer_cabin",
-    "pages/feedback/feedback",
-    "pages/red_cross/red_cross",
-    "pages/about_us/about_us",
-    "pages/register/register",
-    "pages/quiz/quiz",
-    "pages/detailed_injury/detailed_injury",
-    "pages/traininginfo/traininginfo"
+    "pages/profile/profile"
+  ],
+  "subPackages": [
+    {
+      "root": "packageHome",
+      "name": "packageHome",
+      "pages":[
+        "pages/rapidguide/rapidguide"
+      ],
+      "independent": false
+    },
+    {
+      "root": "packageMap",
+      "name": "packageMap",
+      "pages": [
+        "pages/photonavi/photonavi"
+      ],
+      "independent": false
+    },
+    {
+      "root": "packageTraining",
+      "name": "packageTraining",
+      "pages": [
+        "pages/quiz/quiz",
+        "pages/detailed_injury/detailed_injury",
+        "pages/traininginfo/traininginfo",
+        "pages/prevention/prevention",
+        "pages/cpr-aed/cpr-aed",
+        "pages/general-principles/general-principles"
+      ],
+      "independent": false
+    },
+    {
+      "root": "packageProfile",
+      "name": "packageProfile",
+      "pages": [
+        "pages/about_us/about_us",
+        "pages/emergency_contact/emergency_contact",
+        "pages/emergency_contact_modify/emergency_contact_modify",
+        "pages/feedback/feedback",
+        "pages/honor_info/honor_info",
+        "pages/login/login",
+        "pages/personal_info/personal_info",
+        "pages/red_cross/red_cross",
+        "pages/register/register",
+        "pages/volunteer_cabin/volunteer_cabin"
+      ],
+      "independent": false
+    }
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -44,7 +73,7 @@
       },
       {
         "pagePath": "pages/map/map",
-        "text": "AED地图",
+        "text": "急救设施地图",
         "iconPath": "images/navigationbar/map.png",
         "selectedIconPath": "images/navigationbar/map_selected.png"
       },
@@ -61,5 +90,33 @@
         "selectedIconPath": "images/navigationbar/profile_selected.png"
       }
     ]
+  },
+  "useExtendedLib": {
+    "weui": true
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置将用于小程序位置接口效果展示"
+    }
+  },
+  "lazyCodeLoading": "requiredComponents",
+
+  "preloadRule": {
+    "pages/index/index": {
+      "network": "all",
+      "packages": ["packageHome"]
+    },
+    "pages/map/map":{
+      "network": "all",
+      "packages": ["packageMap"]
+    },
+    "pages/training/training": {
+      "network": "all",
+      "packages": ["packageTraining"]
+    },
+    "pages/profile/profile": {
+      "network": "all",
+      "packages": ["packageProfile"]
+    }
   }
 }
