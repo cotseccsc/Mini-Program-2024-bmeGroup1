@@ -1,12 +1,16 @@
 // pages/profile/profile.js
 const app = getApp();
-
+const AV = require("../../libs/av-core-min.js");
+const PersonalInfo = AV.Object.extend("PersonalInfo");
+const personalInfo = new PersonalInfo();
+const query = new AV.Query("PersonalInfo");
 Page({
   data: {
     username: '',
     isLogged: false, // 初始化页面数据
+    avatarSwitch: '/images/profile/selfavatar.png' // 用户头像位置
   },
-  onLoad: function() {
+  onLoad: function () {
     wx.showTabBar();
     // 从本地存储获取用户名
 
@@ -16,7 +20,7 @@ Page({
     });
   },
 
-  onShow: function() {
+  onShow: function () {
     const username = wx.getStorageSync('username');
     if (username) {
       this.setData({
@@ -26,9 +30,10 @@ Page({
     this.setData({
       isLogged: app.globalData.isLogged
     });
+    this.readGender();
   },
 
-  showLoginPromptAndRedirect: function() {
+  showLoginPromptAndRedirect: function () {
     wx.showModal({
       title: '提示',
       content: '请注册或登录！',
@@ -47,7 +52,7 @@ Page({
     this.showLoginPromptAndRedirect();
   },
 
-  ExitLogin:function(){
+  ExitLogin: function () {
     app.globalData.isLogged = false;
     this.setData({
       isLogged: false,
@@ -102,6 +107,39 @@ Page({
   navigateToAboutUs() {
     wx.navigateTo({
       url: '/packageProfile/pages/about_us/about_us'
+    });
+  },
+
+
+  readGender: function () {
+    this.setData({
+      avatarSwitch:'/images/profile/selfavatar.png'
+    });
+    const username = wx.getStorageSync('username');
+    query.equalTo("Username", username);
+    query.first().then((personalInfo) => {
+      if (personalInfo) {
+        const gender = personalInfo.get("Gender");
+        let newAvatarSwitch;
+        switch (gender) {
+          case '女':
+            newAvatarSwitch = '/images/profile/selfavatar-female.png'
+            break;
+          case '男':
+            newAvatarSwitch = '/images/profile/selfavatar-male.png';
+            break;
+          default:
+            newAvatarSwitch = '/images/profile/selfavatar.png';
+            break;
+        }
+        // 使用setData的回调函数来确保数据更新后执行
+        this.setData({
+          avatarSwitch: newAvatarSwitch
+        }, () => {
+          // 这里可以安全地使用更新后的avatarSwitch
+          console.log(this.data.avatarSwitch); // 这将打印更新后的值
+        });
+      }
     });
   }
 })

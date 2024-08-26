@@ -1,8 +1,5 @@
 <!-- pages/index/index.wxml -->
 <view class="container">
-  <navigator url="home" open-type="navigateBack" class="back"> 
-    <image src="/images/back.png" class="icon"></image>
-  </navigator>
   <text class="title">Welcome to EmergenSafe!</text>
   <canvas canvas-id="sosCanvas" style="width: 300px; height: 300px;"></canvas>
   <button class="btn" bindtap="navigateToRapidGuide">快速急救指导</button>

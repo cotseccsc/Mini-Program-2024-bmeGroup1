@@ -1,10 +1,10 @@
 Page({
   // Navigate to the "training=1=info" interface
-  navigateToInfo() {
-    wx.navigateTo({
-      url: '/packageTraining/pages/traininginfo/traininginfo'
-    });
-  },
+  // navigateToInfo() {
+  //   wx.navigateTo({
+  //     url: '/packageTraining/pages/traininginfo/traininginfo'
+  //   });
+  // },
 
   // Navigate to the "training=1=guide" interface
   navigateToGuide() {

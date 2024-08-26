@@ -7,9 +7,9 @@
   <!-- 登录/注册模块 -->
   <view class="login-section">
     <view class="login-gradient">
-      <text class="login-title">邀请你</text>
-      <text class="login-subtitle">登录获取更多优质内容</text>
-      <button class="login-button" bindtap="navigateToLogin">登录/注册</button>
+      <text class="login-title1">邀请你</text>
+      <text class="login-subtitle1">登录获取更多优质内容</text>
+      <button class="login-button1" bindtap="navigateToLogin">登录/注册</button>
     </view>
   </view>
 
@@ -62,8 +62,9 @@
   <!-- 登录/注册模块 -->
   <view class="login-section">
     <view class="login-gradient">
-      <text class="login-title">欢迎！</text>
-      <text class="login-subtitle">{{username}}</text>
+      <image class="avatar" src="{{avatarSwitch}}"></image>
+       <text class="login-title">欢迎！</text>
+       <text class="login-subtitle">{{username}}</text>
       <button class="login-button" bindtap="ExitLogin">退出登录</button>
     </view>
   </view>

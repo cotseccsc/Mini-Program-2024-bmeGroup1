@@ -1,100 +1,59 @@
-/* Global Container */
-.container {
-  width: 95%; /* 设置宽度为父容器的80% */
-  height: 720px; /* 设置固定高度为400rpx */
-  padding: 20rpx; /* 内边距 */
-  background: linear-gradient(45deg, #94d3ec, #eaf1ff); /* 背景颜色 */
-}
-
-/* Middle Section */
-.middle-section {
-  background: linear-gradient(to bottom, #f6feff, #76bffc); /* Gradient effect */
-  padding: 15px;
-  border-radius: 10px;
-  width: 85%;
-  position: absolute; /* 设置绝对定位 */
-  top: 500rpx; /* 距离父容器顶部 20rpx */
-  left: 26rpx; /* 距离父容器左侧 20rpx */
-  box-shadow: 2rpx 4rpx 10rpx rgba(0, 0, 0, 0.1);
-}
-
-/* Image Block ,其中墨绿色的部分*/
-.image-block {
-  background-color: #0C676B;
-  height: 150px; /* Adjust height as needed */
-  margin-bottom: 15px;
-  border-radius: 8px; /* Rounded corners */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/*中间的图片素材。。。*/
-.image {
+/* 背景插画 */
+.background {
   width: 100%;
-  height: 95%;
-  border-radius: 8px;
-  object-fit: cover;
+  height: 100%;
+  background-size: cover; /* 让图片覆盖整个背景 */
+  background-position: center; /* 图片居中显示 */
+  background-repeat: no-repeat; /* 图片不重复 */
+}
+/* 下方背景 */
+.container {
+  width: 100%; /* 设置宽度为父容器的80% */
+  height: 70px; /* 设置固定高度为400rpx */
+  padding: 0rpx; /* 内边距 */
+ background-color: #ffffff;
 }
 
-/* Buttons Container ，四个按钮外部框架*/
-.buttons-container {
-  display: flex;
-  justify-content: space-between;
+.pic_quick{
+  position: absolute;
+  top: 72%;
+  left: 2%;
+  width: 47%;
+  box-shadow: 4rpx 4rpx 20rpx rgba(0, 0, 0, 0.1);
 }
 
-.button {
-  width: 23%; /* Each button takes up about a quarter of the width */
-  background: linear-gradient(to bottom, #ffffff, #ffffff); /* Gradient effect */
-  color: #0a4180; /* Text color */
-  text-align: center;
-  font-weight: bold;
-  padding: 10px;
-  border-radius: 15px; /* Rounded corners */
-  font-size: 12px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-shadow: 2rpx 1rpx 6rpx rgba(7, 55, 87, 0.5), 
-  -2rpx -2rpx 5rpx rgba(255, 255, 255, 0.3); /* 添加多重阴影 */
-  box-shadow: 2rpx 4rpx 10rpx rgba(0, 0, 0, 0.1);
+.pic_strech{
+  position: absolute;
+  top: 72%;
+  right: 2%;
+  width: 47%;
+  box-shadow: 4rpx 4rpx 20rpx rgba(0, 0, 0, 0.1);
 }
 
-/* Bottom Section */
-.bottom-section {
-  background: linear-gradient(to bottom, #f6feff, #76bffc); /* Gradient effect */
-  padding: 30px;
-  position: absolute; /* 设置绝对定位 */
-  top: 270px; /* 距离父容器顶部 20rpx */
-  left: 5.5%;
-  width: 73%;
-  box-shadow: 2rpx 4rpx 10rpx rgba(0, 0, 0, 0.1);
-  border-radius: 18px;
-  height: 130rpx; /* 设置固定高度为400rpx */
-  z-index: 10;
+.pic_AED{
+  position: absolute;
+  top: 84%;
+  left: 2%;
+  width: 47%;
+  box-shadow: 4rpx 4rpx 20rpx rgba(0, 0, 0, 0.1);
+}
+.pic_quiz{
+  position: absolute;
+  top: 84%;
+  right: 2%;
+  width: 47%;
+  box-shadow: 4rpx 4rpx 20rpx rgba(0, 0, 0, 0.1);
 }
 
-.bottom-button {
-  background: linear-gradient(to bottom, #ffffff, #ffffff); /* Gradient effect */
-  color: #0a4180;
-  text-align: center;
-  padding: 0px;
-  border-radius: 8px;
-  font-size: 18px;
-  font-weight: bold;
-  width: 65%; /* 修改后的宽度 */
-  height: 50px;
-
-  position: relative; /* 设置绝对定位 */
-  top: 45rpx; /* 距离父容器顶部 20rpx */
+.pic_sphurt{
+  position: absolute;
+  left: 50%; /* 将元素的左边缘放置在视口的50% */
+  top: 105%; /* 将元素的上边缘放置在视口的50% */
+  transform: translate(-50%, -50%); /* 将元素向上和向左移动自身高度和宽度的一半，实现水平和垂直居中 */
+  width: 80%;
+  box-shadow: 4rpx 4rpx 30rpx rgba(0, 0, 0, 0.1);
 }
 
-.dynamic-text {
-  position: absolute; /* 设置绝对定位 */
-  top: 18px; /* 距离父容器顶部 20rpx */
-  left: 30%;
-  font-size: 16px; /* 根据需要调整字体大小 */
-  color: #333; /* 根据需要调整文本颜色 */
-  font-weight: bold;
-}
+
+
+

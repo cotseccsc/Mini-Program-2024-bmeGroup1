@@ -1,33 +1,18 @@
-<view class="container">
-  <!-- Top Navigation Bar (already provided by default in WeChat Mini Program) -->
-
-  <!-- Middle Section -->
-  <view class="middle-section">
-    <!-- First block with #0C676B color for image placement -->
-    <view class="image-block">
-      <!-- Add your image here -->
-      <image src="/images/training/pic_1.png" class="image" mode="aspectFill" bindtap="navigateToInfo"></image>
-    </view>
-
-    <!-- Four interactive buttons below the image block -->
-    <view class="buttons-container">
-      <button class="button" bindtap="navigateToGuide">快速指南</button>
-      <button class="button" bindtap="navigateToStretch">运前拉伸</button>
-      <button class="button" bindtap="navigateToAed">AED教程</button>
-      <button class="button" bindtap="navigateToQuiz">知识答题</button>
-        <!-- Bottom Section -->
-  <view class="bottom-section">
-    <button class="bottom-button" bindtap="navigateToSportHurt">哪里受伤了-></button>
-    <text class="dynamic-text">SPORTS INJURY</text>
-  </view>
-
-    </view>
-    
-
-  </view>
-
-
-
-
-  <!-- Bottom Navigation Bar (already provided by default in WeChat Mini Program) -->
+<!-- 背景图片 -->
+<view class="background">
+<image src="/images/training/freecompress-cut之后的内容，825下午.png" style="width: 100%;height: 95%;" mode="widthFix"/>
 </view>
+<!-- 四张图片都附属于container模块 -->
+<view class="container">
+<!-- 快捷指南 -->
+  <image src="/images/training/freecompress-快捷指南.png"class="pic_quick"  bindtap="navigateToGuide"mode="widthFix"/>
+<!-- 活力拉伸 -->
+  <image src="/images/training/freecompress-pre-streching.png"class="pic_strech"  bindtap="navigateToStretch"mode="widthFix"/>
+<!-- AED教程 -->
+  <image src="/images/training/freecompress-样板样本.png"class="pic_AED"  bindtap="navigateToAed"mode="widthFix"/>
+<!-- 知识问答 -->
+  <image src="/images/training/freecompress-知识问答.png"class="pic_quiz"  bindtap="navigateToQuiz"mode="widthFix"/>
+<!-- 运动受伤 -->
+  <image src="/images/training/freecompress-运动受伤.png"class="pic_sphurt"  bindtap="navigateToSportHurt"mode="widthFix"/>
+</view>
+ 

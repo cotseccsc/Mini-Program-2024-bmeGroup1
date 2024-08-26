@@ -28,8 +28,8 @@
   text-shadow: 2rpx 2rpx 5rpx rgba(0, 0, 0, 0.5), 
                -2rpx -2rpx 5rpx rgba(255, 255, 255, 0.3); /* 添加多重阴影 */
                position: absolute; /* 设置绝对定位 */
-  top: 40rpx; /* 距离父容器顶部 20rpx */
-  left: 40rpx; /* 距离父容器左侧 20rpx */
+  top: 45rpx; /* 距离父容器顶部 20rpx */
+  left: 225rpx; /* 距离父容器左侧 20rpx */
 }
 
 .login-subtitle {
@@ -38,8 +38,8 @@
   text-shadow: 2rpx 2rpx 5rpx rgba(0, 0, 0, 0.5), 
                -2rpx -2rpx 5rpx rgba(255, 255, 255, 0.3); /* 添加多重阴影 */
                position: absolute; /* 设置绝对定位 */
-  top: 130rpx; /* 距离父容器顶部 20rpx */
-  left: 40rpx; /* 距离父容器左侧 20rpx */
+  top: 135rpx; /* 距离父容器顶部 20rpx */
+  left: 225rpx; /* 距离父容器左侧 20rpx */
 }
 
 .login-button {
@@ -48,11 +48,11 @@
   color: #1e3c72;
   border-radius:100rpx;
   font-size: 30rpx;
-  width: 300rpx;  /* 设置按钮宽度 */
+  width: 225rpx;  /* 设置按钮宽度 */
   height: 80rpx;  /* 设置按钮高度 */
   font-weight: bold;
   top: -50rpx; /* 距离父容器顶部 20rpx */
-  left: 170rpx; /* 距离父容器左侧 20rpx */
+  left: 180rpx; /* 距离父容器左侧 20rpx */
 }
 
 /* 通用板块样式 */
@@ -137,4 +137,45 @@
   font-size: 24rpx;
   color: #0a4180;
   font-weight: bold;
+}
+.avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  margin-right: 20px;
+  position: absolute; /* 设置绝对定位 */
+  top: 15rpx; /* 距离父容器顶部 20rpx */
+  left: 10rpx; /* 距离父容器左侧 20rpx */
+}
+.login-subtitle1 {
+  font-size: 30rpx;
+  margin-bottom: 20rpx;
+  text-shadow: 2rpx 2rpx 5rpx rgba(0, 0, 0, 0.5), 
+               -2rpx -2rpx 5rpx rgba(255, 255, 255, 0.3); /* 添加多重阴影 */
+               position: absolute; /* 设置绝对定位 */
+  top: 130rpx; /* 距离父容器顶部 20rpx */
+  left: 40rpx; /* 距离父容器左侧 20rpx */
+}
+.login-title1 {
+  font-size: 50rpx;
+  font-weight: bold;
+  margin-bottom: 30rpx;
+  text-shadow: 2rpx 2rpx 5rpx rgba(0, 0, 0, 0.5), 
+               -2rpx -2rpx 5rpx rgba(255, 255, 255, 0.3); /* 添加多重阴影 */
+               position: absolute; /* 设置绝对定位 */
+  top: 40rpx; /* 距离父容器顶部 20rpx */
+  left: 40rpx; /* 距离父容器左侧 20rpx */
+}
+.login-button1{
+
+  background-color: #ffffff;
+  color: #1e3c72;
+  border-radius:100rpx;
+  font-size: 30rpx;
+  width: 225rpx;  /* 设置按钮宽度 */
+  height: 80rpx;  /* 设置按钮高度 */
+  font-weight: bold;
+  top: -50rpx; /* 距离父容器顶部 20rpx */
+  left: 180rpx; /* 距离父容器左侧 20rpx */
 }
