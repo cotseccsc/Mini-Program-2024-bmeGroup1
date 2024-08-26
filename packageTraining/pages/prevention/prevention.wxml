@@ -2,7 +2,7 @@
 <!-- 图片板块，使用了photoshop，可以后期调色我来搞 -->
 <!-- container是背景上半，包含图片和渐变部分 -->
 <view class="container">
-  <image src="/images/training/prevention/photo_scretch.png" class="img_1" style="width: 400px;"mode="widthFix"></image>
+  <image src="/packageTraining/images/prevention/photo_scretch.png" class="img_1" style="width: 400px;"mode="widthFix"></image>
 <!-- 上方显示的文本 -->
 <view class="prompt-box">
     <text class="prompt-text">如何进行运动前拉伸？</text>

@@ -1,66 +1,98 @@
 // pages/personal_info/personal_info.js
+// pages/person/person.js
+const AV = require("../../../libs/av-core-min.js");
+const PersonalInfo = AV.Object.extend("PersonalInfo");
+const personalInfo = new PersonalInfo();
+const newPersonalInfo = new PersonalInfo();
+const query = new AV.Query("PersonalInfo");
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    avatar: '',
+    gender: '',
+    name: '',
+    phone: '',
+    birthday: '',
+    email: ''
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad(options) {
-
+  onShow: function () {
+    this.initializeData();
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady() {
+// 页面数据的初始化
+initializeData:function(){
+  // 从本地缓存中读取用户信息
+  const username = wx.getStorageSync('username');
+  // 查找是否已有数据
+  query.equalTo("Username", username);
+  query.first().then((personalInfo) => {
+    // 若已有数据
+    if (personalInfo) {
+      this.setData({
+        gender:personalInfo.get("Gender"),
+        name:personalInfo.get("Name"),
+        phone:personalInfo.get("Phone"),
+        birthday:personalInfo.get("Birthday"),
+        email:personalInfo.get("Email")
+      });
+    }
+  });
+},
 
+  chooseImage: function () {
+    wx.chooseImage({
+      count: 1,
+      sizeType: ['original', 'compressed'],
+      sourceType: ['album', 'camera'],
+      success: (res) => {
+        const tempFilePath = res.tempFilePaths[0];
+        this.setData({
+          avatar: tempFilePath
+        });
+      }
+    });
   },
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow() {
-
+  onGenderChange: function (e) {
+    this.setData({
+      gender: e.detail.value
+    });
   },
 
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide() {
-
+  onInputChange: function (e) {
+    const field = e.currentTarget.dataset.field;
+    this.setData({
+      [field]: e.detail.value
+    });
   },
 
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload() {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh() {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom() {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage() {
-
+  saveProfile: function () {
+    const username = wx.getStorageSync('username');
+  // 查找是否已有数据
+  query.equalTo("Username", username);
+  query.first().then((personalInfo) => {
+    if(personalInfo){
+      personalInfo.set("Gender",this.data.gender);
+      personalInfo.set("Name",this.data.name);
+      personalInfo.set("Phone",this.data.phone);
+      personalInfo.set("Birthday",this.data.birthday);
+      personalInfo.set("Email",this.data.email);
+      personalInfo.save();
+    }
+    else{
+      newPersonalInfo.set("Gender",this.data.gender);
+      newPersonalInfo.set("Name",this.data.name);
+      newPersonalInfo.set("Phone",this.data.phone);
+      newPersonalInfo.set("Birthday",this.data.birthday);
+      newPersonalInfo.set("Email",this.data.email);
+      newPersonalInfo.set("Username",username);
+      newPersonalInfo.save();
+    }
+  });
+    wx.showToast({
+      title: '保存成功',
+      icon: 'success',
+      duration: 2000
+    });
   }
-})
+});

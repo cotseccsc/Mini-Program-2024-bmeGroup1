@@ -4,9 +4,9 @@ Page({
   data: {
     // 循环显示的图片
     images: [
-      '/images/training/prevention/Pic_1.jpg',
-      '/images/training/prevention/pic_2.gif',
-      '/images/training/prevention/pic_3.jpg'
+      '/packageTraining/images/prevention/Pic_1.jpg',
+      '/packageTraining/images/prevention/pic_2.gif',
+      '/packageTraining/images/prevention/pic_3.jpg'
     ],
     // 下方显示的文本，每一个引号里面形成一个方块
     content: [

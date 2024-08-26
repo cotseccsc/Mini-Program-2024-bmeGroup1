@@ -1,6 +1,6 @@
 <view class="container">
   <!-- 红十字会徽 -->
-  <image class="red-cross-logo" src="/images/profile/redcross/red_cross_logo.png"></image>
+  <image class="red-cross-logo" src="/packageProfile/images/red_cross_logo.png"></image>
   
   <!-- 红十字相关信息 -->
   <view class="info-section">
