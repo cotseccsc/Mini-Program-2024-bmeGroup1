@@ -1,0 +1,6 @@
+<!--pages/ankle-injury/ankle-injury.wxml-->
+<!-- pages/ankle-injury/ankle-injury.wxml -->
+<view class="content">
+  <rich-text nodes="{{ankleInjuryContent}}"></rich-text>
+</view>
+<view class="source">资料来源：@默沙东诊疗手册大众版</view>

@@ -1,2 +1,13 @@
-<!--pages/detailed_injury/detailed_injury.wxml-->
-<text>pages/detailed_injury/detailed_injury.wxml</text>
+<view class="container">
+  <text class="title">详细急救指南</text>
+  <view class="button-container">
+    <button class="btn" data-target="prevention" bindtap="navigateTo">运动损伤的预防方式</button>
+    <button class="btn" data-target="cpr-aed" bindtap="navigateTo">心肺复苏&AED</button>
+    <button class="btn" data-target="general-principles" bindtap="navigateTo">运动损伤处理的普适原则</button>
+    <button class="btn" data-target="open_injury" bindtap="navigateTo">开放性软组织损伤</button>
+    <button class="btn" data-target="closed_injury" bindtap="navigateTo">闭合性软组织损伤</button>
+    <button class="btn" data-target="concussion" bindtap="navigateTo">脑震荡</button>
+    <button class="btn" data-target="ankle-injury" bindtap="navigateTo">踝关节扭伤</button>
+    <button class="btn" data-target="dislocation" bindtap="navigateTo">关节脱位</button>
+  </view>
+</view>

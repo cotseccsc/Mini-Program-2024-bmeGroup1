@@ -1,0 +1,6 @@
+<!--pages/concussion/concussion.wxml-->
+<!-- pages/concussion/concussion.wxml -->
+<view class="content">
+  <rich-text nodes="{{concussionContent}}"></rich-text>
+</view>
+<view class="source">资料来源：@默沙东诊疗手册大众版</view>

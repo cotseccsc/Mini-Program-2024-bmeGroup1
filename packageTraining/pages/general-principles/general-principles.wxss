@@ -1,1 +1,42 @@
 /* pages/general-principles/general-principles.wxss */
+page {
+  background-color: #c7e2f7; /* 设置背景颜色为浅灰色 */
+  width:95%;
+  text-align: center;
+}
+.container {
+  padding: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.steps text {
+  display: block;
+  margin-bottom: 10px;
+}
+.header1 {
+  font-size: 36px;
+  color: #00BF00;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.header2 {
+  font-size: 36px;
+  color: #FF0000;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.image {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.footer {
+  margin-top: 20px;
+  text-align: center;
+}
+.source {
+  color: grey;
+  font-size: 12px;
+}

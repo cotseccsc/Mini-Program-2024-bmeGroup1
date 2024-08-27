@@ -1,2 +1,19 @@
-<!--pages/quiz/quiz.wxml-->
-<text>pages/quiz/quiz.wxml</text>
+<view class="body">
+    
+    <view class="question">
+        <view class="title">
+            {{ answerNow + 1 }}、 {{ list[answerNow].title }}
+        </view>
+        <view class="option">
+            <view 
+                class="option-item {{ select === optionList[index] ? status : '' }}" 
+                bindtap="selectAnswer" 
+                data-item="{{ optionList[index] }}"
+                wx:for="{{ list[answerNow].option }}"
+                wx:key="index"
+            >
+                {{ optionList[index] }}. {{ item }}
+            </view>
+        </view>
+    </view>
+</view>

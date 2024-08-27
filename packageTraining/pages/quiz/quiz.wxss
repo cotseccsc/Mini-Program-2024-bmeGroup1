@@ -1,1 +1,42 @@
-/* pages/quiz/quiz.wxss */
+
+.body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.question {
+  padding-top: 200rpx;
+}
+
+.title {
+  border: 1px dashed #f00;
+  padding: 20rpx 60rpx;
+  width: 400rpx;
+  /* text-align: center; */
+  font-size: 40rpx;
+}
+
+.option {
+  margin-top: 50rpx;
+}
+
+.option-item {
+  background-color: #fff;
+  margin-bottom: 20rpx;
+  padding: 20rpx 40rpx;
+}
+
+
+
+.success {
+  background-color: #0f0;
+  color: #fff;
+}
+
+.fail {
+  background-color: #f00;
+  color: #fff;
+}

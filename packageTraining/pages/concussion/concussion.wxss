@@ -1,0 +1,29 @@
+/* pages/concussion/concussion.wxss */
+page {
+  background-color: #c7e2f7; /* 设置背景颜色为浅灰色 */
+  width:95%;
+  text-align: center;
+}
+.content {
+  padding: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #fff;
+}
+
+rich-text {
+  white-space: pre-wrap; /* 保持文本的格式，如换行和空格 */
+}
+
+img {
+  width: 100%; /* 确保图片宽度适应屏幕宽度 */
+  display: block; /* 防止图片下方出现空隙 */
+  margin: 20px 0; /* 图片上下边距 */
+}
+
+.source {
+  font-size: 12px; /* 设置字体大小为12号 */
+  color: #A0A0A0; /* 设置字体颜色为灰色 */
+  text-align: center; /* 文本居中显示 */
+  padding: 20px 0; /* 设置上下内边距 */
+}

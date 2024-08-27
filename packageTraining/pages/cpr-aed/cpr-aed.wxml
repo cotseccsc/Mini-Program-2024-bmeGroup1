@@ -1,2 +1,71 @@
 <!--pages/cpr-aed/cpr-aed.wxml-->
-<text>pages/cpr-aed/cpr-aed.wxml</text>
+<view class="container">
+  <text class="title">心肺复苏培训</text>
+  <text class="subtitle">科普内容</text>
+  <text>心搏骤停</text>
+  <text>心搏骤停是指患者心脏有效泵血功能突然丧失，导致血液循环停止，全身各个脏器的血液供应完全中断，如不及时恢复心搏，患者可发生临床死亡。在完全缺氧的状态下，4~6分钟开始出现脑损伤，8~10分钟后脑损伤将变得不可逆。当患者发生心搏骤停时，能否及时得到周围人的救护是至关重要的。尽早、正确的施救，可使患者获得最大的生存机会。</text>
+  <text class="subtitle">心肺复苏教程</text>
+  <view class="step">
+    <text>1、把你的手放在上面。确保患者平躺在一个坚实的地面上。跪在他旁边，将手掌后跟放在胸部中央。</text>
+    <image src="/packageTraining/images/detailed_injury/cpr_aed/cpr_image_1.jpg" mode="aspectFit"></image>
+  </view>
+  <view class="step">
+    <text>2、交叉手指。保持双臂伸直，用另一只手的后跟盖住第一只手，并将两只手的手指交叉在一起。保持手指抬起，这样他们就不会碰到病人的胸部或胸腔。</text>
+    <image src="/packageTraining/images/detailed_injury/cpr_aed/cpr_image_2.jpg" mode="aspectFit"></image>
+  </view>
+  <view class="step">
+    <text>3、进行胸部按压。身体前倾，让你的肩膀正对着病人的胸部，按压胸部大约5厘米。释放压力，但不是你的手，让胸部恢复。重复以每分钟100次按压的速率进行30次按压。</text>
+    <image src="/packageTraining/images/detailed_injury/cpr_aed/cpr_image_3.jpg" mode="aspectFit"></image>
+  </view>
+  <view class="step">
+    <text>4、打开呼吸道。移到患者的头部。倾斜头部，抬起下巴，再次打开气道。让他的嘴微微张开。</text>
+    <image src="/packageTraining/images/detailed_injury/cpr_aed/cpr_image_4.jpg" mode="aspectFit"></image>
+  </view>
+  <view class="step">
+    <text>5、进行人工呼吸。用额头上的手捏住鼻孔，用另一只手托住病人的下巴。正常呼吸，将嘴巴放在患者嘴上，然后吹，直到可以看到他的胸部上升。</text>
+    <image src="/packageTraining/images/detailed_injury/cpr_aed/cpr_image_5.jpg" mode="aspectFit"></image>
+  </view>
+  <view class="step">
+    <text>6、看胸部下降。把嘴从患者的嘴上移开，顺着胸部看，看着胸部下降。重复步骤五和步骤六1次。</text>
+    <image src="/packageTraining/images/detailed_injury/cpr_aed/cpr_image_6.jpg" mode="aspectFit"></image>
+  </view>
+  <view class="step">
+    <text>7、重复胸部按压和抢救呼吸。再次将手放在胸部，重复30次胸部按压，然后进行两次人工呼吸。继续循环。</text>
+    <image src="/packageTraining/images/detailed_injury/cpr_aed/cpr_image_3.jpg" mode="aspectFit"></image>
+  </view>
+  <view class="step">
+    <text class="subtitle">AED快速教程</text>
+    <image src="/packageTraining/images/detailed_injury/cpr_aed/cpr_image_7.jpg" mode="aspectFit"></image>
+    <text>在AED到达前请保持心肺复苏的进行。AED到达后请根据上图操作，AED会提供语音指令，根据语音指令进行操作即可。</text>
+  </view>
+
+  <view class="step">
+    <text class="subtitle">AED介绍</text>
+
+    <text>自动体外除颤器（AED）是一种便携式的医疗设备，可以诊断特定的心律失常，并且给予电击除颤，是可被非专业人员使用的用于抢救心脏骤停患者的医疗设备。基本上所有发生心脏骤停需要心肺复苏的病人都需要使用AED。在心跳骤停时，只有在最佳抢救时间的“黄金4分钟”内，利用自动体外除颤器（AED）对患者进行除颤和心肺复苏，才是最有效制止猝死的办法</text>
+  </view>
+  <view class="step">
+    <text class="subtitle">AED介绍</text>
+    <text>自动体外除颤器（AED）是一种便携式的医疗设备，可以诊断特定的心律失常，并且给予电击除颤，是可被非专业人员使用的用于抢救心脏骤停患者的医疗设备。基本上所有发生心脏骤停需要心肺复苏的病人都需要使用AED。在心跳骤停时，只有在最佳抢救时间的“黄金4分钟”内，利用自动体外除颤器（AED）对患者进行除颤和心肺复苏，才是最有效制止猝死的办法</text>
+  </view>
+  <view class="step">
+    <text class="subtitle">操作步骤</text>
+    <text>1、开机</text><text>按电源键开机之后，AED会有语音提示，会告诉接下来怎么做。</text>
+    <text>2、贴片</text><text>按照电极片上的图示说明，将电极片紧贴在伤病员相应部位的暴露皮肤上。通常而言，两块电极片分别贴在胸骨右侧，锁骨下方和左胸乳头外侧、腋中线位置，具体位置可以参考AED机壳上的图样和电极片上的说明。</text>
+    <text>AED电极板分正极和负极两片。放电时电流从正极进入患者体内，从负极回到AED中，构成回路。贴电极板时正极贴在患者右侧锁骨下，负极帖在患者左侧乳头外下方，不要贴反。左下的位置在左乳外侧电极片中线在腋中线，电极片上缘距腋窝约7cm左右。</text>
+    <text>3、插上插头分析心律</text><text>将电极片导线的另一端插入AED机器上 （有些AED电极片导线的另一端是已直接和AED机身连接的）。AED开始通过贴在伤病员身上的电极片，采集分析其心律数据，这时AED会提醒救护员或围观人员：“不要接触伤病员。”因为身体接触会干扰AED 对伤病员心律的分析。</text>
+    <text>4、电击除颤</text><text>如果AED分析出伤病员需要电击，就会自动充电，并且在发出除颤指示之前，再次提示：“不要接触伤病员”（此时请一定不能接触伤员），确认没有人接触伤病员之后，按下电击按钮，AED会自动对伤病员进行电击除颤。</text>
+    <image src="/packageTraining/images/detailed_injury/cpr_aed/cpr_image_8.png" mode="aspectFit"></image>
+  </view>
+  <view class="step">
+    <text class="subtitle">注意事项</text>
+    <text>1. AED瞬间可以达到200焦耳的能量，在给病人施救过程中，请在按下通电按钮后立刻远离患者，并告诫身边任何人不得接触靠近患者。</text>
+    <text>2. 患者在水中不能使用AED，患者胸部如有汗水需要快速擦干胸部，因为水会降低AED功效。 如果在使用完AED后，患者没有任何生命特征（没有呼吸心跳）需要马上送医院救治。</text>
+    <text>一旦发现心脏骤停人员，务必及时、持续实施心肺复苏，或至少保持不间断的心外按压，同时配合使用AED，同步拨打120呼救，此期间心肺复苏不停止。</text>
+    <text>3. 除颤之后如果伤病员呼吸心搏未恢复，要继续进行心肺复苏（不关闭AED、不取下电极片），4. 2分钟之后AED会再次发出语音提示，抢救人员应根据提示重复以上操作。</text>
+    <text>4. 操作过程中，不用担心AED的安全问题，AED专门用于帮助心搏呼吸骤停的伤者恢复心律，只要按照提示操作，操作者既不会触电，也不会伤到任何人，不必有所顾虑。</text>
+  </view>
+  <view class="footer">
+    <text class="source">资料来源：@默沙东诊疗手册大众版</text>
+  </view>
+</view>
