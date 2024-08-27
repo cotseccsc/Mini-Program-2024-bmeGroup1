@@ -40,7 +40,6 @@ Page({
       showCancel: false, // 不显示取消按钮
       success: (res) => {
         if (res.confirm) {
-          console.log('用户点击确定');
           // 用户点击确定后立即跳转到登录页面
           this.navigateToLogin();
         }
@@ -57,6 +56,8 @@ Page({
     this.setData({
       isLogged: false,
     });
+    // 退出登录时清除本地存储中的用户名信息
+    wx.clearStorageSync();
     wx.switchTab({
       url: '/packageProfile/pages/profile/profile',
     });
@@ -137,7 +138,6 @@ Page({
           avatarSwitch: newAvatarSwitch
         }, () => {
           // 这里可以安全地使用更新后的avatarSwitch
-          console.log(this.data.avatarSwitch); // 这将打印更新后的值
         });
       }
     });

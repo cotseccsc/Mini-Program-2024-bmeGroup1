@@ -28,10 +28,14 @@
       "pages": [
         "pages/quiz/quiz",
         "pages/detailed_injury/detailed_injury",
-        "pages/traininginfo/traininginfo",
         "pages/prevention/prevention",
         "pages/cpr-aed/cpr-aed",
-        "pages/general-principles/general-principles"
+        "pages/general-principles/general-principles",
+        "pages/open_injury/open_injury",
+        "pages/dislocation/dislocation",
+        "pages/concussion/concussion",
+        "pages/closed_injury/closed_injury",
+        "pages/ankle-injury/ankle-injury"
       ],
       "independent": false
     },

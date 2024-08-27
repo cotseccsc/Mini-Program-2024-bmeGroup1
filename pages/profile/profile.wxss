@@ -145,7 +145,7 @@
   border: 2px solid #fff;
   margin-right: 20px;
   position: absolute; /* 设置绝对定位 */
-  top: 15rpx; /* 距离父容器顶部 20rpx */
+  top: 17rpx; /* 距离父容器顶部 20rpx */
   left: 10rpx; /* 距离父容器左侧 20rpx */
 }
 .login-subtitle1 {
