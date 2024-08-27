@@ -48,7 +48,6 @@ Page({
       return;
     }
     // 这里可以添加发送反馈信息到服务器的代码
-    console.log('Feedback:', { opinion, rating, email });
 
     // 显示发送成功的弹窗
     wx.showToast({
