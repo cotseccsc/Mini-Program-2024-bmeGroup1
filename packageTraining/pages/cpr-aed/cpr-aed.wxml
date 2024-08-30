@@ -20,7 +20,7 @@
 <text class="header">心搏骤停</text>
   <text class="steps">心搏骤停是指患者心脏有效泵血功能突然丧失，导致血液循环停止，全身各个脏器的血液供应完全中断，如不及时恢复心搏，患者可发生临床死亡。在完全缺氧的状态下，4~6分钟开始出现脑损伤，8~10分钟后脑损伤将变得不可逆。当患者发生心搏骤停时，能否及时得到周围人的救护是至关重要的。尽早、正确的施救，可使患者获得最大的生存机会。</text>
 
-  <image src="/packageTraining/images/detailed_injury/cpr_aed/心脏骤停.webp" class="pic" mode="widthFix"></image>
+  <image src="/packageTraining/images/detailed_injury/cpr_aed/心脏骤停.png" class="pic" mode="widthFix"></image>
 
   <text class="header">AED介绍</text>
   <text class="steps">动体外除颤器（AED）是一种便携式的医疗设备，可以诊断特定的心律失常，并且给予电击除颤，是可被非专业人员使用的用于抢救心脏骤停患者的医疗设备。基本上所有发生心脏骤停需要心肺复苏的病人都需要使用AED。</text>
