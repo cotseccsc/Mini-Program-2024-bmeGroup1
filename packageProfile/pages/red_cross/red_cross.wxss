@@ -2,17 +2,42 @@
   width: 95%; /* 设置宽度为父容器的80% */
   height: 1420rpx; /* 设置固定高度为400rpx */
   padding: 20rpx; /* 内边距 */
-  background: linear-gradient(45deg, #94d3ec, #eaf1ff); /* 背景颜色 */
+  background-color: #e7faff; /* 背景颜色 */
 }
 
 .red-cross-logo {
-  width: 68%; /* 或者根据实际大小调整 */
-  margin-top: 50px;
+  width: 70%; /* 或者根据实际大小调整 */
+  margin-top: 40px;
+  display: flex;
+  
 }
 
 .info-section {
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+  width: 100%;
   text-align: center;
   margin-top: 30px;
+  background-color: #293EAF;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50rpx;
+
+}
+
+.stress_word{
+  margin-top: 20rpx;
+  font-size: 45rpx;
+  color: white;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+}
+
+.word_light{
+  font-size: 30rpx;
+  color: white;
+  font-weight: bold;
 }
 
 .reference-section {
@@ -24,9 +49,15 @@
 
 .friend-link {
   position: absolute;
-  bottom: 20px;
+  bottom: 100rpx;
   width: 100%;
   text-align: center;
+}
+
+.bottom_text{
+  font-size: 30rpx;
+  font-weight: bold;
+  margin-bottom: 20rpx;
 }
 
 .text-class {

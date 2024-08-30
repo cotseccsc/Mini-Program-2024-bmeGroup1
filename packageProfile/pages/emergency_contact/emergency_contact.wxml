@@ -1,10 +1,13 @@
 <!--pages/emergency_contact/emergency_contact.wxml-->
 <view class="emergency-contact">
+
   <text class="title">紧急联系人\n \n</text>
-  <text class="contact-info">紧急联系人1：{{eC1}}
-  紧急联系人2：{{eC2}}
-</text>
-  <button class="call-button1" bindtap="makePhoneCall1">拨打紧急联系人1电话</button>
-  <button class="call-button2" bindtap="makePhoneCall2">拨打紧急联系人2电话</button>
-  <button class="modify-button" bindtap="navigateToModify">修改紧急联系人</button>
+  <text class="contact-info">紧急联系人1：{{eC1}}\n</text>
+  <text class="contact-info">紧急联系人2：{{eC2}}</text>
+
+ <view class="container_inner">
+  <button class="call_botton" bindtap="makePhoneCall1">拨打紧急联系人1电话</button>
+  <button class="call_botton" bindtap="makePhoneCall2">拨打紧急联系人2电话</button>
+  <button class="call_botton" bindtap="navigateToModify">修改紧急联系人</button>
+ </view>
 </view>

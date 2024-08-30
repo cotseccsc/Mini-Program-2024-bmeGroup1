@@ -1,15 +1,24 @@
 <!--pages/emergency_contact_modify/emergency_contact_modify.wxml-->
 <view class="emergency-contact-modify">
+  <view class="intention">
+请填写您的紧急联系人:)
+  </view>
+  <view class="container_inner">
   <input class="input" type="text" placeholder="新的紧急联系人1电话：" bindinput="newEmergencyContactNumberChange1" value="{{newEmergencyContactNumber1}}" />
+
   <input class="input" type="text" placeholder="新的紧急联系人2电话：" bindinput="newEmergencyContactNumberChange2" value="{{newEmergencyContactNumber2}}" />
+
   <button class="confirm-button" bindtap="confirmModify">确认修改</button>
-  <view class="warning0">
-  请注意：
+
+</view>
+<view class="warning0">
+  请注意：\n
   </view>
   <view class="warning1">
-  1.请确保您的紧急联系人信息已填写。如果某一输入框为空，我们将会向数据库对应位置传入空字符，也就是说将会从我们的数据库中删除您对应的紧急联系人记录。
+  1.请确保您的紧急联系人信息已填写。如果某一输入框为空，我们将会向数据库对应位置传入空字符，也就是说将会从我们的数据库中删除您对应的紧急联系人记录。\n
   </view>
   <view class="warning2">
     2.请在点击确认之前，确保您的紧急联系人信息以正确的格式填写。如果您填写时出现了其他种类的字符(如空格、特殊符号等)，我们的数据库会忠实地存储您输入的所有内容。但是由于您的随意输入导致的电话无法正确拨打的情况，本程序对此不承担任何责任。
   </view>
 </view>
+

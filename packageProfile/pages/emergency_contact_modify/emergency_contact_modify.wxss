@@ -1,36 +1,95 @@
 /* pages/emergency_contact_modify/emergency_contact_modify.wxss */
 .emergency-contact-modify {
-  padding: 20px;
+  padding:20rpx;
+  width: 95%; /* 设置宽度为父容器的95% */
+  height:1450rpx;
+  padding: 20rpx; /* 内边距 */
+  background-color: #e7faff; /* 背景颜色 */
+}
+.intention{
+position: relative;
+top: 80rpx;
+left: 100rpx;
+  font-weight: 700;
+  font-size: 45rpx;
+  color: #000000;
+  font-family: 微软雅黑;
+}
+.container_inner{
+position: relative;
+top: -6%;
+width: 90%;
+margin: auto;
+background-color: #ffffff;
+border-radius: 60rpx;
+margin: 250rpx auto 30rpx;
+box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+padding-top: 20rpx;
+padding-bottom: 60rpx;
+padding-left: 20rpx;
+padding-right: 20rpx;
 }
 
+
 .input {
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  padding: 12px; /* 增加内边距以提高输入框的高度 */
-  margin-bottom: 30px; /* 增加输入框和按钮之间的距离 */
-  width: 100%;
-  box-sizing: border-box;
-  height: 50px; /* 直接设置输入框的高度 */
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70rpx;
+  margin-bottom: 70rpx;
+  margin-left: 65rpx;
+
+  flex:1;
+  height: 70rpx;
+	border: 5rpx solid rgba(41,62,175,0.4);
+  width: 70%;
+  border-radius: 60rpx;
+  justify-content: center;
+  flex-direction: column; /* 垂直方向排列子元素 */
+  align-items: flex-start;
+  padding-left: 20rpx;
 }
 
 .confirm-button {
-  margin-top: 20px; /* 增加按钮的上边距 */
-  padding: 10px; /* 增加按钮的内边距 */
-  background-color: #1aad19; /* 设置按钮背景颜色 */
-  color: white; /* 设置按钮文字颜色 */
-  border: none; /* 去除按钮边框 */
-  border-radius: 4px; /* 设置按钮的圆角 */
+  position: relative;
+  margin-top: 20rpx;
+      width: 70%;
+      height: 100rpx;
+      margin-top: 60rpx;
+      background-color: #293EAF;
+      border-radius: 60rpx;
+      display: flex;
+      color: white;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 2px 2px 2px 5px rgba(0, 0, 0, 0.2);
+      font-family: 微软雅黑;
+      font-weight: 600;
+      font-size: 36rpx;
 }
 
 .warning0{
-  color:#ff0000;
+  display: flex;
+  justify-content: center;
+  color:#293EAF;
+  font-size: 40rpx;
+  font-weight: 600;
+  font-family: 微软雅黑;
+  margin: 30rpx;
 }
 
 .warning1{
-  color:#ff0000;
+  font-size: 28rpx;
+  color:#293EAF;
+  font-weight: 600;
+  font-family: 微软雅黑;
+  margin: 30rpx;
 }
 
 .warning2{
-  color:#ff0000;
+  font-size: 28rpx;
+  color:#293EAF;
+  font-weight: 600;
+  font-family: 微软雅黑;
+  margin: 30rpx;
 }
 

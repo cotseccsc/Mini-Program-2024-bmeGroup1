@@ -1,38 +1,112 @@
+.background {
+  z-index: 10;
+  vertical-align: top;
+  background-color: #e7faff;
+  vertical-align: top;
+}
+
+
+
 .container {
+  padding:20rpx;
   width: 95%; /* 设置宽度为父容器的95% */
-  height:1430rpx;
+  height:1150rpx;
   padding: 20rpx; /* 内边距 */
-  background: linear-gradient(45deg, #94d3ec, #eaf1ff); /* 背景颜色 */
+  background-color: #e7faff; /* 背景颜色 */
+}
+
+.container_1 {
+position: relative;
+top: -17%;
+width: 90%;
+margin: auto;
+background-color: #ffffff;
+border-radius: 60rpx;
+margin: 250rpx auto 30rpx;
+box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
 }
 
 .input-section {
-  margin-bottom: 20rpx;
-}
+    width: 80%;
+    padding: 20rpx 30rpx;
+    height: 70rpx;
+    background-color: #28a4e233;
+    border-radius: 70rpx;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 70rpx auto 50rpx;
+    justify-content: space-between;
+  }
+
+  .text_info{
+    font-weight: 600;
+font-family: 微软雅黑;
+  }
 
 .input-text {
-  width: 100%;
-  padding: 10rpx;
-  font-size: 28rpx;
-  border: 1rpx solid #ccc;
-  border-radius: 10rpx;
-  margin-top: 10rpx;
+  flex:1;
+  height: 70rpx;
+	border: 5rpx solid rgba(41,62,175,0.4);
+  width: 230rpx;
+  border-radius: 60rpx;
+  justify-content: center;
+  flex-direction: column; /* 垂直方向排列子元素 */
+  align-items: flex-start;
+  padding-left: 20rpx;
 }
 
 .contact-info {
-  margin-top: 100rpx;
+  position: absolute;
+  bottom: 100rpx;
   font-size: 28rpx;
-  color: #0072ff;
+  margin-left: 150rpx;
+  margin-right: 50rpx;
+  color: #293EAF;
+  font-weight: 600;
+  font-family: 微软雅黑;
+
 }
 
-.contact-info text {
+/* .contact-info text {
+  margin-bottom: 20rpx;
   color: #0072ff;
-}
+  font-weight: 500;
+} */
 
 .send-button {
-  background-color: #0072ff;
-  color: #ffffff;
-  padding: 20rpx;
-  font-size: 28rpx;
-  border-radius: 10rpx;
-  margin-top: 40rpx;
+  position: absolute;
+  top:980rpx;
+  left:105rpx ;
+  width: 70%;
+  height: 100rpx;
+	margin-top: 60rpx;
+  background-color: #293EAF;
+  border-radius: 60rpx;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: 微软雅黑;
+  font-weight: 600;
+}
+
+.register {
+  position: absolute;
+  top:800rpx;
+  left: 40rpx;
+  width: 70%;
+  height: 100rpx;
+	margin-top: 50rpx;
+  background-color: #000000;
+  border-radius: 60rpx;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  margin:60rpx auto;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+  font-family: 微软雅黑;
+  font-weight: 600;
 }

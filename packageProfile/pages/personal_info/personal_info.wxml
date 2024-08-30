@@ -2,56 +2,59 @@
 <!-- pages/person/person.wxml -->
 <view class="container">
   <!-- 用户头像 -->
-
+  <view class="container_1">
   <view class="avatar-section">
      <!-- <image class="avatar" src="{{avatar || '/resources/default-avatar.png'}}" bindtap="chooseImage"></image>-->
   </view>
 
   <!-- 性别选择 -->
   <view class="section">
-    <text>性别</text>
+    <text class="stress_index">性别</text>
     <radio-group class="radio-group" bindchange="onGenderChange">
       <label class="radio-label">
-        <radio value="男" checked="{{gender === '男'}}">男</radio>
+        <radio value="男" class="choice" checked="{{gender === '男'}}">男</radio>
       </label>
       <label class="radio-label">
-        <radio value="女" checked="{{gender === '女'}}">女</radio>
+        <radio value="女" class="choice" checked="{{gender === '女'}}">女</radio>
       </label>
     </radio-group>
   </view>
 
   <!-- 用户姓名 -->
   <view class="section">
-    <text>姓名</text>
-    <input value="{{name}}" bindinput="onInputChange" data-field="name" placeholder="请输入姓名"/>
+    <text class="stress_index">姓名</text>
+    <input value="{{name}}" class="input-text" bindinput="onInputChange" data-field="name" placeholder="请输入姓名"/>
   </view>
 
   <!-- 手机电话 -->
   <view class="section">
-    <text>手机电话</text>
-    <input value="{{phone}}" bindinput="onInputChange" data-field="phone" placeholder="请输入手机电话"/>
+    <text class="stress_index">手机电话</text>
+    <input value="{{phone}}" class="input-text" bindinput="onInputChange" data-field="phone" placeholder="请输入手机电话"/>
   </view>
 
   <!-- 生日 -->
   <view class="section">
-    <text>生日</text>
-    <input value="{{birthday}}" bindinput="onInputChange" data-field="birthday" placeholder="请输入生日"/>
+    <text class="stress_index">生日</text>
+    <input value="{{birthday}}" class="input-text" bindinput="onInputChange" data-field="birthday" placeholder="请输入生日"/>
   </view>
 
   <!-- 邮箱 -->
   <view class="section">
-    <text>邮箱</text>
-    <input value="{{email}}" bindinput="onInputChange" data-field="email" placeholder="请输入邮箱"/>
+    <text class="stress_index">邮箱</text>
+    <input value="{{email}}" class="input-text" bindinput="onInputChange" data-field="email" placeholder="请输入邮箱"/>
   </view>
-
+</view>
   <!-- 保存按钮 -->
-  <button class="save-button" bindtap="saveProfile">保存</button>
-  <text class="custom-text">
+
+
+</view>
+<button class="save-button" bindtap="saveProfile">保存</button>
+<text class="custom-text">
   隐私声明</text>
-  <text>
-  我们非常重视您的隐私。您提供的个人信息仅用于以下用途：
+  <text class="small_text">
+  我们重视您的隐私。您提供的个人信息仅用于以下用途：
       1. 确认您的身份，以便为您提供个性化服务；
       2. 与您联系并提供相关的客户支持；
       3. 改善我们的产品和服务。
       请放心，您的个人信息未经您的同意不会泄露给第三方。</text>
-</view>
+
