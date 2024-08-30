@@ -26,8 +26,6 @@
       <view slot="desc">{{currentMarker.desc}}</view>
       <view slot="footer">
         <button type="primary" class="weui-btn1" bindtap="navi1">APP导航</button>
-        
-
         <button type="primary" class="weui-btn2" bindtap="navi2">图片导航</button>
       </view>  
   </mp-halfScreenDialog>>

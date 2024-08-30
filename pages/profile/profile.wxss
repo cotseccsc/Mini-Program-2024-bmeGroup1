@@ -1,21 +1,46 @@
 /* pages/profile/profile.wxss */
+
+.background{
+  position: relative;
+  top:-1%;
+  left:0%;
+  width: 100%;
+  height: 90%;
+  background-size: cover; /* 让图片覆盖整个背景 */
+  background-position: center; /* 图片居中显示 */
+  background-repeat: no-repeat; /* 图片不重复 */
+  z-index: 10;
+}
+.back_pic{
+position: absolute;
+top:3%;
+  width: 60%;
+  height: 50%;
+}
 /* 容器样式 */
 .container {
+  position: absolute;
+  top:0%;
   width: 95%; /* 设置宽度为父容器的80% */
-  height: 1420rpx; /* 设置固定高度为400rpx */
+  height: 1580rpx; /* 设置固定高度为400rpx */
   padding: 20rpx; /* 内边距 */
-  background: linear-gradient(45deg, #94d3ec, #eaf1ff); /* 背景颜色 */
+  background-color: #e7faff; /* 背景颜色 */
 }
 
 /* 登录/注册模块样式 */
 .login-section {
   margin: 35rpx auto 35rpx; /* 上下外边距设置为 0 和 30rpx，左右外边距设置为 auto */
-  width: 95%; /* 设置宽度为父容器的 60% */
-  position: relative; /* 设置position为relative，方便内部元素使用绝对定位 */
+  width: 90%; /* 设置宽度为父容器的 60% */
+height: 10%;
+  position: absolute; /* 设置position为relative，方便内部元素使用绝对定位 */
+  top:300rpx;
+  z-index: 20;
+  border-radius: 20rpx;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2); /* 设置阴影 */
 }
 .login-gradient {
   padding: 110rpx;
-  background: linear-gradient(0deg, #1656aa, #c6dbff);
+  background-color: #ffffff;
   border-radius: 20rpx;
   height: 0rpx; 
   color: #ffffff;
@@ -30,6 +55,7 @@
                position: absolute; /* 设置绝对定位 */
   top: 45rpx; /* 距离父容器顶部 20rpx */
   left: 225rpx; /* 距离父容器左侧 20rpx */
+  color:#000000
 }
 
 .login-subtitle {
@@ -40,19 +66,21 @@
                position: absolute; /* 设置绝对定位 */
   top: 135rpx; /* 距离父容器顶部 20rpx */
   left: 225rpx; /* 距离父容器左侧 20rpx */
+  color:#000000
 }
 
 .login-button {
 
-  background-color: #ffffff;
-  color: #1e3c72;
+  background-color: #293EAF
+  ;
+  color: #ffffff;
   border-radius:100rpx;
   font-size: 30rpx;
-  width: 225rpx;  /* 设置按钮宽度 */
+  width: 260rpx;  /* 设置按钮宽度 */
   height: 80rpx;  /* 设置按钮高度 */
   font-weight: bold;
   top: -50rpx; /* 距离父容器顶部 20rpx */
-  left: 180rpx; /* 距离父容器左侧 20rpx */
+  left: 170rpx; /* 距离父容器左侧 20rpx */
 }
 
 /* 通用板块样式 */
@@ -61,27 +89,47 @@
 }
 
 .section-title {
-  font-size: 32rpx;
+  font-size: 40rpx;
   font-weight: bold;
   color: #0072ff;
-
-  /* 设置相对位置 */
+  font-family: 微软雅黑;
   position: absolute;  /* 使字体相对定位 */
-  top: 350rpx;          /* 向下移动 20rpx */
+  top: 570rpx;          /* 向下移动 20rpx */
   left: 60rpx;         /* 向右移动 30rpx */
+  z-index: 9999;
+}
+.section-title_Eng {
+  font-size: 40rpx;
+  font-weight: bold;
+  color: #0072ff;
+  font-family: 华文琥珀;
+  position: absolute;  /* 使字体相对定位 */
+  top: 575rpx;          /* 向下移动 20rpx */
+  left: 32%;         /* 向右移动 30rpx */
   z-index: 9999;
 }
 .section-title_1 {
-  font-size: 32rpx;
+  font-family: 微软雅黑;
+  font-size: 40rpx;
   font-weight: bold;
   color: #0072ff;
-
-  /* 设置相对位置 */
   position: absolute;  /* 使字体相对定位 */
-  top: 790rpx;          /* 向下移动 20rpx */
+  top: 1063rpx;          /* 向下移动 20rpx */
   left: 60rpx;         /* 向右移动 30rpx */
   z-index: 9999;
 }
+
+.section-title_1_Eng{
+  font-size: 40rpx;
+  font-weight: bold;
+  color: #0072ff;
+  font-family:华文琥珀;
+  position: absolute;  /* 使字体相对定位 */
+  top: 1068rpx;          /* 向下移动 20rpx */
+  left: 32%;         /* 向右移动 30rpx */
+  z-index: 9999;
+}
+
 
 .grid-container {
   display: flex;
@@ -92,7 +140,7 @@
   box-shadow: 0 4rpx 10rpx rgba(0, 0, 0, 0.1);
 
   position: absolute; /* 或者 relative, fixed, sticky */
-  top: 340rpx;       /* 距离顶部 100rpx */
+  top: 540rpx;       /* 距离顶部 100rpx */
   left: 45rpx;   
   height: 290rpx;   /* 高度 */
   width: 75%;
@@ -108,12 +156,70 @@
 
   
   position: absolute; /* 或者 relative, fixed, sticky */
-  top: 780rpx;       /* 距离顶部 100rpx */
+  top: 980rpx;       /* 距离顶部 100rpx */
   left: 45rpx;   
   height: 190rpx;   /* 高度 */
   width: 75%;
 }
 
+.selfinfo_pic{
+  z-index: 30;
+  position: absolute;
+  top:650rpx;
+  left: 7.5%;
+  width: 40%;
+  height: 60%;
+}
+.contact_pic{
+  z-index: 30;
+  position: absolute;
+  top:650rpx;
+  right: 7.5%;
+  width: 40%;
+  height: 60%;
+}
+
+.honor_pic{
+  z-index: 30;
+  position: absolute;
+  top:860rpx;
+  left: 7.5%;
+  width: 40%;
+  height: 60%;
+}
+
+.volunteer_pic{
+  z-index: 30;
+  position: absolute;
+  top:860rpx;
+  right: 7.5%;
+  width: 40%;
+  height: 60%;
+}
+.feedback_pic{
+  z-index: 30;
+  position: absolute;
+  top:1140rpx;
+  left: 7.5%;
+  width: 40%;
+  height: 60%;
+}
+.redcross_pic{
+  z-index: 30;
+  position: absolute;
+  top:1140rpx;
+  right: 7.5%;
+  width: 40%;
+  height: 60%;
+}
+.aboutus_pic{
+  z-index: 30;
+  position: absolute;
+  top:1350rpx;
+  left: 7.5%;
+  width: 40%;
+  height: 60%;
+}
 
 .grid-item {
   width: 33%;
@@ -138,6 +244,15 @@
   color: #0a4180;
   font-weight: bold;
 }
+
+.footer{
+background-color: brown;
+position: absolute;
+bottom:0px;
+height: 20%;
+width: 95%;
+z-index: 99;
+}
 .avatar {
   width: 90px;
   height: 90px;
@@ -148,15 +263,6 @@
   top: 17rpx; /* 距离父容器顶部 20rpx */
   left: 10rpx; /* 距离父容器左侧 20rpx */
 }
-.login-subtitle1 {
-  font-size: 30rpx;
-  margin-bottom: 20rpx;
-  text-shadow: 2rpx 2rpx 5rpx rgba(0, 0, 0, 0.5), 
-               -2rpx -2rpx 5rpx rgba(255, 255, 255, 0.3); /* 添加多重阴影 */
-               position: absolute; /* 设置绝对定位 */
-  top: 130rpx; /* 距离父容器顶部 20rpx */
-  left: 40rpx; /* 距离父容器左侧 20rpx */
-}
 .login-title1 {
   font-size: 50rpx;
   font-weight: bold;
@@ -166,16 +272,15 @@
                position: absolute; /* 设置绝对定位 */
   top: 40rpx; /* 距离父容器顶部 20rpx */
   left: 40rpx; /* 距离父容器左侧 20rpx */
+  color:#000000
 }
-.login-button1{
-
-  background-color: #ffffff;
-  color: #1e3c72;
-  border-radius:100rpx;
+.login-subtitle1 {
   font-size: 30rpx;
-  width: 225rpx;  /* 设置按钮宽度 */
-  height: 80rpx;  /* 设置按钮高度 */
-  font-weight: bold;
-  top: -50rpx; /* 距离父容器顶部 20rpx */
-  left: 180rpx; /* 距离父容器左侧 20rpx */
+  margin-bottom: 20rpx;
+  text-shadow: 2rpx 2rpx 5rpx rgba(0, 0, 0, 0.5), 
+               -2rpx -2rpx 5rpx rgba(255, 255, 255, 0.3); /* 添加多重阴影 */
+               position: absolute; /* 设置绝对定位 */
+  top: 130rpx; /* 距离父容器顶部 20rpx */
+  left: 40rpx; /* 距离父容器左侧 20rpx */
+  color:#000000
 }

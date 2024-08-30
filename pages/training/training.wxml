@@ -1,6 +1,6 @@
 <!-- 背景图片 -->
 <view class="background">
-<image src="/images/training/freecompress-cut之后的内容，825下午.png" style="width: 100%;height: 95%;" mode="widthFix"/>
+<image src="/images/training/training_background_cut_com.png" style="width: 100%;height: 95%;" mode="widthFix"/>
 </view>
 <!-- 四张图片都附属于container模块 -->
 <view class="container">

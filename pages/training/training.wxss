@@ -5,52 +5,57 @@
   background-size: cover; /* 让图片覆盖整个背景 */
   background-position: center; /* 图片居中显示 */
   background-repeat: no-repeat; /* 图片不重复 */
+  vertical-align: top;
+  z-index: 999;
 }
 /* 下方背景 */
 .container {
+  position: absolute;
+  top: 900rpx;
   width: 100%; /* 设置宽度为父容器的80% */
-  height: 70px; /* 设置固定高度为400rpx */
-  padding: 0rpx; /* 内边距 */
- background-color: #ffffff;
+  height: 560rpx; /* 设置固定高度为400rpx */
+  padding: 20rpx; /* 内边距 */
+ background-color: #e7faff;
+ z-index: 10;
 }
 
 .pic_quick{
   position: absolute;
-  top: 72%;
-  left: 2%;
-  width: 47%;
+  top: 10rpx;
+  left:40rpx;
+  width: 330rpx;
   box-shadow: 4rpx 4rpx 20rpx rgba(0, 0, 0, 0.1);
 }
 
 .pic_strech{
   position: absolute;
-  top: 72%;
-  right: 2%;
-  width: 47%;
+  top: 10rpx;
+  right: 80rpx;
+  width: 330rpx;
   box-shadow: 4rpx 4rpx 20rpx rgba(0, 0, 0, 0.1);
 }
 
 .pic_AED{
   position: absolute;
-  top: 84%;
-  left: 2%;
-  width: 47%;
+  top: 150rpx;
+  left: 40rpx;
+  width: 330rpx;
   box-shadow: 4rpx 4rpx 20rpx rgba(0, 0, 0, 0.1);
 }
 .pic_quiz{
   position: absolute;
-  top: 84%;
-  right: 2%;
-  width: 47%;
+  top: 150rpx;
+  right: 80rpx;
+  width: 330rpx;
   box-shadow: 4rpx 4rpx 20rpx rgba(0, 0, 0, 0.1);
 }
 
 .pic_sphurt{
   position: absolute;
-  left: 50%; /* 将元素的左边缘放置在视口的50% */
-  top: 105%; /* 将元素的上边缘放置在视口的50% */
+  left: 370rpx;
+  top: 400rpx; /* 将元素的上边缘放置在视口的50% */
   transform: translate(-50%, -50%); /* 将元素向上和向左移动自身高度和宽度的一半，实现水平和垂直居中 */
-  width: 80%;
+  width: 600rpx;
   box-shadow: 4rpx 4rpx 30rpx rgba(0, 0, 0, 0.1);
 }
 

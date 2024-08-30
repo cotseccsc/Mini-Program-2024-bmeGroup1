@@ -35,7 +35,9 @@
         "pages/dislocation/dislocation",
         "pages/concussion/concussion",
         "pages/closed_injury/closed_injury",
-        "pages/ankle-injury/ankle-injury"
+        "pages/ankle-injury/ankle-injury",
+        "pages/fracture/fracture",
+        "pages/shock/shock"
       ],
       "independent": false
     },

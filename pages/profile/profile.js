@@ -57,7 +57,7 @@ Page({
       isLogged: false,
     });
     // 退出登录时清除本地存储中的用户名信息
-    wx.clearStorageSync();
+    wx.removeStorageSync('username');
     wx.switchTab({
       url: '/packageProfile/pages/profile/profile',
     });

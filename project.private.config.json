@@ -3,6 +3,7 @@
   "projectname": "EmergenSave",
   "setting": {
     "compileHotReLoad": true,
-    "bigPackageSizeSupport": true
+    "bigPackageSizeSupport": true,
+    "urlCheck": false
   }
 }
