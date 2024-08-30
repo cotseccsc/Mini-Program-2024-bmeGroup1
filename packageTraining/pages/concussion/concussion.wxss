@@ -1,29 +1,80 @@
-/* pages/concussion/concussion.wxss */
-page {
-  background-color: #c7e2f7; /* 设置背景颜色为浅灰色 */
-  width:95%;
-  text-align: center;
+.guideline{
+  top: 30rpx;
+  left: 40rpx;
+  width: 90%;
+  position: fixed;
+  border-radius: 40rpx;
+  z-index: 5;
 }
-.content {
+
+.container {
   padding: 20px;
   font-size: 16px;
   line-height: 1.5;
-  background-color: #fff;
+  background-color: #e7faff;
+  z-index: 6;
+  height: 2600rpx;
+}
+.container_1{
+  z-index: 100;
+  position: relative;
+  top: 100rpx;
+  width: 100.4%;
+  background-color: #ffffff;
+  border-radius: 60rpx;
+  margin:250rpx auto 30rpx;
+  box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.1);
+}
+.steps {
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  margin-bottom: 20rpx;
+  z-index: 20;
+  display: block;
+  margin-bottom: 10px;
+  color: #000000;
+  font-family: 微软雅黑;
+  font-weight: 600;
+  font-size: 28rpx;
+}
+/* 重点文本 */
+.stress{
+  color: #17225e;
+  font-weight: 900;
+  font-size: 32rpx;
+  border: black;
+  text-shadow: 2rpx 2rpx 1rpx rgba(0, 0, 0, 0.3);
 }
 
-rich-text {
-  white-space: pre-wrap; /* 保持文本的格式，如换行和空格 */
+.header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+  font-size: 36px;
+  color: #293EAF;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-family: 微软雅黑;
+  font-size: 40rpx;
 }
-
-img {
-  width: 100%; /* 确保图片宽度适应屏幕宽度 */
-  display: block; /* 防止图片下方出现空隙 */
-  margin: 20px 0; /* 图片上下边距 */
+.pic{ 
+  margin-top: 50rpx;
+  margin-bottom: 50rpx;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  position: relative;
+  border-radius: 50rpx;
+  display: flex;
+  left: 10rpx;
+  justify-content: center;
+  box-shadow: 6rpx 6rpx 12rpx rgba(0, 0, 0, 0.5);
 }
-
-.source {
-  font-size: 12px; /* 设置字体大小为12号 */
-  color: #A0A0A0; /* 设置字体颜色为灰色 */
-  text-align: center; /* 文本居中显示 */
-  padding: 20px 0; /* 设置上下内边距 */
+.source{
+  margin-top: 60rpx;
+  font-size: 30rpx;
+  font-weight: 500;
+  margin-left: 70rpx;
 }

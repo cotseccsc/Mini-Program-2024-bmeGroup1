@@ -1,0 +1,23 @@
+<image src="/packageTraining/images/detailed_injury/shock/freecompress-重力性休克！.png" class="guideline" mode="widthFix"/>
+
+<view class="container">
+  <view class="container_1">
+    <view class="steps">
+      <text class="steps">每当12分钟跑完成后，体育老师们总会要求我们不要立即停下休息，而是要行走一段时间后再完全停止运动坐下休息。这个要求就是在预防接下来我们要讲到的”重力性休克”。</text>
+    <text class="header">定义</text>
+
+  <text class="steps">“重力性休克”指疾跑后立即站立不动而引起的晕厥或休克症状，有的甚至发生猝死。</text>
+  <text class="steps">因为突然停止运动，下肢毛细血管和静脉失去肌肉收缩时的节律性挤压作用，加上血液本身的重力，使血液大量积聚在下肢血管中而使得回流心脏的血液显著减少，导致心脏输出血液相应减少，血压下降，血液不易压向头部，使脑部发生暂时性贫血而晕倒。</text>
+  <text class="steps">这种现象因与血液重力作用有关，所以有“重力性休克”之称。其主要症状是:昏倒后血压下降、血流减慢、脉搏弱且慢、四肢发凉、脸色苍白、体温下降、神志淡漠、瞳孔缩小等。</text>
+  <image src="/packageTraining/images/detailed_injury/shock/重力性休克_1.png" class="pic" mode="aspectFit"></image>
+
+  <text class="header">处理方法</text>
+  <text class="steps"> 应让休克者仰卧，两腿抬起高于头（保持静脉血回流到心脏），松开衣领、腰带、注意保暖，不省人事时可掐人中穴。</text>
+  <text class="steps">清醒后可饮用热水，充分静卧、保暖和休息。如果出现重度休克导致患者心脏骤停，有必要采用心肺复苏等治疗方法。</text>
+
+</view>
+<view class="footer">
+  <text class="source">资料来源：@默沙东诊疗手册大众版</text>
+</view>
+</view>
+</view>

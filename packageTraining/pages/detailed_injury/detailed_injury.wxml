@@ -1,13 +1,27 @@
 <view class="container">
-  <text class="title">详细急救指南</text>
+  <text class="title">运动受伤指南</text>
   <view class="button-container">
-    <button class="btn" data-target="prevention" bindtap="navigateTo">运动损伤的预防方式</button>
-    <button class="btn" data-target="cpr-aed" bindtap="navigateTo">心肺复苏&AED</button>
-    <button class="btn" data-target="general-principles" bindtap="navigateTo">运动损伤处理的普适原则</button>
-    <button class="btn" data-target="open_injury" bindtap="navigateTo">开放性软组织损伤</button>
-    <button class="btn" data-target="closed_injury" bindtap="navigateTo">闭合性软组织损伤</button>
-    <button class="btn" data-target="concussion" bindtap="navigateTo">脑震荡</button>
-    <button class="btn" data-target="ankle-injury" bindtap="navigateTo">踝关节扭伤</button>
-    <button class="btn" data-target="dislocation" bindtap="navigateTo">关节脱位</button>
+    <!-- <button class="btn" data-target="prevention" bindtap="navigateTo">运动损伤的预防方式</button> -->
+    <image src="/packageTraining/images/all_the_stuff/闭合性损伤.png" class="pic1"
+    data-target="closed_injury" bindtap="navigateTo" mode="widthFix"/>
+    <image src="/packageTraining/images/all_the_stuff/开放性损伤 (1).png"  class="pic2"
+    data-target="open_injury" bindtap="navigateTo" mode="widthFix"/>
+    <image src="/packageTraining/images/all_the_stuff/骨折 (1).png"  class="pic3"
+    data-target="fracture" bindtap="navigateTo" mode="widthFix"/>
+    <image src="/packageTraining/images/all_the_stuff/关节脱位.png"  class="pic4"
+    data-target="dislocation" bindtap="navigateTo" mode="widthFix"/>
+    <image src="/packageTraining/images/all_the_stuff/脑震荡.png"  class="pic5"
+    data-target="concussion" bindtap="navigateTo" mode="widthFix"/>
+    <image src="/packageTraining/images/all_the_stuff/踝扭伤.png"  class="pic6"
+    data-target="ankle-injury" bindtap="navigateTo" mode="widthFix"/>
+    <image src="/packageTraining/images/all_the_stuff/重力性休克.png"  class="pic7"
+    data-target="shock" bindtap="navigateTo" mode="widthFix"/>
+    <!-- <button class="btn" data-target="shock" bindtap="navigateTo">重力性休克</button> -->
+    <!-- <button class="btn" data-target="fracture" bindtap="navigateTo">骨折</button> -->
+    <!-- <button class="btn" data-target="open_injury" bindtap="navigateTo">开放性软组织损伤</button> -->
+    <!-- <button class="btn" data-target="closed_injury" bindtap="navigateTo">闭合性软组织损伤</button> -->
+    <!-- <button class="btn" data-target="concussion" bindtap="navigateTo">脑震荡</button> -->
+    <!-- <button class="btn" data-target="ankle-injury" bindtap="navigateTo">踝关节扭伤</button> -->
+    <!-- <button class="btn" data-target="dislocation" bindtap="navigateTo">关节脱位</button> -->
   </view>
 </view>

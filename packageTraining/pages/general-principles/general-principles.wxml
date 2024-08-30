@@ -1,19 +1,36 @@
-<!--pages/general-principles/general-principles.wxml-->
+<image src="/packageTraining/images/guide/加上文字之后.png" class="guideline" mode="widthFix"/>
+<!-- 背景板块 -->
 <view class="container">
-  <text class="header1">YES</text>
-  <view class="steps">
-    <text>1、Protection（保护）：</text><text>发生状况时应尽可能先保护受伤的部位和肢体，防止二次伤害，同时也避免后续因为移动、就医产生的新问题</text>
-    <text>2、Rest（休息）：</text><text>停止运动，让受伤部位静止休息，切记不要对受伤部位进行按摩、扭转和牵拉等，以免进一步加重损伤。</text>
-    <text>3、Ice（冰敷）：</text><text>用冰块或冷毛巾冷敷受伤处，这样有利于减轻疼痛、肿胀和肌肉痉挛等症状。</text>
-    <text>4、Compression（加压）：</text><text>可以用弹性绷带对受伤部位进行包扎，防止内出血，但不要包扎得过紧，以免影响血液循环。</text>
-    <text>5、Elevation（抬高）：</text><text>如果受伤部位在胳膊上，可以将受伤的胳膊抬高，高于心脏位置即可，这样能够使静脉血液和淋巴液回流，有利于受伤处恢复。</text>
-    <text>上述措施应尽量在受伤后30分钟内进行。临床实践证明，在一般情况下，及时采取这些措施能够明显减轻患者的疼痛，并有利于下一步治疗。</text>
-    <image src="/packageTraining/images/detailed_injury/general_principles/general_image_1.jpg" mode="aspectFit"></image>
-    <text class="header2">NO</text>
-    <text>1.H-Heat，避免早期热敷。加重患处血液循环，加重肿胀。</text>
-    <text>2.A-Alcohol，酒精。这里不仅仅指外用或内服酒精，而是泛指在早期不要外用刺激类的药品（如辣椒碱、红花油等）。</text>
-    <text>3.R-Run，跑动。损伤早期勿“轻伤不下火线”或者带伤坚持训练、比赛，早期让患肢充分休息有利于完全康复。</text>
-    <text>4.M-Massage，按摩。损伤早期禁止一切形式的手法刺激和按摩，避免加重损伤和局部炎性反应加重。</text>
+<!-- 白色方框 -->
+<view class="container_1">
+<!-- 总标题 -->
+  <text class="header1">TO DO--RICE原则</text>
+  <!-- steps代表不需要加粗的普通文本，stress表示副标题，需要加粗的文本 -->
+    <text class="stress">1、Protection（保护）：</text>
+    <text class="steps">发生状况时应尽可能先保护受伤的部位和肢体，防止二次伤害，同时也避免后续因为移动、就医产生的新问题</text>
+    <text class="stress">2、Rest（休息）：</text>
+    <text class="steps">停止运动，让受伤部位静止休息，切记不要对受伤部位进行按摩、扭转和牵拉等，以免进一步加重损伤。</text>
+    <text class="stress">3、Ice（冰敷）：</text>
+    <text class="steps">用冰块或冷毛巾冷敷受伤处，这样有利于减轻疼痛、肿胀和肌肉痉挛等症状。</text>
+    <text class="stress">4、Compression（加压）：</text>
+    <text class="steps">可以用弹性绷带对受伤部位进行包扎，防止内出血，但不要包扎得过紧，以免影响血液循环。</text>
+    <text class="stress">5、Elevation（抬高）：</text>
+    <text class="steps">如果受伤部位在胳膊上，可以将受伤的胳膊抬高，高于心脏位置即可，这样能够使静脉血液和淋巴液回流，有利于受伤处恢复。</text>
+    <text class="steps">上述措施应尽量在受伤后30分钟内进行。临床实践证明，在一般情况下，及时采取这些措施能够明显减轻患者的疼痛，并有利于下一步治疗。</text>
+    <!-- 加入图片 -->
+    <image src="/packageTraining/images/detailed_injury/general_principles/general_image_1.jpg" class="pic_1" mode="aspectFit"></image>
+    <!-- 第二个总标题 -->
+    <text class="header2">NOT TO DO--HARM效应</text>
+    <text class="stress">1、Heat（热敷）：</text>
+    <text class="steps">避免早期热敷。加重患处血液循环，加重肿胀。</text>
+    <text class="stress">2、Alcohol（酒精）：</text>
+    <text class="steps">这里不仅仅指外用或内服酒精，而是泛指在早期不要外用刺激类的药品（如辣椒碱、红花油等）。</text>
+    <text class="stress">3、Run（跑动）：</text>
+    <text class="steps">损伤早期勿“轻伤不下火线”或者带伤坚持训练、比赛，早期让患肢充分休息有利于完全康复。</text>
+    <text class="stress">4、Massage（按摩）：</text>
+    <text class="steps">损伤早期禁止一切形式的手法刺激和按摩，避免加重损伤和局部炎性反应加重。</text>
+
+<!-- 注释和引用文献 -->
   </view>
   <view class="footer">
     <text class="source">资料来源：@默沙东诊疗手册大众版</text>

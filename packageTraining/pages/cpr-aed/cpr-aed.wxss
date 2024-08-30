@@ -1,44 +1,207 @@
-/* pages/cpr-aed/cpr-aed.wxss */
-page {
-  background-color: #c7e2f7; /* 设置背景颜色为浅灰色 */
-  width:95%;
+.head-title {
+  background: linear-gradient(to right, #6288ef, #1bf4fc);
+  height: 300rpx;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20rpx;
+  font-size: 25rpx;
+  color: #fff;
+}
+.title_1{
+  z-index: 600;
+  font-size: 60rpx;
+  font-weight: 600;
+  display: flex;
+  font-family: 微软雅黑;
+  justify-content: center;
+  margin-top: 60rpx;
+  margin-left: 40rpx;
+}
+.hd {
+  z-index: 1000;
+  width: 100%;
+  height: 88rpx;
+  line-height: 88rpx;
+  display: flex;
+  background: #fff;
+  box-shadow: 0 5rpx 5rpx #ccc;
+  position: relative;
+}
+
+.hd-item {
+  flex: 1;
+  text-align: center;
+  font-family: 微软雅黑;
+  font-weight: 550;
+  color: #333;
+  font-size: 28rpx;
+  position: relative;
+}
+
+.hd-item::after {
+  content: '';
+  position: absolute;
+  /* 设置默认宽度为0 */
+  width: 0%;
+  height: 6rpx;
+  background: linear-gradient(to right, #6288ef, #1bf4fc);
+  border-radius: 3rpx;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 4rpx;
+  /* 添加过渡效果 */
+  transition: 0.3s width linear;
+}
+
+/* 激活选中样式 */
+.hd-item.active {
+  font-size: 30rpx;
+  font-weight: 600;
+  font-family: 微软雅黑;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, #6288ef, #1bf4fc);
+  transition: 0.3s all linear;
+  transition-delay: 0.1s;
+}
+
+.hd-item.active::after {
+  width: 40%;
+}
+/* 上面的东西基本不用改 */
+.content view {
+  background: #e7faff;
+  height: 2300rpx;
+  line-height: 50rpx;
+  border-bottom: 1rpx solid #eaeef1;
+  padding: 20rpx;
+  color: #e7faff;
   text-align: center;
 }
+
+.content.pt {
+  padding-top: 88rpx;
+  /* nav的高度 */
+}
+
+.fixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+
+/* 下面是自己改的部分了 */
 .container {
   padding: 20px;
   font-size: 16px;
   line-height: 1.5;
+  background-color: #e7faff;
+  z-index: 6;
+  height: 1550rpx;
 }
-.title {
-  font-size: 24px;
-  color: #333;
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 10px;
+.container_x {
+  padding: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #e7faff;
+  z-index: 6;
+  height: 4050rpx;
 }
-.subtitle {
-  font-size: 18px;
-  color: #666;
-  margin-top: 20px;
-  margin-bottom: 10px;
+.container_y {
+  padding: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #e7faff;
+  z-index: 6;
+  height: 3450rpx;
 }
-.step {
-  margin-bottom: 20px;
+.container_1{
+  padding-top: 40rpx;
+  padding-bottom: 60rpx;
+  z-index: 100;
+  position: relative;
+  top: -200rpx;
+  width: 100.4%;
+  background-color: #ffffff;
+  border-radius: 60rpx;
+  margin:250rpx auto 30rpx;
+  box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.1);
 }
-.step text {
+
+.steps {
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+  margin-bottom: 20rpx;
+  z-index: 20;
   display: block;
   margin-bottom: 10px;
+  color: #000000;
+  font-family: 微软雅黑;
+  font-weight: 600;
+  font-size: 28rpx;
+  text-align: left;
+  text-indent: 40rpx;
 }
-.image {
-  width: 100%;
+/* 重点文本 */
+.stress{
+  color: #17225e;
+  font-weight: 900;
+  font-size: 32rpx;
+  border: black;
+  text-shadow: 2rpx 2rpx 1rpx rgba(0, 0, 0, 0.2);
+  margin-left: 40rpx;
+margin-right: 40rpx;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+  font-size: 36px;
+  color: #293EAF;
+  text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
+  font-weight: 700;
+  font-family: 微软雅黑;
+  font-size: 40rpx;
 }
-.footer {
-  margin-top: 20px;
-  text-align: center;
+.pic{
+margin-left: 10%;
+width: 80%;
+  margin-top: 50rpx;
+  margin-bottom: 50rpx;
+  position: relative;
+  border-radius: 50rpx;
+  display: flex;
+  left: 10rpx;
+  justify-content: center;
+  box-shadow: 6rpx 6rpx 12rpx rgba(0, 0, 0, 0.5);
 }
-.source {
-  color: #A0A0A0;
-  font-size: 12px;
+.source{
+  margin-top: 60rpx;
+  font-size: 30rpx;
+  font-weight: 500;
+  margin-left: 70rpx;
 }
+
+.shit{
+  z-index: 100;
+  position: relative;
+  top:-200rpx;
+  width: 85%;
+  height: 3000rpx;
+  background-color: #160909;
+  border-radius: 60rpx;
+  margin:250rpx auto 30rpx;
+  box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255) !important;
+
+}
+

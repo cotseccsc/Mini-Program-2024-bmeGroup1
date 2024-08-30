@@ -1,5 +1,6 @@
-<view class="body">
-    
+
+  <view class="body">
+  
     <view class="question">
         <view class="title">
             {{ answerNow + 1 }}、 {{ list[answerNow].title }}
@@ -16,4 +17,8 @@
             </view>
         </view>
     </view>
+    <image src="/packageTraining/images/quiz/test_ad.png" mode="aspectFit" class="my-image"></image>
 </view>
+
+
+

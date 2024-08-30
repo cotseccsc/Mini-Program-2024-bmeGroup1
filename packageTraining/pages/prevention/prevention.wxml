@@ -1,35 +1,34 @@
-
-<!-- 图片板块，使用了photoshop，可以后期调色我来搞 -->
-<!-- container是背景上半，包含图片和渐变部分 -->
+<image src="/packageTraining/images/prevention/freecompress-运动拉伸！.png" class="guideline" mode="widthFix"/>
 <view class="container">
-  <image src="/packageTraining/images/prevention/photo_scretch.png" class="img_1" style="width: 400px;"mode="widthFix"></image>
-<!-- 上方显示的文本 -->
-<view class="prompt-box">
-    <text class="prompt-text">如何进行运动前拉伸？</text>
+  <view class="container_1">
+
+    <text class="header">准则</text>
+    <view class="steps">
+
+  <text class="stress">1、动态拉伸：</text>
+  <text class="steps">运动前的拉伸应该以动态拉伸为主，这种拉伸方式包括活动性动作，帮助提高关节活动范围和肌肉温度。比如，腿部的高抬腿、跳跃性深蹲、胳膊圈等都是很好的动态拉伸动作。</text>
+
+  <text class="stress">2、避免静态拉伸：</text>
+  <text class="steps">静态拉伸（即保持某个拉伸姿势不动一段时间）通常在运动前不建议做，因为它可能会暂时降低肌肉的力量和弹性。静态拉伸更适合在运动后进行，有助于放松和恢复。</text>
+
+  <text class="stress">3、针对性拉伸：</text>
+  <text class="steps">根据你要进行的运动类型，针对主要使用的肌肉群进行拉伸。例如，如果你要跑步，重点拉伸大腿前侧、后侧、小腿肌肉等；如果你要做力量训练，可以关注肩部、背部和核心肌群。</text>
+
+  <image src="/packageTraining/images/prevention/freecompress-拉伸-1.jpg" class="pic" mode="aspectFit"></image>
+
+  <text class="stress">4、热身：</text>
+  <text class="steps">在进行拉伸前先进行轻度热身，如慢跑、跳绳或原地踏步几分钟，可以提高全身肌肉的温度，准备好进行拉伸。</text>
+
+  <text class="stress">5、保持正确的姿势：</text>
+  <text class="steps">拉伸时确保姿势正确，避免用力过猛或不当，防止拉伤。每个拉伸动作要保持控制和舒适，不应感到疼痛。</text>
+
+  <text class="stress">6、渐进增加强度：</text>
+  <text class="steps">拉伸时的动作应该逐渐增加强度，避免急速用力，保持平稳和缓慢的节奏。
+  \n</text>
+
+  <view class="footer">
+    <text class="source">资料来源：@默沙东诊疗手册大众版</text>
+  </view>
 </view>
-<!-- 循环显示图片板块 -->
-<swiper
-  autoplay="true" 
-  interval="3000" 
-  duration="1000"
-  circular="true"
-  easing-function="easeInOutCubic"
-  previous-margin="20px"
-  next-margin="20px"
-  indicator-dots="{{true}}"
-  class="swiper-container">
-  <swiper-item class="swiper-item" wx:for="{{images}}" wx:key="unique">
-    <image src="{{item}}" mode="widthFix"  bindtap="imgClick" class="swiper-image" />
-  </swiper-item>
-</swiper>
-
-  </view>
-
-<!-- container_1s是第二块背景，保证上方渐变效果不变的情况下，可以根据文本量调整整体界面，颜色需要和container的底部颜色一致，可以使用ps中的吸取颜色工具进行设计 -->
-<view class="container_1">
-  <view class="content" wx:for="{{content}}" wx:key="list">
-    <view class="content-box">
-      {{item}}
-    </view>
-  </view>
+</view>
 </view>

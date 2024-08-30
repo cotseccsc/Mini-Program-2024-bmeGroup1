@@ -1,66 +1,42 @@
-// pages/cpr-aed/cpr-aed.js
+// pages/wxCase/sticky/index.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    navList: ['基础科普', '心肺复苏教程', 'AED傻瓜教程'],
+    nav_type: 0,//默认选中第一个数据
+    isFixed: false,//是否吸顶
+    navTop:0,//nav菜单距离顶部距离
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad(options) {
-
+  changeType(e) {
+    let { index } = e.currentTarget.dataset;
+    if (this.data.nav_type == index || index == undefined) return;
+    this.setData({
+      nav_type: index
+    })
+    if (this.data.isFixed) {
+      wx.pageScrollTo({
+        selector: '#content',
+        duration: 0.5//滚动动指定位置需要时间
+      })
+    }
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
   onReady() {
-
+    // 获取节点距离顶部的距离
+    wx.createSelectorQuery().select("#nav").boundingClientRect((rect) => {
+      if (rect && rect.top) {
+        this.setData({
+          navTop: parseInt(rect.top)
+        })
+      }
+    }).exec()
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload() {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh() {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom() {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage() {
-
+  // 监听页面滚动事件
+  onPageScroll(e) {
+    let scrollTop = parseInt(e.scrollTop),
+      isFixed = scrollTop >= this.data.navTop;
+    if (this.data.isFixed !== isFixed) {
+      this.setData({
+        isFixed
+      })
+    }
   }
 })

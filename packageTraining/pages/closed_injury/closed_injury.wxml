@@ -1,37 +1,43 @@
+<image src="/packageTraining/images/detailed_injury/closed_injury/freecompress-闭合性损伤.png" class="guideline" mode="widthFix"/>
+
 <view class="container">
-  <text>闭合性软组织损伤</text>
-  <text>定义：</text>
-  <text>闭合性软组织损伤是指局部皮肤或粘膜完整，无裂口与外界相通，损伤时的出血积聚在组织内，是软组织损伤的一种。</text>
-  <image src="/packageTraining/images/detailed_injury/closed_injury/closed_image_1.jpg" mode="aspectFit"></image>
-  <text>临床表现：</text>
-  <text>常见有（1）挫伤（2）肌肉拉伤（3）关节韧带拉伤（4）骨质增生（5）椎间盘突出（6）肩周炎（7）骨关节炎（8）滑囊炎（9）肌腰腿鞘炎。</text>
-  <text>治疗（针对急性损伤）：</text>
+  <view class="container_1">
+    <view class="steps">
+    <text class="header">定义</text>
+
+  <text class="steps">闭合性软组织损伤是指局部皮肤或粘膜完整，无裂口与外界相通，损伤时的出血积聚在组织内，是软组织损伤的一种。</text>
+  <image src="/packageTraining/images/detailed_injury/closed_injury/closed_image_1.jpg" class="pic" mode="aspectFit"></image>
+
+  <text class="header">临床表现</text>
+  <text class="steps">常见有</text>
+  <text class="stress">（1）挫伤（2）肌肉拉伤（3）关节韧带拉伤（4）骨质增生（5）椎间盘突出（6）肩周炎（7）骨关节炎（8）滑囊炎（9）肌腰腿鞘炎。</text>
+
+  <text class="header">治疗（针对急性损伤）</text>
   <view>
-    <text>1、早期：</text>
-    <text>伤后24或48小时内，主要表现为红、肿、热、痛、功能障碍，炎症反应严重。</text>
-    <text>处理原则：止血、止痛、防肿、制动和减轻炎症反应。</text>
-    <text>处理方法：</text>
-    <text>伤后即刻冷敷、加压包扎、患肢抬高、适当制动。还可使用止痛药物和点穴、针刺治疗。</text>
-    <image src="/packageTraining/images/detailed_injury/closed_injury/closed_image_2.jpg" mode="aspectFit"></image>
+    <text class="stress">1、早期：\n</text>
+    <text class="steps">伤后24或48小时内，主要表现为红、肿、热、痛、功能障碍，炎症反应严重。</text>
+    <text class="steps">处理原则：止血、止痛、防肿、制动和减轻炎症反应。</text>
+    <text class="steps">处理方法：伤后即刻冷敷、加压包扎、患肢抬高、适当制动。还可使用止痛药物和点穴、针刺治疗。</text>
+    <image src="/packageTraining/images/detailed_injury/closed_injury/closed_image_2.jpg" class="pic" mode="aspectFit"></image>
   </view>
-  <text>伤后即刻冷敷、加压包扎、患肢抬高、适当制动。还可使用止痛药物和点穴、针刺治疗。</text>
+  <text class="steps">伤后即刻冷敷、加压包扎、患肢抬高、适当制动。还可使用止痛药物和点穴、针刺治疗。</text>
   <view>
-    <text>2、中期：</text>
-    <text>早期至症状基本消失，主要表现为疼痛、肿胀、功能障碍。</text>
-    <text>处理原则：改善血液和淋巴循环，促进组织代谢，促进淤血和渗出吸收，加速再生修复。</text>
-    <text>处理方法：</text>
-    <text>综合治疗方法和功能锻炼。</text>
-    <text>⑴热疗。⑵理疗。⑶按摩、针刺：应从伤部边缘开始，由近端向远端进行，轻重以不加重局部疼痛为宜，深部肌肉挫伤不能使用重手法；在按摩以后加以点穴可增强疗效，但禁止重复受伤动作。⑷药物使用。⑸棉花夹板固定：适用于组织断裂者。⑹功能锻炼。</text>
+    <text class="stress">2、中期：\n</text>
+    <text class="steps">早期至症状基本消失，主要表现为疼痛、肿胀、功能障碍。</text>
+    <text class="steps">处理原则：改善血液和淋巴循环，促进组织代谢，促进淤血和渗出吸收，加速再生修复。</text>
+    <text class="steps">处理方法：综合治疗方法和功能锻炼。\n (1)热疗。(2)理疗。(3)按摩、针刺：应从伤部边缘开始，由近端向远端进行，轻重以不加重局部疼痛为宜，深部肌肉挫伤不能使用重手法；在按摩以后加以点穴可增强疗效，但禁止重复受伤动作。⑷药物使用。⑸棉花夹板固定：适用于组织断裂者。⑹功能锻炼。</text>
   </view>
+
   <view>
-    <text>3、后期：</text>
-    <text>损伤基本修复、痛肿基本消失，但功能尚未完全恢复。主要表现为锻炼时有痛感，肌力未恢复，严重者可能由于组织粘连、疤痕收缩而出现伤部僵硬，活动受限等。</text>
-    <text>处理原则：增强和恢复肌肉、关节功能，软化疤痕、松解粘连。</text>
-    <text>处理方法：</text>
-    <text>以按摩、理疗、功能锻炼为主，适当配以药物治疗，如旧伤药外敷或海桐皮熏洗药熏洗。</text>
+    <text class="stress">3、后期\n</text>
+    <text class="steps">损伤基本修复、痛肿基本消失，但功能尚未完全恢复。主要表现为锻炼时有痛感，肌力未恢复，严重者可能由于组织粘连、疤痕收缩而出现伤部僵硬，活动受限等。</text>
+    <text class="steps">处理原则：增强和恢复肌肉、关节功能，软化疤痕、松解粘连。</text>
+    <text class="steps">处理方法：以按摩、理疗、功能锻炼为主，适当配以药物治疗，如旧伤药外敷或海桐皮熏洗药熏洗。</text>
   </view>
   <!-- 其他治疗步骤省略，可以按照上述格式继续添加 -->
 </view>
 <view class="footer">
   <text class="source">资料来源：@默沙东诊疗手册大众版</text>
+</view>
+</view>
 </view>

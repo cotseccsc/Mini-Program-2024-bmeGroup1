@@ -1,0 +1,26 @@
+<image src="/packageTraining/images/detailed_injury/fracture/freecompress-骨折！.png" class="guideline" mode="widthFix"/>
+
+<view class="container">
+  <view class="container_1">
+    <view class="steps">
+    <text class="header">定义</text>
+
+  <text class="steps">骨折是一种比较常见的运动损伤。可根据多种标准分为开放性骨折、闭合性骨折；稳定性骨折、不稳定性骨折等等。</text>
+  <text class="steps">了解骨折的早期正确处理方法对减轻患者后续恢复的痛苦有很大的意义。</text>
+  
+  <image src="/packageTraining/images/detailed_injury/fracture/freecompress-骨折1.webp" class="pic" mode="aspectFit"></image>
+
+  <text class="header">处理方法</text>
+  <text class="steps"> 如果发现骨折，首先要做的是保持冷静，不要惊慌失措，务必立即拨打120急救电话。一旦怀疑骨折，应尽量避免移动受伤部位。这是因为移动过程中可能会加重骨折的损伤程度，导致疼痛加剧，甚至可能使骨折部位移位，给后续治疗带来困难。</text>
+  <text class="steps">骨折发生后，如出现休克现象，应先抗休克，取头低脚高平卧位、保暖；保持呼吸道畅通，并服用止痛药，如受伤者昏迷不醒，可用手指掐人中穴使其苏醒。</text>
+  <text class="steps">患者如有出血现象，请务必先进行止血，再进行固定。止血时可用止血带进行，指压止血后先将患肢抬高2分钟，指导伤员用健肢指压止血，在扎止血带部位(上肢在上臂上1/3段，下肢在大腿上2/3段)垫衬垫，扎止血带压力均匀、适度，以刚阻止动脉血液流动为度。</text>
+  <image src="/packageTraining/images/detailed_injury/fracture/freecompress-骨折2.png" class="pic" mode="aspectFit"></image>
+  <text class="steps">如有条件，可以在现场对受伤部位进行简易固定。可用软垫（如衣物、毯子等）包裹患肢并沿其轴线放平，但不要施加强力。保持固定位，等待救援到达。但要注意不要过度紧绷，以免影响血液循环。保持固定状态直至救援人员抵达即可。</text>
+
+
+</view>
+<view class="footer">
+  <text class="source">资料来源：@默沙东诊疗手册大众版</text>
+</view>
+</view>
+</view>

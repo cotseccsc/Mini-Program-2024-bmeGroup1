@@ -1,15 +1,22 @@
-<!--packageTraining/pages/open_injury/open_injury.wxml-->
+<image src="/packageTraining/images/detailed_injury/open_injury/freecompress-开放性软组织损伤.png" class="guideline" mode="widthFix"/>
 <view class="container">
+  <view class="container_1">
+
+    <text class="header">定义</text>
+    <view class="steps">
   <text>开放性软组织损伤</text>
-  <text>定义：</text>
-  <text>软组织损伤的一种，伤口与外界相通，容易引起出血和感染。</text>
-  <text>常见的有擦伤、切伤、刺伤和撕裂伤。</text>
-  <image src="/packageTraining/images/detailed_injury/open_injury/open_image_1.png" mode="aspectFit"></image>
-  <text>治疗：</text>
-  <text>较浅、小、干净伤口，可用碘酊或其它消毒，然后用创可贴或消毒纱布覆盖。</text>
-  <text>较大、深、不洁伤口，应现场加压包扎后送医院进行清创、止血等处理。</text>
-  <image src="/packageTraining/images/detailed_injury/open_injury/open_image_2.png" mode="aspectFit"></image>
+  <text class="steps">软组织损伤的一种，伤口与外界相通，容易引起出血和感染。</text>
+  <text class="steps">常见的有擦伤、切伤、刺伤和撕裂伤。</text>
+  <image src="/packageTraining/images/detailed_injury/open_injury/open_image_1.png" class="pic" mode="aspectFit"></image>
+
+  <text class="header">治疗方法</text>
+
+  <text class="steps">较浅、小、干净伤口，可用碘酊或其它消毒，然后用创可贴或消毒纱布覆盖。</text>
+  <text class="steps">较大、深、不洁伤口，应现场加压包扎后送医院进行清创、止血等处理。</text>
+  <image src="/packageTraining/images/detailed_injury/open_injury/open_image_2.png" class="pic" mode="widthFix"></image>
   <view class="footer">
     <text class="source">资料来源：@默沙东诊疗手册大众版</text>
   </view>
+</view>
+</view>
 </view>

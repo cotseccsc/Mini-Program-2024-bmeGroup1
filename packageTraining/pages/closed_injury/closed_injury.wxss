@@ -1,24 +1,80 @@
-/* packageTraining/pages/closed_injury/closed_injury.wxss */
-page {
-  background-color: #c7e2f7; /* 设置背景颜色为浅灰色 */
-  width:95%;
-  text-align: center;
+.guideline{
+  top: 30rpx;
+  left: 40rpx;
+  width: 90%;
+  position: fixed;
+  border-radius: 40rpx;
+  z-index: 5;
 }
+
 .container {
   padding: 20px;
   font-size: 16px;
   line-height: 1.5;
+  background-color: #e7faff;
+  z-index: 6;
+  height: 3700rpx;
 }
-image {
-  width: 100%;
-  margin-top: 10px;
+.container_1{
+  z-index: 100;
+  position: relative;
+  top: 100rpx;
+  width: 100.4%;
+  background-color: #ffffff;
+  border-radius: 60rpx;
+  margin:250rpx auto 30rpx;
+  box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.1);
+}
+.steps {
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  margin-bottom: 20rpx;
+  z-index: 20;
+  display: block;
   margin-bottom: 10px;
+  color: #000000;
+  font-family: 微软雅黑;
+  font-weight: 600;
+  font-size: 28rpx;
 }
-.footer {
-  margin-top: 20px;
+/* 重点文本 */
+.stress{
+  color: #17225e;
+  font-weight: 900;
+  font-size: 32rpx;
+  border: black;
+  text-shadow: 2rpx 2rpx 1rpx rgba(0, 0, 0, 0.3);
+}
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+  font-size: 36px;
+  color: #293EAF;
   text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-family: 微软雅黑;
+  font-size: 40rpx;
 }
-.source {
-  color:#A0A0A0;
-  font-size: 12px;
+.pic{ 
+  margin-top: 50rpx;
+  margin-bottom: 50rpx;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  position: relative;
+  border-radius: 50rpx;
+  display: flex;
+  left: 10rpx;
+  justify-content: center;
+  box-shadow: 6rpx 6rpx 12rpx rgba(0, 0, 0, 0.5);
+}
+.source{
+  margin-top: 60rpx;
+  font-size: 30rpx;
+  font-weight: 500;
+  margin-left: 70rpx;
 }
