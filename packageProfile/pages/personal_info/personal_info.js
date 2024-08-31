@@ -7,12 +7,13 @@ const newPersonalInfo = new PersonalInfo();
 const query = new AV.Query("PersonalInfo");
 Page({
   data: {
-    avatar: '',
     gender: '',
     name: '',
     phone: '',
     birthday: '',
-    email: ''
+    email: '',
+    school:'',
+    volunteerWilling:''
   },
 
   onShow: function () {
@@ -33,29 +34,23 @@ initializeData:function(){
         name:personalInfo.get("Name"),
         phone:personalInfo.get("Phone"),
         birthday:personalInfo.get("Birthday"),
-        email:personalInfo.get("Email")
+        email:personalInfo.get("Email"),
+        school: personalInfo.get("School"),
+        volunteerWilling: personalInfo.get("VolunteerWilling")
       });
     }
   });
 },
 
-  chooseImage: function () {
-    wx.chooseImage({
-      count: 1,
-      sizeType: ['original', 'compressed'],
-      sourceType: ['album', 'camera'],
-      success: (res) => {
-        const tempFilePath = res.tempFilePaths[0];
-        this.setData({
-          avatar: tempFilePath
-        });
-      }
-    });
-  },
-
   onGenderChange: function (e) {
     this.setData({
       gender: e.detail.value
+    });
+  },
+
+  onVolunteerChange: function (e) {
+    this.setData({
+      volunteerWilling: e.detail.value
     });
   },
 
@@ -77,6 +72,8 @@ initializeData:function(){
       personalInfo.set("Phone",this.data.phone);
       personalInfo.set("Birthday",this.data.birthday);
       personalInfo.set("Email",this.data.email);
+      personalInfo.set("School",this.data.school);
+      personalInfo.set("VolunteerWilling",this.data.volunteerWilling);
       personalInfo.save();
     }
     else{
@@ -85,6 +82,8 @@ initializeData:function(){
       newPersonalInfo.set("Phone",this.data.phone);
       newPersonalInfo.set("Birthday",this.data.birthday);
       newPersonalInfo.set("Email",this.data.email);
+      newPersonalInfo.set("School",this.data.school);
+      newPersonalInfo.set("VolunteerWilling",this.data.volunteerWilling);
       newPersonalInfo.set("Username",username);
       newPersonalInfo.save();
     }

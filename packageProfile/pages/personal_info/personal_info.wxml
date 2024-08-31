@@ -1,11 +1,7 @@
 <!--pages/personal_info/personal_info.wxml-->
 <!-- pages/person/person.wxml -->
 <view class="container">
-  <!-- 用户头像 -->
   <view class="container_1">
-  <view class="avatar-section">
-     <!-- <image class="avatar" src="{{avatar || '/resources/default-avatar.png'}}" bindtap="chooseImage"></image>-->
-  </view>
 
   <!-- 性别选择 -->
   <view class="section">
@@ -43,7 +39,27 @@
     <text class="stress_index">邮箱</text>
     <input value="{{email}}" class="input-text" bindinput="onInputChange" data-field="email" placeholder="请输入邮箱"/>
   </view>
+<!-- 校区 -->
+<view class="section">
+    <text class="stress_index">校区</text>
+    <input value="{{school}}" class="input-text" bindinput="onInputChange" data-field="school" placeholder="请输入校区"/>
+  </view>
+<!-- volunteer -->
+<view class="section">
+    <text class="stress_index">是否愿意成为志愿者</text>
+    <radio-group class="radio-group" bindchange="onVolunteerChange">
+      <label class="radio-label">
+        <radio value="是" class="choice" checked="{{volunteerWilling==='是'}}">是</radio>
+      </label>
+      <label class="radio-label">
+        <radio value="否" class="choice" checked="{{volunteerWilling === '否'}}">否</radio>
+      </label>
+    </radio-group>
+  </view>
+
 </view>
+
+
   <!-- 保存按钮 -->
 
 

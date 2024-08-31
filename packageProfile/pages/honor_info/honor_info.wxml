@@ -1,2 +1,35 @@
-<!--pages/honor_info/honor_info.wxml-->
-<text>pages/honor_info/honor_info.wxml</text>
+<!--index.wxml-->
+<view class="container">
+  <!-- 签到功能 -->
+
+  <!-- 我的勋章 -->
+  <view class="medals-section">
+    <text class="section-title">我的勋章</text>
+    <text class="medals-summary">已获得{{ earnedMedals.length }}/{{ totalMedals }}个勋章</text>
+    
+    <!-- 已获勋章 -->
+    <view class="earned-medals">
+      <text class="medals-title">已获勋章</text>
+      <view class="medals-list">
+        <block wx:for="{{ earnedMedals }}" wx:key="id">
+          <view class="medal-item">
+          <image class="medal-image" src="{{ item.image }}"></image>
+        </view>
+        </block>
+      </view>
+    </view>
+    
+    <!-- 待获勋章 -->
+    <view class="pending-medals">
+      <text class="medals-title">待获勋章</text>
+      <view class="medals-list">
+        <block wx:for="{{ pendingMedals }}" wx:key="id">
+          <view class="medal-item">
+            <image class="medal-image" src="{{ item.image }}"></image>
+            <progress percent="{{ item.progress }}" show-info></progress>
+          </view>
+        </block>
+      </view>
+    </view>
+  </view>
+</view>
