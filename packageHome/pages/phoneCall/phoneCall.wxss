@@ -1,0 +1,87 @@
+/* pages/emergency_contact/emergency_contact.wxss */
+/* pages/emergency_contact/emergency_contact.wxss */
+.emergency-contact {
+  padding:20rpx;
+  width: 95%; /* 设置宽度为父容器的95% */
+  height:1450rpx;
+  padding: 20rpx; /* 内边距 */
+  background-color: #e7faff; /* 背景颜色 */
+}
+
+.container_inner{
+position: relative;
+top: -10%;
+width: 90%;
+margin: auto;
+background-color: #ffffff;
+border-radius: 60rpx;
+margin: 250rpx auto 30rpx;
+box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+padding-top: 20rpx;
+padding-bottom: 60rpx;
+}
+.title {
+  margin-left: 40rpx;
+  margin-top: 30rpx;
+  font-size: 26px;
+  font-weight: bold;
+  font-family: 微软雅黑;
+  display: flex;
+  justify-content: center; 
+}
+
+.contact-info {
+  font-weight: bold;
+  font-family: 微软雅黑;
+  margin-left: 70rpx;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.call_botton{
+position: relative;
+margin-top: 20rpx;
+    width: 70%;
+    height: 100rpx;
+    margin-top: 60rpx;
+    background-color: #293EAF;
+    border-radius: 60rpx;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: 微软雅黑;
+    font-weight: 600;
+    font-size: 36rpx;
+}
+.call_botton1{
+  position: relative;
+  margin-top: 20rpx;
+      width: 70%;
+      height: 100rpx;
+      margin-top: 60rpx;
+      background-color: #ff0000;
+      border-radius: 60rpx;
+      display: flex;
+      color: white;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 2px 2px 2px 5px rgba(0, 0, 0, 0.1);
+      font-family: 微软雅黑;
+      font-weight: 600;
+      font-size: 36rpx;
+  }
+
+
+
+/* 
+.modify-button {
+    font-size: 20px;
+  margin-bottom: 20px;
+  color:#181111;
+} */
+.radio-group{
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}

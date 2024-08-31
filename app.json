@@ -10,7 +10,8 @@
       "root": "packageHome",
       "name": "packageHome",
       "pages":[
-        "pages/rapidguide/rapidguide"
+        "pages/rapidguide/rapidguide",
+        "pages/phoneCall/phoneCall"
       ],
       "independent": false
     },
@@ -62,7 +63,7 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#293EAF",
-    "navigationBarTitleText": "EmergenSafe",
+    "navigationBarTitleText": "Sports Aid Guide",
     "navigationBarTextStyle": "white"
   },
   "tabBar": {

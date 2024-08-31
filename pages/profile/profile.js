@@ -4,12 +4,61 @@ const AV = require("../../libs/av-core-min.js");
 const PersonalInfo = AV.Object.extend("PersonalInfo");
 const personalInfo = new PersonalInfo();
 const query = new AV.Query("PersonalInfo");
+const quizState=new AV.Object("QuizState");
+const query1=new AV.Query("PersonalInfo");
+const query2=new AV.Query("QuizState");
 Page({
   data: {
     username: '',
     isLogged: false, // 初始化页面数据
     avatarSwitch: '/images/profile/selfavatar.png' // 用户头像位置
   },
+
+  judgeVolunteer: function() {
+    var volunteerEligible = 0;
+    var volunteerWilling = 0;
+    const username = wx.getStorageSync('username');
+    //console.log(username);
+
+    if (username) {
+      const query2Promise = query2.equalTo("Username", username).first();
+      const query1Promise = query1.equalTo("Username", username).first();
+
+      Promise.all([query2Promise, query1Promise]).then(([quizState, personalInfo]) => {
+        if (quizState) {
+          let a = quizState.get("CorrectNum");
+          if (a >= 30) {
+            volunteerEligible = 1;
+            //console.log("eligiblity update success.");
+          } else {
+            volunteerEligible = 0;
+          }
+        }
+
+        if (personalInfo) {
+          let b = personalInfo.get("VolunteerWilling");
+          if (b === '是') {
+            volunteerWilling = 1;
+            //console.log("willingness update success.");
+          } else {
+            volunteerWilling = 0;
+          }
+
+          //console.log(volunteerEligible);
+         //console.log(volunteerWilling);
+          if (volunteerWilling && volunteerEligible) {
+            personalInfo.set("IsVolunteer", 1);
+          } else {
+            personalInfo.set("IsVolunteer", 0);
+          }
+          personalInfo.save();
+        }
+      }).catch((error) => {
+        console.error("Error during querying: ", error);
+      });
+    }
+  },
+
   onLoad: function () {
     wx.showTabBar();
     // 从本地存储获取用户名
@@ -31,6 +80,7 @@ Page({
       isLogged: app.globalData.isLogged
     });
     this.readGender();
+    this.judgeVolunteer();
   },
 
   showLoginPromptAndRedirect: function () {
@@ -57,7 +107,7 @@ Page({
       isLogged: false,
     });
     // 退出登录时清除本地存储中的用户名信息
-    wx.removeStorageSync('username');
+    wx.removeStorage('username');
     wx.switchTab({
       url: '/packageProfile/pages/profile/profile',
     });

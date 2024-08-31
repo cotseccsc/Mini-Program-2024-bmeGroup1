@@ -1,4 +1,40 @@
 /* pages/photonavi/photonavi.wxss */
 page{
   height: 100%;
+  background-color: #e7faff;
 }
+
+.container{
+  height: 100%;
+  background-color: #e7faff;
+}
+
+.title{
+  margin-bottom: 100rpx;
+  font-weight: 600;
+  font-size: 50rpx;
+  display: flex;
+  justify-content: center;
+  font-family: 微软雅黑;
+  top:200rpx;
+}
+.pic{
+ display: flex;
+ justify-content: center;
+ width: 85%; 
+}
+
+.pic_back{
+  width: 40%; 
+  transform: rotate(30deg); /* 旋转45度 */
+  position:relative;
+  top:30rpx;
+  left: -280rpx;
+ }
+ .pic_back_1{
+  width: 65%; 
+  transform: rotate(-5deg); /* 旋转45度 */
+  position:relative;
+  top:-200rpx;
+  left: 160rpx;
+ }

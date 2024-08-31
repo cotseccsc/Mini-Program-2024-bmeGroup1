@@ -1,3 +1,8 @@
 <!--pages/photonavi/photonavi.wxml-->
-<view>请跟随图片指引</view>
-<image src="{{images}}"></image>
+
+<view class="container">
+  <view class="title">请跟随图片指引</view>
+  <image class="pic" src="{{images}}" mode="widthFix"></image>
+  <image class="pic_back" src="/packageMap/images/freecompress-7252668.png" mode="widthFix"></image>
+  <image class="pic_back_1" src="/packageMap/images/58aeffe6c869e092af51ee78.png" mode="widthFix"></image>
+</view>

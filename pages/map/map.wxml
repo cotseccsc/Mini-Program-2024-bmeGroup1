@@ -22,11 +22,13 @@
     bindmarkertap="handleMarkerTap"
   ></map>
   <mp-halfScreenDialog show="{{showDialog}}" class="custom-dialog">
-      <view slot="title">{{currentMarker.name}}</view>
-      <view slot="desc">{{currentMarker.desc}}</view>
+      <view  class="title" slot="title">{{currentMarker.name}}</view>
+      <view class="desc" slot="desc">{{currentMarker.desc}}</view>
       <view slot="footer">
-        <button type="primary" class="weui-btn1" bindtap="navi1">APP导航</button>
-        <button type="primary" class="weui-btn2" bindtap="navi2">图片导航</button>
+        <button type="primary" class="button" bindtap="navi1">APP导航</button>
+        
+
+        <button type="primary" class="button" bindtap="navi2">图片导航</button>
       </view>  
   </mp-halfScreenDialog>>
 </view>
