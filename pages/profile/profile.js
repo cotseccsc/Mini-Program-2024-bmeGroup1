@@ -20,7 +20,7 @@ Page({
     const username = wx.getStorageSync('username');
     //console.log(username);
 
-    if (username) {
+    if (username && app.globalData.isLogged) {
       const query2Promise = query2.equalTo("Username", username).first();
       const query1Promise = query1.equalTo("Username", username).first();
 

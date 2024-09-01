@@ -9,7 +9,7 @@
     {
       "root": "packageHome",
       "name": "packageHome",
-      "pages":[
+      "pages": [
         "pages/rapidguide/rapidguide",
         "pages/phoneCall/phoneCall"
       ],
@@ -55,7 +55,8 @@
         "pages/personal_info/personal_info",
         "pages/red_cross/red_cross",
         "pages/register/register",
-        "pages/volunteer_cabin/volunteer_cabin"
+        "pages/volunteer_cabin/volunteer_cabin",
+        "pages/facilitymapinfo/facilitymapinfo"
       ],
       "independent": false
     }
@@ -107,23 +108,30 @@
     }
   },
   "lazyCodeLoading": "requiredComponents",
-
   "preloadRule": {
     "pages/index/index": {
       "network": "all",
-      "packages": ["packageHome"]
+      "packages": [
+        "packageHome"
+      ]
     },
-    "pages/map/map":{
+    "pages/map/map": {
       "network": "all",
-      "packages": ["packageMap"]
+      "packages": [
+        "packageMap"
+      ]
     },
     "pages/training/training": {
       "network": "all",
-      "packages": ["packageTraining"]
+      "packages": [
+        "packageTraining"
+      ]
     },
     "pages/profile/profile": {
       "network": "all",
-      "packages": ["packageProfile"]
+      "packages": [
+        "packageProfile"
+      ]
     }
   }
 }

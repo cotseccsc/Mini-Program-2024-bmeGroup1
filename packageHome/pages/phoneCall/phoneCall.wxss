@@ -3,7 +3,7 @@
 .emergency-contact {
   padding:20rpx;
   width: 95%; /* 设置宽度为父容器的95% */
-  height:1450rpx;
+  height:1600rpx;
   padding: 20rpx; /* 内边距 */
   background-color: #e7faff; /* 背景颜色 */
 }

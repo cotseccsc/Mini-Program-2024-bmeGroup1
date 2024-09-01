@@ -3,11 +3,19 @@
 
 <text class="title">拨打紧急电话</text>
 <view class="container_inner">
-  <button class="call_botton1" bindtap="makePhoneCall120">紧急拨打120</button>
+  <button class="call_botton1" bindtap="makePhoneCall120">选择校区获得该校区120</button>
+  <view wx:if="{{showRadio0}}">
+    <radio-group class="radio-group" bindchange="radioChange0">
+      <label wx:for="{{options0}}" wx:key="{{item.value}}">
+        <radio value="{{item.value}}" />{{item.label}}
+      </label>
+    </radio-group>
+  </view>
+  <button class="call_botton1" wx:if="{{showButtonA}}" bindtap="makePhoneCall0">拨打</button>
 
-<button class="call_botton" bindtap="makePhoneCall1">拨打紧急联系人1:{{eC1}}</button>
-<button class="call_botton" bindtap="makePhoneCall2">拨打紧急联系人2:{{eC2}}</button>
-<button class="call_botton" bindtap="makePhoneCallzyz">选择当前所在校区，拨打志愿者</button>
+<button class="call_botton" bindtap="makePhoneCall1">拨打紧急联系人1</button>
+<button class="call_botton" bindtap="makePhoneCall2">拨打紧急联系人2</button>
+<button class="call_botton" bindtap="makePhoneCallzyz">拨打所在校区志愿者电话</button>
 <view wx:if="{{showRadio}}">
     <radio-group class="radio-group" bindchange="radioChange">
       <label wx:for="{{options}}" wx:key="{{item.value}}">
@@ -17,6 +25,6 @@
   </view>
 
   <!-- 按钮B -->
-  <button class="call_botton" wx:if="{{showButtonB}}" bindtap="makePhoneCall">拨打志愿者</button>
+  <button class="call_botton" wx:if="{{showButtonB}}" bindtap="searchVolunteer">拨打志愿者</button>
 </view>
 </view>
