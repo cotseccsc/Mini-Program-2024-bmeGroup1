@@ -1,0 +1,24 @@
+<view class="background">
+  <image src="/packageProfile/images/反馈界面.png" style="width: 100%;height: 95%;left: 0%;" class="five" mode="widthFix"/>
+</view>
+
+<view class="container">
+  <view class="container_1">
+    <view class="input-section">
+      <text class="text_info">设施所在区域：</text>
+      <picker range="{{regions}}" bindchange="bindRegionChange" class="picker">
+        <view class="input-text">{{facility.region}}</view>
+      </picker>
+    </view>
+    <view class="input-section">
+      <text class="text_info">具体位置：</text>
+      <input class="input-text" type="text" placeholder="请输入具体位置" bindinput="bindLocationInput"/>
+    </view>
+  </view>
+</view>
+<button class="send-button" bindtap="sendFeedback">发送反馈</button>
+
+<view class="contact-info">
+  更多精彩、其他信息请联系：王先生 396767537@qq.com
+  <text bindtap="copyEmail">[点击复制邮箱]</text>
+</view>

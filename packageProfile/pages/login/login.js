@@ -43,7 +43,7 @@ Page({
         });
         wx.setStorageSync('username', username); // 保存用户名到本地存储
 
-        // 直接使用setData更新全局状态
+        // 直接使用更新全局状态
       app.globalData.isLogged = true;
         
         wx.switchTab({

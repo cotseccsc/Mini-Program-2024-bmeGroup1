@@ -1,31 +1,28 @@
 <view class="background">
-<image src="/packageProfile/images/反馈界面.png" style="width: 100%;height: 95%;left: 0%;" class="five" mode="widthFix"/>
+  <image src="/packageProfile/images/反馈界面.png" style="width: 100%;height: 95%;left: 0%;" class="five" mode="widthFix"/>
 </view>
-
-
-
 
 <view class="container">
   <view class="container_1">
-  <view class="input-section">
-    <text class="text_info">意见或建议：</text>
-    <input class="input-text" type="text" placeholder="    请输入意见或建议" bindinput="bindOpinionInput"/>
+    <view class="input-section">
+      <text class="text_info">意见或建议：</text>
+      <input class="input-text" type="text" placeholder="    请输入意见或建议" bindinput="bindOpinionInput"/>
+    </view>
+    <view class="input-section">
+      <text class="text_info">小程序评分：</text>
+      <input class="input-text" type="number" min="1" max="10" placeholder="      1~10之间评分" bindinput="bindRatingInput"/>
+    </view>
+    <view class="input-section">
+      <text class="text_info">您的邮箱：</text>
+      <input class="input-text" type="text" placeholder="       请输入您的邮箱" bindinput="bindEmailInput"/>
+    </view>
   </view>
-  <view class="input-section">
-    <text class="text_info">小程序评分：</text>
-    <input class="input-text" type="number" min="1" max="10" placeholder="      1~10之间评分" bindinput="bindRatingInput"/>
-  </view>
-  <view class="input-section">
-    <text class="text_info">您的邮箱：</text>
-    <input class="input-text" type="text" placeholder="       请输入您的邮箱" bindinput="bindEmailInput"/>
-  </view>
-
-
-  </view>
+  <!-- 新增按钮 -->
+  <button class="facility-button" style="background-color: #00FF00;" bindtap="goToFacilityMapInfo">急救设施地图信息反馈--></button>
 </view>
 <button class="send-button" bindtap="sendFeedback">发送反馈</button>
 
 <view class="contact-info">
-    更多精彩、其他信息请联系：王先生 3967675@qq.com
-    <text bindtap="copyEmail">[点击复制邮箱]</text>
-  </view>
+  更多精彩、其他信息请联系：王先生 396767537@qq.com
+  <text bindtap="copyEmail">[点击复制邮箱]</text>
+</view>

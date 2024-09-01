@@ -56,7 +56,7 @@
 
 .contact-info {
   position: absolute;
-  bottom: 50rpx;
+  bottom: 80rpx;
   font-size: 28rpx;
   margin-left: 150rpx;
   margin-right: 50rpx;
@@ -67,7 +67,7 @@
 
 .send-button {
   position: absolute;
-  top: 980rpx;
+  top: 780rpx;
   left: 105rpx;
   width: 70%;
   height: 100rpx;
@@ -82,39 +82,35 @@
   font-family: 微软雅黑;
   font-weight: 600;
 }
-.facility-button {
-  position: absolute;
-  top: 1120rpx;
-  left: 105rpx;
-  width: 70%;
-  height: 100rpx;
-  margin-top: 60rpx;
-  background-color: #00FF00;
+
+/* ... 其他样式不变 ... */
+
+.input-text{
+  flex: 1;
+  height: 70rpx;
+  border: 5rpx solid rgba(41, 62, 175, 0.4);
   border-radius: 60rpx;
-  display: flex;
-  color: white;
   justify-content: center;
-  align-items: center;
-  box-shadow: 2px 2px 2px 5px rgba(0, 0, 0, 0.1);
-  font-family: 微软雅黑;
-  font-weight: 600;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 20rpx;
+  background-color: #28a4e233;
 }
 
-.register {
-  position: absolute;
-  top: 800rpx;
-  left: 40rpx;
-  width: 70%;
-  height: 100rpx;
-  margin-top: 50rpx;
-  background-color: #000000;
+.upload-button {
+  width: 400rpx; /* 增加按钮宽度以显示完整文本 */
+  height: 70rpx;
+  background-color: #28a4e233;
+  color: rgba(41, 62, 175, 0.4);
+  border: none;
+  text-align: center;
+  line-height: 70rpx;
   border-radius: 60rpx;
-  display: flex;
-  color: white;
-  justify-content: center;
-  align-items: center;
-  margin: 60rpx auto;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
-  font-family: 微软雅黑;
-  font-weight: 600;
+}
+
+.photo-preview {
+  width: 100%;
+  height: 300rpx;
+  margin-top: 20rpx;
+  border-radius: 10rpx;
 }

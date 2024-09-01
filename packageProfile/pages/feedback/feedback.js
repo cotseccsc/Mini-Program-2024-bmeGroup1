@@ -1,3 +1,7 @@
+const AV=require("../../../libs/av-core-min.js");
+const ProgramFeedback=AV.Object.extend("ProgramFeedback");
+const programFeedback=new ProgramFeedback();
+
 Page({
   data: {
     feedback: {
@@ -48,6 +52,10 @@ Page({
       return;
     }
     // 这里可以添加发送反馈信息到服务器的代码
+    programFeedback.set("Opinion",this.data.feedback.opinion);
+    programFeedback.set("Rating",this.data.feedback.rating);
+    programFeedback.set("Email",this.data.feedback.email);
+    programFeedback.save();
 
     // 显示发送成功的弹窗
     wx.showToast({
@@ -57,11 +65,17 @@ Page({
       complete: () => {
         // 延迟一段时间后重新加载页面
         setTimeout(() => {
-          wx.reLaunch({
-            url: '/pages/feedback/feedback'
+          wx.switchTab({
+            url: '/pages/profile/profile'
           });
         }, 2000);
       }
+    });
+  },
+
+  goToFacilityMapInfo() {
+    wx.navigateTo({
+      url: '/packageProfile/pages/facilitymapinfo/facilitymapinfo'
     });
   }
 });

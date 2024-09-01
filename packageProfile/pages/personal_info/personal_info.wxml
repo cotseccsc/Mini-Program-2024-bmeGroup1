@@ -42,11 +42,11 @@
 <!-- 校区 -->
 <view class="section">
     <text class="stress_index">校区</text>
-    <input value="{{school}}" class="input-text" bindinput="onInputChange" data-field="school" placeholder="请输入校区"/>
+    <input value="{{school}}" class="input-text" bindinput="onInputChange" data-field="school" placeholder="示例:玉泉校区"/>
   </view>
 <!-- volunteer -->
 <view class="section">
-    <text class="stress_index">是否愿意成为志愿者</text>
+    <text class="stress_index">愿做志愿者?</text>
     <radio-group class="radio-group" bindchange="onVolunteerChange">
       <label class="radio-label">
         <radio value="是" class="choice" checked="{{volunteerWilling==='是'}}">是</radio>
@@ -72,5 +72,10 @@
       1. 确认您的身份，以便为您提供个性化服务；
       2. 与您联系并提供相关的客户支持；
       3. 改善我们的产品和服务。
-      请放心，您的个人信息未经您的同意不会泄露给第三方。</text>
+      请放心，您的个人信息未经您的同意不会泄露给第三方。
+
+
+
+      注意：如果您选择愿意成为我们的志愿者，请务必按照示例填写准确无误的校区信息，以便您为其他用户提供帮助！
+    </text>
 
