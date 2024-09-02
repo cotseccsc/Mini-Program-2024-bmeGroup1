@@ -1,10 +1,35 @@
 /**index.wxss**/
 /* 容器样式 */
+.container_inside{
+  position: relative;
+  justify-content: center;
+  width: 95%;
+  border-radius: 60rpx;
+  margin-top: 40rpx;
+  margin-bottom: 30rpx;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+  padding-top: 40rpx;
+  padding-bottom: 40rpx;
+  padding-left: 15rpx;
+  padding-right: 15rpx;
+background-color: #293EAF;
+
+}
 /* 容器样式 */
+.medal-text {
+  font-size: 14px;
+  color: #333;
+  font-weight: 600;
+  font-family: 微软雅黑;
+  text-align: center;
+  margin-bottom: 5px;
+}
 .container {
   display: flex;
   flex-direction: column;
   padding: 20px;
+  background-color: #e7faff;
+  height: 1380rpx;
 }
 
 
@@ -12,39 +37,85 @@
 .medals-section {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .section-title {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 10px;
+  margin-left: 40rpx;
+  font-family: 微软雅黑;
+  color: #ffffff;
 }
 
 .medals-summary {
+  margin-top: 20rpx;
   font-size: 16px;
-  color: #666;
+  color: rgb(214, 214, 214);
   margin-bottom: 20px;
+  font-family: 600;
 }
 
 .medals-title {
   font-size: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 10rpx;
+  margin-left: 20rpx;
+  font-family: 微软雅黑;
+  font-weight: 600;
 }
 
 .medals-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 每行显示3个勋章 */
+  gap: 10px;
 }
 
 .medal-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10px;
 }
 
 .medal-image {
-  width: 80px;
-  height: 80px;
+  margin-top: 20rpx;
+  width: 90px;
+  height: 90px;
   margin-bottom: 5px;
+  border: 3px solid #293EAF; /* 绿色边框 */
+  border-radius: 50rpx;
+}
+
+.earned-medals{
+  position: relative;
+  justify-content: center;
+  width: 95%;
+  background-color: #ffffff;
+  border-radius: 60rpx;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  padding-left: 15rpx;
+  padding-right: 15rpx;
+  /* padding-left: 20rpx;
+  padding-right: 20rpx; */
+}
+
+.pending-medals{
+  position: relative;
+  justify-content: center;
+  width: 95%;
+  background-color: #ffffff;
+  border-radius: 60rpx;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  padding-left: 15rpx;
+  padding-right: 15rpx;
+  /* padding-left: 20rpx;
+  padding-right: 20rpx; */
 }

@@ -1,16 +1,22 @@
 /* pages/index/index.wxss */
 .container {
+  position:absolute;
   width: 95%; /* 设置宽度为父容器的80% */
   height: 1130rpx; /* 设置固定高度为400rpx */
   padding: 20rpx; /* 内边距 */
   padding-top: 300rpx; /* 增加顶部的填充高度 */
-  background: linear-gradient(45deg, #94d3ec, #eaf1ff); /* 背景颜色 */
+  background-color: #e7faff; /* 背景颜色 */
 }
 .input-wrap {
-	width: 50%;
-	display: flex;
+  width: 80%;
+  padding: 20rpx 30rpx;
+  height: 70rpx;
+  background-color: #28a4e233;
+  border-radius: 70rpx;
+  display: flex;
+  align-items: center;
 	flex-direction: row;
-	margin-top: 50rpx;
+  margin: 70rpx auto 50rpx;
 	justify-content: space-between;
 }
 
@@ -27,4 +33,46 @@
 
 .register {
 	margin-top: 60rpx;
+}
+
+.container_1{
+  position: relative;
+  top: -23%;
+width: 90%;
+margin: auto;
+background-color: #ffffff;
+border-radius: 60rpx;
+margin:250rpx auto 30rpx;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+.username{
+  font-weight: 600;
+  font-family: 微软雅黑;
+}
+
+.info-input{
+  flex:1;
+  height: 70rpx;
+	border: 5rpx solid rgba(41,62,175,0.4);
+  width: 230rpx;
+  border-radius: 60rpx;
+  padding-left: 20rpx;
+}
+
+.action {
+  position: absolute;
+  top:54%;
+  width: 70%;
+  height: 100rpx;
+	margin-top: 50rpx;
+  background-color: #293EAF;
+  border-radius: 60rpx;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  margin:60rpx auto;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+  font-family: 微软雅黑;
+  font-weight: 600;
 }

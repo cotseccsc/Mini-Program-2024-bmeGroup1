@@ -18,7 +18,7 @@
     <text class="bottom_text">http://www.cbeis.zju.edu.cn </text>
  
     <text class="bottom_text" bindtap="copyLink">
-    浙江大学生物医学工程官网
+    浙江大学生物医学工程与仪器科学学院官网
     [点击复制链接到剪贴板]</text>
   </view>
 

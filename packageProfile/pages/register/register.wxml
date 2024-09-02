@@ -1,13 +1,15 @@
 <!--pages/index/index.wxml-->
 <view class="container">
+  <view class="container_1">
 	<view class="input-wrap">
-		<view>用户名：</view>
+		<view class="username">用户名：</view>
 		<input value="{{username}}" bindinput="inputUsername" class="info-input" />
 	</view>
 	<view class="input-wrap">
-		<view>密码：</view>
+		<view class="username">密码：</view>
 		<input value="{{password}}" bindinput="inputPassword" class="info-input" password="true" />
 	</view>
+</view>
 	<!-- 按钮 -->
 	<button bindtap="register" class="action">点击注册</button>
 </view>
