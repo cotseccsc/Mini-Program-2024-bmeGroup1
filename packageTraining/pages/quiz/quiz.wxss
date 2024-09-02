@@ -1,41 +1,94 @@
 page{
-  background-color: #e7faff;
+  /* background-color: #e7faff; */
+  background-image:
+  radial-gradient(closest-side, rgba(173, 216, 230, 0.3), rgba(173, 216, 230, 0)), /* 浅蓝色 */
+  radial-gradient(closest-side, rgba(100, 149, 237, 0.3), rgba(100, 149, 237, 0)), /* 中浅蓝色 */
+  radial-gradient(closest-side, rgba(65, 105, 225, 0.3), rgba(65, 105, 225, 0)),  /* 中深蓝色 */
+  radial-gradient(closest-side, rgba(0, 0, 139, 0.3), rgba(0, 0, 139, 0));     
+  background-size:
+    130vmax 130vmax,
+    80vmax 80vmax,
+    90vmax 90vmax,
+    110vmax 110vmax,
+    90vmax 90vmax;
+  background-position:
+    -80vmax -80vmax,
+    60vmax 30vmax,
+    40vmax 10vmax,
+    110vmax 10vmax,
+    -10vmax -10vmax;
+  animation: moveGradient 20s infinite linear;
 }
 
 .body {
   width: 100vw;
   height: 100vh;
-  display: flex;
   flex-direction: column;
   align-items: center;
 
 }
 
+@keyframes moveGradient {
+  0% {
+    background-position:
+      -80vmax -80vmax,
+      60vmax 30vmax,
+      40vmax 10vmax,
+      110vmax 10vmax,
+      -10vmax -10vmax;
+  }
+  50% {
+    background-position:
+      80vmax 80vmax,
+      -60vmax -30vmax,
+      -40vmax -10vmax,
+      -110vmax -10vmax,
+      10vmax 10vmax;
+  }
+  100% {
+    background-position:
+      -80vmax -80vmax,
+      60vmax 30vmax,
+      40vmax 10vmax,
+      110vmax 10vmax,
+      -10vmax -10vmax;
+  }
+}
+
 
 
 .question {
-  padding-top: 200rpx;
+  padding-top: 150rpx;
 }
 
 .title {
-  border: 1px dashed #f00;
+  margin-left: 60rpx;
+  margin-right: 50rpx;
+  border: 2px dotted #293EAF;
+  border-radius: 40rpx;
   padding: 20rpx 60rpx;
-  width: 400rpx;
+  width: 500rpx;
   /* text-align: center; */
   font-size: 40rpx;
+  font-family: 微软雅黑;
+  font-weight: 600;
 }
 
 .option {
-  margin-top: 50rpx;
+  margin-top: 60rpx;
 }
 
 .option-item {
-  background-color: #fff;
-  margin-bottom: 20rpx;
-  padding: 20rpx 40rpx;
+  background-color: #ffffffbb;
+  margin-bottom: 40rpx;
+  margin-left: 50rpx;
+  margin-right: 50rpx;
+  padding: 25rpx 45rpx 25rpx 40rpx;
+  border-radius: 50rpx;
+  font-size: 32rpx;
+  font-weight: 600;
+  font-family: 微软雅黑;
 }
-
-
 
 .success {
   background-color: #0f0;
@@ -47,3 +100,9 @@ page{
   color: #fff;
 }
 
+.my-image{
+  width: 70%;
+  height: 70%;
+  position: relative;
+  left: 100rpx;
+}

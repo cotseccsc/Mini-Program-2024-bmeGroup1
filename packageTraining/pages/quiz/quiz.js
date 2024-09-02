@@ -178,6 +178,16 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onShow(options) {
+    /*quizState.set("Username","sincostan");
+    quizState.set("BeginNum",0);
+    quizState.set("0",0);
+    quizState.set("1",0);
+    quizState.set("2",0);
+    quizState.set("3",0);
+    quizState.set("4",0);
+    quizState.save();*/
+
+
     const username = wx.getStorageSync('username');
     if (username) {
       query.equalTo("Username", username);
@@ -245,7 +255,7 @@ Page({
           newQuizState.set("Username", username);
           newQuizState.set("BeginNum", 0);
           newQuizState.set("CorrectNum",0);
-          for(let i=0;i<this.data.list.length; i++)
+          for(let i=0;i< this.data.list.length; i++)
             {
               let istring=i+"";
               newQuizState.set(istring,0);
@@ -295,7 +305,7 @@ Page({
               quizState.set(x, 1);
               quizState.save();
               const c = quizState.get("CorrectNum");
-              if (c < this.data.list.length) {
+              if (c < 5) {
                 quizState.increment("CorrectNum", 1);
                 quizState.save();
               } else {}

@@ -16,7 +16,7 @@
             </view>
         </view>
     </view>
-    <image src="/packageTraining/images/quiz/test_ad.png" mode="aspectFit" class="my-image"></image>
+    <image src="/packageTraining/images/quiz/test_ad.png" mode="widthFix"style="width:70%" class="my-image"></image>
 </view>
 
 

@@ -11,9 +11,28 @@
   padding: 20px;
   font-size: 16px;
   line-height: 1.5;
-  background-color: #e7faff;
+  /* background-color: #e7faff; */
   z-index: 6;
   height: 3700rpx;
+
+  background-image:
+  radial-gradient(closest-side, rgba(173, 216, 230, 0.3), rgba(173, 216, 230, 0)), /* 浅蓝色 */
+  radial-gradient(closest-side, rgba(100, 149, 237, 0.3), rgba(100, 149, 237, 0)), /* 中浅蓝色 */
+  radial-gradient(closest-side, rgba(65, 105, 225, 0.3), rgba(65, 105, 225, 0)),  /* 中深蓝色 */
+  radial-gradient(closest-side, rgba(0, 0, 139, 0.3), rgba(0, 0, 139, 0));     
+  background-size:
+    130vmax 130vmax,
+    80vmax 80vmax,
+    90vmax 90vmax,
+    110vmax 110vmax,
+    90vmax 90vmax;
+  background-position:
+    -80vmax -80vmax,
+    60vmax 30vmax,
+    40vmax 10vmax,
+    110vmax 10vmax,
+    -10vmax -10vmax;
+  animation: moveGradient 20s infinite linear;
 }
 .container_1{
   z-index: 100;
@@ -77,4 +96,31 @@
   font-size: 30rpx;
   font-weight: 500;
   margin-left: 70rpx;
+}
+
+@keyframes moveGradient {
+  0% {
+    background-position:
+      -80vmax -80vmax,
+      60vmax 30vmax,
+      40vmax 10vmax,
+      110vmax 10vmax,
+      -10vmax -10vmax;
+  }
+  50% {
+    background-position:
+      80vmax 80vmax,
+      -60vmax -30vmax,
+      -40vmax -10vmax,
+      -110vmax -10vmax,
+      10vmax 10vmax;
+  }
+  100% {
+    background-position:
+      -80vmax -80vmax,
+      60vmax 30vmax,
+      40vmax 10vmax,
+      110vmax 10vmax,
+      -10vmax -10vmax;
+  }
 }

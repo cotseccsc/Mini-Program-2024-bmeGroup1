@@ -4,7 +4,7 @@
 <!-- 白色方框 -->
 <view class="container_1">
 <!-- 总标题 -->
-  <text class="header1">TO DO--RICE原则</text>
+  <text class="header1">TO DO--PRICE原则</text>
   <!-- steps代表不需要加粗的普通文本，stress表示副标题，需要加粗的文本 -->
     <text class="stress">1、Protection（保护）：</text>
     <text class="steps">发生状况时应尽可能先保护受伤的部位和肢体，防止二次伤害，同时也避免后续因为移动、就医产生的新问题</text>
