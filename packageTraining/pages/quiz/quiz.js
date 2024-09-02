@@ -305,7 +305,7 @@ Page({
               quizState.set(x, 1);
               quizState.save();
               const c = quizState.get("CorrectNum");
-              if (c < 5) {
+              if (c < this.data.list.length) {
                 quizState.increment("CorrectNum", 1);
                 quizState.save();
               } else {}
