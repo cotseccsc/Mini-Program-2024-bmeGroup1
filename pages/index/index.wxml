@@ -1,9 +1,9 @@
 <!-- pages/index/index.wxml -->
 <view class="container">
-<image src="/images/index/背景图片_cut.png" class="backgroud_pic"style="width:100%" mode="widthFix"/>
-<view class="container_1">
+<image src="/images/index/freecompress-88888888888888.png" class="backgroud_pic"style="width:100%" mode="widthFix"/>
+<!-- <view class="container_1">
   <text class="title">EMBRACE\n YOUR\n SPORTS LIFE\n</text>
-  </view>
+  </view> -->
 <image class="pic_1" src="/images/index/紧急呼叫logo.png" bindtap="navigateToPhoneCall"  mode="widthFix"/>
 <image class="pic_2" src="/images/index/急救指导logo.png" bindtap="navigateToRapidGuide" mode="widthFix"/>
 <image class="pic_3" src="/images/index/跳转培训logo.png" bindtap="navigateToTraining"  mode="widthFix"/>

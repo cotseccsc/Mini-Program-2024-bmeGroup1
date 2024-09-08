@@ -26,7 +26,7 @@ Page({
         'desc':'周亦卿大楼一楼大门进门左侧107室门口',
         'latitude':30.260283,
         'longitude':120.121984,
-        'iconPath':'/packageMap/images/AED.jpeg',
+        'iconPath':'/images/map/AED.jpeg',
         'width':32,
         'height':32
       },{
@@ -35,7 +35,7 @@ Page({
         'desc':'玉泉乒乓球房门口',
         'latitude':30.265584,
         'longitude':120.127284,
-        'iconPath':'/packageMap/images/AED.jpeg',
+        'iconPath':'/images/map/AED.jpeg',
         'width':32,
         'height':32
       },{
@@ -44,7 +44,7 @@ Page({
         'desc':'周亦卿大楼1楼大门进门右侧墙上',
         'latitude':30.26047333,
         'longitude':120.12203028,
-        'iconPath':'/packageMap/images/KIT.png',
+        'iconPath':'/images/map/KIT.png',
         'width':32,
         'height':32
       },{
@@ -53,7 +53,7 @@ Page({
         'desc':'浙江省杭州市西湖区玉古路156号',
         'latitude':30.263177,
         'longitude':120.1268678,
-        'iconPath':'/packageMap/images/pharmacy.jpg',
+        'iconPath':'/images/map/pharmacy.jpg',
         'width':32,
         'height':32
       },{
@@ -62,7 +62,7 @@ Page({
         'desc':'浙江省杭州市西湖区外东山弄66号东山农贸市场196号',
         'latitude':30.259041,
         'longitude':120.127159,
-        'iconPath':'/packageMap/images/pharmacy.jpg',
+        'iconPath':'/images/map/pharmacy.jpg',
         'width':32,
         'height':32
       },{
@@ -71,7 +71,7 @@ Page({
         'desc':'浙江省杭州市西湖区浙大路6号',
         'latitude':30.259903,
         'longitude':120.130431,
-        'iconPath':'/packageMap/images/pharmacy.jpg',
+        'iconPath':'/images/map/pharmacy.jpg',
         'width':32,
         'height':32
       },{
@@ -80,7 +80,7 @@ Page({
         'desc':'浙江省杭州市西湖区西溪路395-2号',
         'latitude':30.267981,
         'longitude':120.127907,
-        'iconPath':'/packageMap/images/pharmacy.jpg',
+        'iconPath':'/images/map/pharmacy.jpg',
         'width':32,
         'height':32
       },{
@@ -89,7 +89,7 @@ Page({
         'desc':'浙江省杭州市西湖区西溪路418号',
         'latitude':30.270383,
         'longitude':120.123575,
-        'iconPath':'/packageMap/images/pharmacy.jpg',
+        'iconPath':'/images/map/pharmacy.jpg',
         'width':32,
         'height':32
       },{
@@ -98,7 +98,7 @@ Page({
         'desc':'之江校区健身房入口右侧',
         'latitude':30.192147,
         'longitude':120.124843,
-        'iconPath':'/packageMap/images/AED.jpeg',
+        'iconPath':'/images/map/AED.jpeg',
         'width':32,
         'height':32
       },{
@@ -107,7 +107,7 @@ Page({
         'desc':'之江校区6号楼',
         'latitude':30.193062,
         'longitude':120.124444,
-        'iconPath':'/packageMap/images/AED.jpeg',
+        'iconPath':'/images/map/AED.jpeg',
         'width':32,
         'height':32
       },{
@@ -116,7 +116,7 @@ Page({
         'desc':'浙江省杭州市西湖区文三路133-4号',
         'latitude':30.277384,
         'longitude':120.143142,
-        'iconPath':'/packageMap/images/pharmacy.jpg',
+        'iconPath':'/images/map/pharmacy.jpg',
         'width':32,
         'height':32
       },{
@@ -125,7 +125,7 @@ Page({
         'desc':'浙江省杭州市西湖区文三路255号联强大厦B座',
         'latitude':30.277293,
         'longitude':120.134909,
-        'iconPath':'/packageMap/images/pharmacy.jpg',
+        'iconPath':'/images/map/pharmacy.jpg',
         'width':32,
         'height':32
       },{
@@ -134,7 +134,7 @@ Page({
         'desc':'浙江省杭州市西湖区杭大路44号',
         'latitude':30.27036,
         'longitude':120.14124,
-        'iconPath':'/packageMap/images/pharmacy.jpg',
+        'iconPath':'/images/map/pharmacy.jpg',
         'width':32,
         'height':32
       },{
@@ -143,7 +143,7 @@ Page({
         'desc':'浙江省杭州市西湖区文三路353号',
         'latitude':30.276734,
         'longitude':120.132749,
-        'iconPath':'/packageMap/images/pharmacy.jpg',
+        'iconPath':'/images/map/pharmacy.jpg',
         'width':32,
         'height':32
       }
@@ -153,7 +153,7 @@ Page({
         'desc':'8号楼学生宿舍门厅',
         'latitude':30.192121,
         'longitude':120.12408,
-        'iconPath':'/packageMap/images/KIT.png',
+        'iconPath':'/images/map/KIT.png',
         'width':32,
         'height':32
       },{
@@ -162,7 +162,7 @@ Page({
         'desc':'校医院门诊楼大门右侧',
         'latitude':30.267495,
         'longitude':120.124699,
-        'iconPath':'/packageMap/images/AED.jpeg',
+        'iconPath':'/images/map/AED.jpeg',
         'width':32,
         'height':32
       }
@@ -172,7 +172,7 @@ Page({
         'desc':'25舍一楼大厅右侧',
         'latitude':30.267973,
         'longitude':120.125233,
-        'iconPath':'/packageMap/images/KIT.png',
+        'iconPath':'/images/map/KIT.png',
         'width':32,
         'height':32
       },{
@@ -181,7 +181,7 @@ Page({
         'desc':'西湖区紫金西苑1幢1层104号商铺',
         'latitude':30.301066,
         'longitude':120.068071,
-        'iconPath':'/packageMap/images/pharmacy.jpg',
+        'iconPath':'/images/map/pharmacy.jpg',
         'width':32,
         'height':32
       },{
@@ -190,7 +190,7 @@ Page({
         'desc':'西湖区太和路港湾家园22幢10号',
         'latitude':30.310697,
         'longitude':120.086213,
-        'iconPath':'/packageMap/images/pharmacy.jpg',
+        'iconPath':'/images/map/pharmacy.jpg',
         'width':32,
         'height':32
       },{
@@ -199,7 +199,7 @@ Page({
         'desc':'风雨操场进门右前方拐角处墙上',
         'latitude':30.306547,
         'longitude':120.090548,
-        'iconPath':'/packageMap/images/AED.jpeg',
+        'iconPath':'/images/map/AED.jpeg',
         'width':32,
         'height':32
       },{
@@ -208,7 +208,7 @@ Page({
         'desc':'校医院门口（内外各一台）',
         'latitude':30.277155,
         'longitude':120.14083,
-        'iconPath':'/packageMap/images/AED.jpeg',
+        'iconPath':'/images/map/AED.jpeg',
         'width':32,
         'height':32
       },{
@@ -217,7 +217,7 @@ Page({
         'desc':'行政办事服务大厅入口左侧',
         'latitude':30.297318,
         'longitude':120.088716,
-        'iconPath':'/packageMap/images/AED.jpeg',
+        'iconPath':'/images/map/AED.jpeg',
         'width':32,
         'height':32
       },{
@@ -226,7 +226,7 @@ Page({
         'desc':'主图二层24h自习区研讨间213旁',
         'latitude':30.303148,
         'longitude':120.079869,
-        'iconPath':'/packageMap/images/AED.jpeg',
+        'iconPath':'/images/map/AED.jpeg',
         'width':32,
         'height':32
       },{
@@ -235,7 +235,7 @@ Page({
         'desc':'银泉足球场入口右侧墙上',
         'latitude':30.306988,
         'longitude':120.075545,
-        'iconPath':'/packageMap/images/AED.jpeg',
+        'iconPath':'/images/map/AED.jpeg',
         'width':32,
         'height':32
       },{
@@ -244,7 +244,7 @@ Page({
         'desc':'尧坤楼309排练室进门右侧墙边',
         'latitude':30.29926,
         'longitude':120.072398,
-        'iconPath':'/packageMap/images/AED.jpeg',
+        'iconPath':'/images/map/AED.jpeg',
         'width':32,
         'height':32
       },{
@@ -253,16 +253,16 @@ Page({
         'desc':'医学综合楼1楼门厅',
         'latitude':30.296663,
         'longitude':120.084633,
-        'iconPath':'/packageMap/images/AED.jpeg',
+        'iconPath':'/images/map/AED.jpeg',
         'width':32,
         'height':32
       },{
         'id':27,
         'name':'浙江大学（紫金港校区）西教AED',
         'desc':'西1-310斜对面',
-        'latitude':30.296663,
-        'longitude':120.084633,
-        'iconPath':'/packageMap/images/AED.jpeg',
+        'latitude':30.302323,
+        'longitude':120.084685,
+        'iconPath':'/images/map/AED.jpeg',
         'width':32,
         'height':32
       },{
@@ -271,7 +271,7 @@ Page({
         'desc':'东区1楼休闲餐厅靠文化广场入口对面，校园卡服务部旁',
         'latitude':30.307771,
         'longitude':120.08443,
-        'iconPath':'/packageMap/images/AED.jpeg',
+        'iconPath':'/images/map/AED.jpeg',
         'width':32,
         'height':32
       },{
@@ -280,7 +280,7 @@ Page({
         'desc':'浙江大学华家池校区新农村杂志社附近',
         'latitude':30.268372,
         'longitude':120.195718,
-        'iconPath':'/packageMap/images/AED.jpeg',
+        'iconPath':'/images/map/AED.jpeg',
         'width':32,
         'height':32
       },{
@@ -289,7 +289,7 @@ Page({
         'desc':'东1B-123门口右侧',
         'latitude':30.302212,
         'longitude':120.08923,
-        'iconPath':'/packageMap/images/AED.jpeg',
+        'iconPath':'/images/map/AED.jpeg',
         'width':32,
         'height':32
       },{
@@ -298,7 +298,7 @@ Page({
         'desc':'东田径场和东足球场（西操）间过道右侧墙上',
         'latitude':30.304935,
         'longitude':120.082612,
-        'iconPath':'/packageMap/images/AED.jpeg',
+        'iconPath':'/images/map/AED.jpeg',
         'width':32,
         'height':32
       },{
@@ -307,7 +307,7 @@ Page({
         'desc':'老游泳池（亚运热身馆）靠风雨操场一侧入口右侧',
         'latitude':30.307541,
         'longitude':120.090365,
-        'iconPath':'/packageMap/images/AED.jpeg',
+        'iconPath':'/images/map/AED.jpeg',
         'width':32,
         'height':32
       }
@@ -323,9 +323,6 @@ Page({
 
 
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
   onReady() {
     const map = wx.createMapContext("map");
     map.moveToLocation();

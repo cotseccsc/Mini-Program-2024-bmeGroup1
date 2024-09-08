@@ -6,6 +6,7 @@ page{
   background-color: #e7faff;
 }
 .title{
+  margin-top: 40rpx;
   font-size: 44rpx;
   font-weight: 700;
   font-family: 微软雅黑;
@@ -34,5 +35,15 @@ page{
   box-shadow: 2px 2px 0px 3px rgba(0, 0, 0, 0.1);
   font-family: 微软雅黑;
   font-weight: 600;
+}
+
+.tips_title{
+  margin-top: 30rpx;
+  display: flex;
+  justify-content: center;
+  color: crimson;
+  font-weight: 600;
+  font-family: 微软雅黑;
+  font-size: 36rpx;
 }
 

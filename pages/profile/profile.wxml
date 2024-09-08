@@ -1,21 +1,26 @@
-
+<!-- 最下方的背景 -->
 <view class="background">
-<image src="/images/profile/com-hehe.png" class="back_pic" style="width: 100%;height: 80%;" mode="widthFix"/>
+<image src="/images/profile/freecompress-背景_cut.png" class="back_pic" style="width: 100%;height: 80%;" mode="widthFix"/>
 </view>
 
 <view class="profile">
   <view class="content">
+  <!-- 两个白色透明的部分 -->
+    <view class="shit"></view>
+    <view class="shit_1"></view>
+    <view class="shit_2"></view>
+
     <!-- 如果用户未登录 -->
     <block wx:if="{{!isLogged}}">
-      <view class="container">
+
   <!-- 登录/注册模块 -->
   <view class="login-section">
-    <view class="login-gradient">
+    <image src="/images/profile/个人中心.png" class="login_pic" mode="widthFix"/>
+
       <text class="login-title1">邀请你</text>
       <text class="login-subtitle1">登录获取更多优质内容</text>
       <button class="login-button" bindtap="navigateToLogin">登录/注册</button>
-    </view>
-  </view>
+   
 
   <!-- 个人中心模块 -->
   <view class="section">
@@ -27,26 +32,6 @@
     <image src="/images/profile/荣誉信息.png"class="honor_pic"  bindtap="navigateRedirect"mode="widthFix"/>
     <image src="/images/profile/志愿者.png"class="volunteer_pic"  bindtap="navigateRedirect"mode="widthFix"/>
 
-
-
-    <!-- <view class="grid-container"> -->
-      <!-- <view class="grid-item" bindtap="navigateRedirect">
-        <image src="/images/profile/personal_info.png" class="icon"></image>
-        <text class="grid-text">个人信息</text>
-      </view> -->
-      <!-- <view class="grid-item" bindtap="navigateRedirect">
-        <image src="/images/profile/emergency_contact.png" class="icon"></image>
-        <text class="grid-text">紧急联系人</text>
-      </view> -->
-      <!-- <view class="grid-item" bindtap="navigateRedirect">
-        <image src="/images/profile/honor_info.png" class="icon"></image>
-        <text class="grid-text">荣誉信息</text>
-      </view> -->
-      <!-- <view class="grid-item" bindtap="navigateRedirect">
-        <image src="/images/profile/volunteer_cabin.png" class="icon"></image>
-        <text class="grid-text">志愿者小屋</text>
-      </view> -->
-    <!-- </view> -->
   </view>
 
   <!-- 服务中心模块 -->
@@ -54,83 +39,33 @@
     <text class="section-title_1">服务中心</text>
     <text class="section-title_1_Eng">Service Center</text>
 
-    <image src="/images/profile/意见反馈.png"class="feedback_pic"  bindtap="navigateToFeedback"mode="widthFix"/>
-    <image src="/images/profile/红十字会.png"class="redcross_pic"  bindtap="navigateToRedCross"mode="widthFix"/>
+    <image src="/images/profile/意见反馈.png"class="redcross_pic"  bindtap="navigateToFeedback"mode="widthFix"/>
+    <image src="/images/profile/红十字会.png"class="feedback_pic"  bindtap="navigateToRedCross"mode="widthFix"/>
     <image src="/images/profile/关于我们.png"class="aboutus_pic"  bindtap="navigateToAboutUs"mode="widthFix"/>
-
-
-
-    <!-- <view class="grid-container_1"> -->
-      <!-- <view class="grid-item" bindtap="navigateToFeedback">
-        <image src="/images/profile/feedback.png" class="icon"></image>
-        <text class="grid-text">意见反馈</text>
-      </view> -->
-      <!-- <view class="grid-item" bindtap="navigateToRedCross">
-        <image src="/images/profile/red_cross.png" class="icon"></image>
-        <text class="grid-text">红十字</text>
-      </view> -->
-      <!-- <view class="grid-item" bindtap="navigateToAboutUs">
-        <image src="/images/profile/about_us.png" class="icon"></image>
-        <text class="grid-text">关于我们</text>
-      </view> -->
-    <!-- </view> -->
   </view>
 </view>
 </block>
 
-
-
-
-
-
-
-
-
-    <!-- 如果用户已登录 -->
+    <!-- 如果用户已登录，相当于和上面的部分是不同的分支 -->
     <block wx:if="{{isLogged}}">
-      <view class="container">
   <!-- 登录/注册模块 -->
   <view class="login-section">
-    <view class="login-gradient">
+  <image src="/images/profile/个人中心.png" mode="widthFix" class="login_pic"/>
       <image class="avatar" src="{{avatarSwitch}}"></image>
        <text class="login-title">欢迎！</text>
        <text class="login-subtitle">{{username}}</text>
       <button class="login-button" bindtap="ExitLogin">退出登录</button>
-    </view>
-  </view>
 
   <!-- 个人中心模块 -->
   <view class="section">
     <text class="section-title">个人中心</text>
     <text class="section-title_Eng">Personal Center</text>
 
-
     <image src="/images/profile/个人信息.png"class="selfinfo_pic"  bindtap="navigateToPersonalInfo"mode="widthFix"/>
     <image src="/images/profile/紧急联系人.png"class="contact_pic"  bindtap="navigateToEmergencyContact"mode="widthFix"/>
     <image src="/images/profile/荣誉信息.png"class="honor_pic"  bindtap="navigateToHonorInfo"mode="widthFix"/>
     <image src="/images/profile/志愿者.png"class="volunteer_pic"  bindtap="navigateToVolunteerCabin"mode="widthFix"/>
 
-
-
-
-    <!-- <view class="grid-container">
-      <view class="grid-item" bindtap="navigateToPersonalInfo">
-        <image src="/images/profile/personal_info.png" class="icon"></image>
-        <text class="grid-text">个人信息</text>
-      </view> -->
-      <!-- <view class="grid-item" bindtap="navigateToEmergencyContact">
-        <image src="/images/profile/emergency_contact.png" class="icon"></image>
-        <text class="grid-text">紧急联系人</text>
-      </view> -->
-      <!-- <view class="grid-item" bindtap="navigateToHonorInfo">
-        <image src="/images/profile/honor_info.png" class="icon"></image>
-        <text class="grid-text">荣誉信息</text>
-      </view> -->
-      <!-- <view class="grid-item" bindtap="navigateToVolunteerCabin">
-        <image src="/images/profile/volunteer_cabin.png" class="icon"></image>
-        <text class="grid-text">志愿者小屋</text>
-      </view> -->
-    <!-- </view> -->
   </view>
 
   <!-- 服务中心模块 -->
@@ -138,25 +73,10 @@
     <text class="section-title_1">服务中心</text>
     <text class="section-title_1_Eng">Service Center</text>
 
-    <image src="/images/profile/意见反馈.png"class="feedback_pic"  bindtap="navigateToFeedback"mode="widthFix"/>
-    <image src="/images/profile/红十字会.png"class="redcross_pic"  bindtap="navigateToRedCross"mode="widthFix"/>
+    <image src="/images/profile/意见反馈.png"class="redcross_pic"  bindtap="navigateToFeedback"mode="widthFix"/>
+    <image src="/images/profile/红十字会.png"class="feedback_pic"  bindtap="navigateToRedCross"mode="widthFix"/>
     <image src="/images/profile/关于我们.png"class="aboutus_pic"  bindtap="navigateToAboutUs"mode="widthFix"/>
 
-
-    <!-- <view class="grid-container_1">
-      <view class="grid-item" bindtap="navigateToFeedback">
-        <image src="/images/profile/feedback.png" class="icon"></image>
-        <text class="grid-text">意见反馈</text>
-      </view> -->
-      <!-- <view class="grid-item" bindtap="navigateToRedCross">
-        <image src="/images/profile/red_cross.png" class="icon"></image>
-        <text class="grid-text">红十字</text>
-      </view> -->
-      <!-- <view class="grid-item" bindtap="navigateToAboutUs">
-        <image src="/images/profile/about_us.png" class="icon"></image>
-        <text class="grid-text">关于我们</text>
-      </view>
-    </view> -->
   </view>
 </view>
     </block>

@@ -1,4 +1,3 @@
-/* pages/profile/profile.wxss */
 
 .background{
   position: relative;
@@ -11,32 +10,24 @@
   background-repeat: no-repeat; /* 图片不重复 */
   z-index: 10;
 }
+/* 背景图片板块 */
 .back_pic{
-position: absolute;
-top:3%;
+  position: absolute;
+  top:3%;
   width: 60%;
   height: 50%;
-}
-/* 容器样式 */
-.container {
-  position: absolute;
-  top:0%;
-  width: 95%; /* 设置宽度为父容器的80% */
-  height: 1580rpx; /* 设置固定高度为400rpx */
-  padding: 20rpx; /* 内边距 */
-  background-color: #e7faff; /* 背景颜色 */
 }
 
 /* 登录/注册模块样式 */
 .login-section {
   margin: 35rpx auto 35rpx; /* 上下外边距设置为 0 和 30rpx，左右外边距设置为 auto */
   width: 90%; /* 设置宽度为父容器的 60% */
-height: 10%;
+  height: 10%;
   position: absolute; /* 设置position为relative，方便内部元素使用绝对定位 */
-  top:300rpx;
+  top:220rpx;
   z-index: 20;
   border-radius: 20rpx;
-  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2); /* 设置阴影 */
+
 }
 .login-gradient {
   padding: 110rpx;
@@ -45,7 +36,11 @@ height: 10%;
   height: 0rpx; 
   color: #ffffff;
 }
-
+.login_pic{
+  width: 100%;
+  position: relative;
+  margin-left: 40rpx;
+}
 .login-title {
   font-size: 50rpx;
   font-weight: bold;
@@ -53,9 +48,10 @@ height: 10%;
   text-shadow: 2rpx 2rpx 5rpx rgba(0, 0, 0, 0.5), 
                -2rpx -2rpx 5rpx rgba(255, 255, 255, 0.3); /* 添加多重阴影 */
                position: absolute; /* 设置绝对定位 */
-  top: 45rpx; /* 距离父容器顶部 20rpx */
-  left: 225rpx; /* 距离父容器左侧 20rpx */
-  color:#000000
+  top: 55rpx; /* 距离父容器顶部 20rpx */
+  left: 175rpx; /* 距离父容器左侧 20rpx */
+  color:#ffffff;
+
 }
 
 .login-subtitle {
@@ -64,23 +60,21 @@ height: 10%;
   text-shadow: 2rpx 2rpx 5rpx rgba(0, 0, 0, 0.5), 
                -2rpx -2rpx 5rpx rgba(255, 255, 255, 0.3); /* 添加多重阴影 */
                position: absolute; /* 设置绝对定位 */
-  top: 135rpx; /* 距离父容器顶部 20rpx */
-  left: 225rpx; /* 距离父容器左侧 20rpx */
-  color:#000000
+  top: 145rpx; /* 距离父容器顶部 20rpx */
+  left: 175rpx; /* 距离父容器左侧 20rpx */
+  color:#ffffff
 }
-
+/* 登录、注册按钮 */
 .login-button {
-
-  background-color: #293EAF
-  ;
+  background-color: #293EAF;
   color: #ffffff;
   border-radius:100rpx;
   font-size: 30rpx;
-  width: 260rpx;  /* 设置按钮宽度 */
+  width: 280rpx;  /* 设置按钮宽度 */
   height: 80rpx;  /* 设置按钮高度 */
   font-weight: bold;
-  top: -50rpx; /* 距离父容器顶部 20rpx */
-  left: 170rpx; /* 距离父容器左侧 20rpx */
+  top: -120rpx; /* 距离父容器顶部 20rpx */
+  left: 40rpx; /* 距离父容器左侧 20rpx */
 }
 
 /* 通用板块样式 */
@@ -91,46 +85,44 @@ height: 10%;
 .section-title {
   font-size: 40rpx;
   font-weight: bold;
-  color: #0072ff;
+  color: #293EAF;
   font-family: 微软雅黑;
   position: absolute;  /* 使字体相对定位 */
-  top: 570rpx;          /* 向下移动 20rpx */
-  left: 60rpx;         /* 向右移动 30rpx */
+  top: 450rpx;          /* 向下移动 20rpx */
+  left: 80rpx;         /* 向右移动 30rpx */
   z-index: 9999;
 }
 .section-title_Eng {
   font-size: 40rpx;
   font-weight: bold;
-  color: #0072ff;
+  color: #293EAF;
   font-family: 华文琥珀;
   position: absolute;  /* 使字体相对定位 */
-  top: 575rpx;          /* 向下移动 20rpx */
-  left: 32%;         /* 向右移动 30rpx */
+  top: 455rpx;          /* 向下移动 20rpx */
+  left: 330rpx;         /* 向右移动 30rpx */
   z-index: 9999;
 }
 .section-title_1 {
   font-family: 微软雅黑;
   font-size: 40rpx;
   font-weight: bold;
-  color: #0072ff;
+  color: #293EAF;
   position: absolute;  /* 使字体相对定位 */
-  top: 1063rpx;          /* 向下移动 20rpx */
-  left: 60rpx;         /* 向右移动 30rpx */
+  top: 1010rpx;          /* 向下移动 20rpx */
+  left: 80rpx;         /* 向右移动 30rpx */
   z-index: 9999;
 }
 
 .section-title_1_Eng{
   font-size: 40rpx;
   font-weight: bold;
-  color: #0072ff;
+  color: #293EAF;
   font-family:华文琥珀;
   position: absolute;  /* 使字体相对定位 */
-  top: 1068rpx;          /* 向下移动 20rpx */
-  left: 32%;         /* 向右移动 30rpx */
+  top: 1015rpx;          /* 向下移动 20rpx */
+  left: 330rpx;         /* 向右移动 30rpx */
   z-index: 9999;
 }
-
-
 .grid-container {
   display: flex;
   flex-wrap: wrap;
@@ -138,13 +130,11 @@ height: 10%;
   padding: 50rpx;
   border-radius: 20rpx;
   box-shadow: 0 4rpx 10rpx rgba(0, 0, 0, 0.1);
-
   position: absolute; /* 或者 relative, fixed, sticky */
   top: 540rpx;       /* 距离顶部 100rpx */
   left: 45rpx;   
   height: 290rpx;   /* 高度 */
   width: 75%;
-
 }
 .grid-container_1 {
   display: flex;
@@ -153,8 +143,6 @@ height: 10%;
   padding: 50rpx;
   border-radius: 20rpx;
   box-shadow: 0 4rpx 10rpx rgba(0, 0, 0, 0.1);
-
-  
   position: absolute; /* 或者 relative, fixed, sticky */
   top: 980rpx;       /* 距离顶部 100rpx */
   left: 45rpx;   
@@ -165,59 +153,58 @@ height: 10%;
 .selfinfo_pic{
   z-index: 30;
   position: absolute;
-  top:650rpx;
-  left: 7.5%;
-  width: 40%;
+  top:530rpx;
+  left: 60rpx;
+  width:43%;
   height: 60%;
 }
 .contact_pic{
   z-index: 30;
   position: absolute;
-  top:650rpx;
-  right: 7.5%;
-  width: 40%;
+  top:530rpx;
+  right: 0rpx;
+  width: 43%;
   height: 60%;
 }
-
 .honor_pic{
   z-index: 30;
   position: absolute;
-  top:860rpx;
-  left: 7.5%;
-  width: 40%;
+  top:740rpx;
+  left: 60rpx;
+  width: 43%;
   height: 60%;
 }
 
 .volunteer_pic{
   z-index: 30;
   position: absolute;
-  top:860rpx;
-  right: 7.5%;
-  width: 40%;
+  top:740rpx;
+  right: 0rpx;
+  width: 43%;
   height: 60%;
 }
 .feedback_pic{
   z-index: 30;
   position: absolute;
-  top:1140rpx;
-  left: 7.5%;
-  width: 40%;
+  top:1090rpx;
+  left: 60rpx;
+  width: 43%;
   height: 60%;
 }
 .redcross_pic{
   z-index: 30;
   position: absolute;
-  top:1140rpx;
-  right: 7.5%;
-  width: 40%;
+  top:1090rpx;
+  right: 0rpx;
+  width: 43%;
   height: 60%;
 }
 .aboutus_pic{
   z-index: 30;
   position: absolute;
-  top:1350rpx;
-  left: 7.5%;
-  width: 40%;
+  top:1300rpx;
+  left: 60rpx;
+  width: 43%;
   height: 60%;
 }
 
@@ -230,7 +217,6 @@ height: 10%;
   flex-direction: column; /* 垂直排列子元素 */
   align-items: center;    /* 水平居中对齐 */
   padding-top: 25rpx;
-
 }
 
 .icon {
@@ -253,15 +239,17 @@ height: 20%;
 width: 95%;
 z-index: 99;
 }
+/* 头像 */
 .avatar {
-  width: 90px;
-  height: 90px;
+  width: 85px;
+  height: 85px;
   border-radius: 50%;
   border: 2px solid #fff;
   margin-right: 20px;
   position: absolute; /* 设置绝对定位 */
-  top: 17rpx; /* 距离父容器顶部 20rpx */
-  left: 10rpx; /* 距离父容器左侧 20rpx */
+  top: 40rpx; /* 距离父容器顶部 20rpx */
+  left: 480rpx; /* 距离父容器左侧 20rpx */
+  border: 2px solid #000; 
 }
 .login-title1 {
   font-size: 50rpx;
@@ -270,17 +258,56 @@ z-index: 99;
   text-shadow: 2rpx 2rpx 5rpx rgba(0, 0, 0, 0.5), 
                -2rpx -2rpx 5rpx rgba(255, 255, 255, 0.3); /* 添加多重阴影 */
                position: absolute; /* 设置绝对定位 */
-  top: 40rpx; /* 距离父容器顶部 20rpx */
-  left: 40rpx; /* 距离父容器左侧 20rpx */
-  color:#000000
+  top: 60rpx; /* 距离父容器顶部 20rpx */
+  left: 170rpx; /* 距离父容器左侧 20rpx */
+  color:#ffffff
 }
 .login-subtitle1 {
+  font-weight: 500;
   font-size: 30rpx;
   margin-bottom: 20rpx;
   text-shadow: 2rpx 2rpx 5rpx rgba(0, 0, 0, 0.5), 
                -2rpx -2rpx 5rpx rgba(255, 255, 255, 0.3); /* 添加多重阴影 */
                position: absolute; /* 设置绝对定位 */
-  top: 130rpx; /* 距离父容器顶部 20rpx */
-  left: 40rpx; /* 距离父容器左侧 20rpx */
-  color:#000000
+  top: 150rpx; /* 距离父容器顶部 20rpx */
+  left: 170rpx; /* 距离父容器左侧 20rpx */
+  color:#ffffff
+}
+/* 白色板块1 */
+.shit{
+  z-index: 10;
+  position: relative;
+  justify-content: center;
+  top: 690rpx;
+left: 40rpx;
+width: 90%;
+height: 520rpx;
+background-color: #ffffffdd;
+border-radius: 60rpx;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+/* 白色板块二 */
+.shit_1{
+  z-index: 10;
+  position: relative;
+  justify-content: center;
+  top: 720rpx;
+left: 40rpx;
+width: 90%;
+height: 520rpx;
+background-color: #ffffffdd;
+border-radius: 60rpx;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+.shit_2{
+  z-index: 10;
+  position: relative;
+  justify-content: center;
+  top: -790rpx;
+left: 40rpx;
+width: 90%;
+height: 420rpx;
+background-color: #ffffffdd;
+border-radius: 60rpx;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
 }

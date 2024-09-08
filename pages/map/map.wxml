@@ -20,7 +20,11 @@
     enable-overlooking="{{enableOverLooking}}"
     enable-scroll="{{enableScroll}}"
     bindmarkertap="handleMarkerTap"
-  ></map>
+  >
+  <text class="tips_title">请点击地图上的图标获取详细位置信息</text>
+  </map>
+  <!-- 注释 -->
+
   <mp-halfScreenDialog show="{{showDialog}}" class="custom-dialog">
       <view  class="title" slot="title">{{currentMarker.name}}</view>
       <view class="desc" slot="desc">{{currentMarker.desc}}</view>
@@ -29,6 +33,7 @@
         
 
         <button type="primary" class="button" bindtap="navi2">图片导航</button>
+        <!-- <text class="login-title1">邀请你</text> -->
       </view>  
   </mp-halfScreenDialog>>
 </view>

@@ -38,7 +38,9 @@
         "pages/closed_injury/closed_injury",
         "pages/ankle-injury/ankle-injury",
         "pages/fracture/fracture",
-        "pages/shock/shock"
+        "pages/shock/shock",
+        "pages/traininginfo/traininginfo",
+        "pages/rolling/rolling"
       ],
       "independent": false
     },
@@ -56,7 +58,9 @@
         "pages/red_cross/red_cross",
         "pages/register/register",
         "pages/volunteer_cabin/volunteer_cabin",
-        "pages/facilitymapinfo/facilitymapinfo"
+        "pages/facilitymapinfo/facilitymapinfo",
+        "pages/volunteer_cabin_comment/volunteer_cabin_comment",
+        "pages/pending/pending"
       ],
       "independent": false
     }
