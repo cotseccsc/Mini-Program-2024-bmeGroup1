@@ -89,7 +89,7 @@
   width: 70%;
   height: 100rpx;
   margin-top: 60rpx;
-  background-color: #00FF00;
+  background-color: #317dd4;
   border-radius: 60rpx;
   display: flex;
   color: white;

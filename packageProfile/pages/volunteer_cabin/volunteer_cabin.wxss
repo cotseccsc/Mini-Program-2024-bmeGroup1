@@ -1,1 +1,266 @@
-/* pages/volunteer_cabin/volunteer_cabin.wxss */
+/* pages/volunteer_cabin/volunteer_cabin.wxss *//**index.wxss**/
+.side_button{
+  font-weight: 600;
+  font-size: 32rpx;
+  font-family: 微软雅黑;
+  border-radius: 40rpx;
+  background-color: #fff;
+}
+.username {
+  font-size: 40rpx;
+  margin-bottom: 20rpx;
+  text-shadow: 2rpx 2rpx 5rpx rgba(0, 0, 0, 0.5), 
+               -2rpx -2rpx 5rpx rgba(255, 255, 255, 0.3); /* 添加多重阴影 */
+               position: absolute; /* 设置绝对定位 */
+  top: 100rpx; /* 距离父容器顶部 20rpx */
+  left: 200rpx; /* 距离父容器左侧 20rpx */
+}
+.signintext {
+  font-size: 30rpx;
+  margin-bottom: 20rpx;
+  
+               position: absolute; /* 设置绝对定位 */
+  top: 150rpx; /* 距离父容器顶部 20rpx */
+  left: 200rpx; /* 距离父容器左侧 20rpx */
+}
+
+.sign-in-section {
+  font-size: 30rpx;
+  margin-bottom: 20rpx;
+               position: absolute; /* 设置绝对定位 */
+  top: 50rpx; /* 距离父容器顶部 20rpx */
+  left: 500rpx; /* 距离父容器左侧 20rpx */
+}
+.handlesignin {
+  background-color: #1aad19;
+  color: #ffffff;
+  border-radius:100rpx;
+  font-size: 30rpx;
+  width: 225rpx;  /* 设置按钮宽度 */
+  height: 80rpx;  /* 设置按钮高度 */
+  font-weight: bold;
+  top: 0rpx; /* 距离父容器顶部 20rpx */
+  left: 0rpx; /* 距离父容器左侧 20rpx */
+}
+.SignInCalendar {
+  background-color: #1aad19;
+  color: #ffffff;
+  border-radius:100rpx;
+  font-size: 30rpx;
+  width: 225rpx;  /* 设置按钮宽度 */
+  height: 80rpx;  /* 设置按钮高度 */
+  font-weight: bold;
+  top: 10rpx; /* 距离父容器顶部 20rpx */
+  left: 0rpx; /* 距离父容器左侧 20rpx */
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.user-info {
+  display: flex;
+  padding: 10px;
+  margin-left: 50rpx;
+  border-radius: 50rpx;
+  background-color: #ffffff;
+  /* border-bottom: 1px solid #ddd; */
+  border: 2px solid #293EAF; 
+  width: 80%; /* 设置宽度为父容器的80% */
+  height: 120rpx;
+}
+/* 头像 */
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  left: 200rpx;
+  top:70rpx;
+  border: 2px solid #293EAF; 
+}
+/* 用户名 */
+.username {
+  top: 91rpx;
+  left: 250rpx;
+  margin-left: 10px;
+  font-weight: 600;
+  font-size: 38rpx;
+  font-family: 微软雅黑;
+}
+/* 废稿 */
+.scroll_view{
+  background-color: aqua;
+  z-index: 200;
+}
+.post-list {
+  z-index: 50;
+ flex: 1; 
+  height: 50%; /* 固定高度 */
+  /* padding: 20px; */
+  position: relative;
+  top: 30rpx;
+  border-radius: 80rpx;
+  background-color: #e7faff;
+  margin-bottom: 30rpx;
+}
+
+.post {
+  border: 3px solid #293EAF; 
+  background: rgb(255, 255, 255);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 30px;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.post-avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-left: 20rpx;
+  margin-top: 8rpx;
+  border: 3px solid #293EAF; 
+}
+
+.post-username {
+  margin-left: 10px;
+}
+
+.post-content {
+  margin-bottom: 10px;
+  word-wrap: break-word; /* 确保文本换行 */
+  white-space: pre-wrap; /* 保留空格和换行 */
+  margin-left: 20rpx;
+}
+
+.post-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.new-post {
+  z-index: 90;
+  width: 90%;
+  height: 20%;
+  padding: 10px;
+  background: #fff;
+  /* border-top: 1px solid #ddd; */
+  border: 2px solid #293EAF; 
+  border-radius: 40rpx;
+  margin-top: 20rpx;
+}
+
+textarea {
+  width: 100%;
+  height: 80px;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  word-wrap: break-word; /* 确保文本换行 */
+  white-space: pre-wrap; /* 保留空格和换行 */
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #1aad19;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+.menu-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.menu-btn__burger {
+  width: 100%;
+  height: 4px;
+  background-color: #000;
+  border-radius: 2px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 4;
+}
+/* 左侧边栏 */
+.side-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80%;
+  max-width: 300px;
+  height: 100%;
+  background-color: #e7faff;
+  /* box-shadow: 2px 0 12px rgba(0, 0, 0, 0.5); */
+  padding: 25px 20px;
+  box-sizing: border-box;
+  z-index: 5;
+}
+
+.side-nav button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 10px;
+}
+/* 背景板块 */
+.container{
+background-color: #e7faff;
+}
+/* 发布帖子按钮 */
+.publish_button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #293EAF;
+  color: #ffffff;
+  border-radius:100rpx;
+  font-size: 32rpx;
+  width: 450rpx;  /* 设置按钮宽度 */
+  height: 100rpx;  /* 设置按钮高度 */
+  font-weight: bold;
+}
+/* 输入框 */
+.oninput{
+  width: 95%;
+}
+/* 点赞和评论按钮 */
+.word_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #293EAF;
+    color: #ffffff;
+    border-radius:30rpx;
+    font-size: 32rpx;
+    width: 280rpx;  /* 设置按钮宽度 */
+    height: 90rpx;  /* 设置按钮高度 */
+    font-weight: bold;
+  }
+  .side-nav{
+    z-index: 100;
+    border: 1px solid #000; 
+  }
+

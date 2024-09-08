@@ -1,0 +1,146 @@
+/* pages/post/post.wxss */
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 10px;
+  background-color:#e7faff ;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.post-avatar {
+  margin-top: 20rpx;
+  border: 2px solid #293EAF; 
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.post-username {
+  margin-top: 20rpx;
+  margin-left: 20px;
+  font-weight: 600;
+  font-size: 40rpx;
+  font-family: 微软雅黑;
+}
+/* 评论内容 */
+.post-content {
+  width: 90%;
+  background: #293EAF;
+  padding: 20rpx;
+  margin-bottom: 10px;
+  border-radius: 40rpx;
+  word-wrap: break-word; /* 确保文本换行 */
+  white-space: pre-wrap; /* 保留空格和换行 */
+  font-weight: 500;
+  font-weight: 30rpx;
+  font-family: 微软雅黑;
+  color: #fff;
+  text-indent: 2em;
+}
+
+.post-comments {
+  flex: 1;
+  padding: 10px;
+  background-color: #f2f2f2;
+  margin-bottom: 10px;
+  background-color: #e7faff;
+}
+
+.comment {
+  display: flex;
+  align-items: flex-start;
+  background: #fff;
+  padding: 20rpx;
+  margin-bottom: 5px;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  border-radius: 20px;
+  word-wrap: break-word; /* 确保文本换行 */
+  white-space: pre-wrap; /* 保留空格和换行 */
+  border: 2px solid #293EAF; 
+}
+
+.comment-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.comment-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.comment-username {
+
+  font-weight: 600;
+  font-size: 34rpx;
+  font-family: 微软雅黑;
+}
+
+.comment-content {
+  font-weight: 500;
+  font-size: 32rpx;
+  font-family: 微软雅黑;
+  margin-bottom: 5rpx;
+}
+
+.new-comment {
+  padding-top: 10rpx;
+  z-index: 10;
+  width: 90%;
+  height: 20%;
+  padding: 0px;
+  background:#ffffff;
+  /* border-top: 1px solid rgb(0, 0, 0); */
+  border-radius: 40rpx;
+  border: 2px solid #293EAF; 
+}
+
+textarea {
+  margin-top: 30rpx;
+  left: 20rpx;
+  width: 90%;
+  background-color: #ffffff;
+  height: 100rpx;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  word-wrap: break-word; /* 确保文本换行 */
+  white-space: pre-wrap; /* 保留空格和换行 */
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #1aad19;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+.publish_button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #293EAF;
+  color: #ffffff;
+  border-radius:100rpx;
+  font-size: 32rpx;
+  width: 450rpx;  /* 设置按钮宽度 */
+  height: 100rpx;  /* 设置按钮高度 */
+  font-weight: bold;
+}
+/* 
+.oninput{
+  background-color: aqua;
+  width: 95%;
+} */

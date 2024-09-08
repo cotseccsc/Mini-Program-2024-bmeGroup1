@@ -18,7 +18,7 @@
     </view>
   </view>
   <!-- 新增按钮 -->
-  <button class="facility-button" style="background-color: #00FF00;" bindtap="goToFacilityMapInfo">急救设施地图信息反馈--></button>
+  <button class="facility-button"  bindtap="goToFacilityMapInfo">急救设施地图信息反馈--></button>
 </view>
 <button class="send-button" bindtap="sendFeedback">发送反馈</button>
 

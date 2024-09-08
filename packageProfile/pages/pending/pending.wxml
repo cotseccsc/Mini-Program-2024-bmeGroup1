@@ -1,0 +1,6 @@
+<!--packageProfile/pages/pending/pending.wxml-->
+<view class="container">
+  <view class="title">页面施工中......</view>
+  <image class='imagepending' src='/packageProfile/images/pending1.jpg' mode="widthFix"></image>
+  
+</view>

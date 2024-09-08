@@ -1,12 +1,11 @@
 /* pages/personal_info/personal_info.wxss */
-/* pages/person/person.wxss */
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
   background-color: #e7faff;
-  height: 1900rpx;
+  height: 1700rpx;
 }
 .container_1 {
   position: relative;
@@ -115,6 +114,18 @@ input {
   font-family: 微软雅黑;
   margin-left: -40rpx;
   margin-right: 60rpx;
+}
+.picker{
+  flex: 1;
+  height: 70rpx;
+  border: 5rpx solid rgba(41, 62, 175, 0.4);
+  width: 240rpx;
+  border-radius: 60rpx;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 70rpx;
+  
 }
 
 

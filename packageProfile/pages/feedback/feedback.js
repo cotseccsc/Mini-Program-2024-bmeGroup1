@@ -31,7 +31,7 @@ Page({
 
   copyEmail() {
     wx.setClipboardData({
-      data: '3220103675@zju.edu.cn',
+      data: '396767537@qq.com',
       success: function () {
         wx.showToast({
           title: '复制成功',

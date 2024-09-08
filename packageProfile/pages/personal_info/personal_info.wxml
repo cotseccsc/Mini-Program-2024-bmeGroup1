@@ -1,5 +1,4 @@
 <!--pages/personal_info/personal_info.wxml-->
-<!-- pages/person/person.wxml -->
 <view class="container">
   <view class="container_1">
 
@@ -39,11 +38,13 @@
     <text class="stress_index">邮箱</text>
     <input value="{{email}}" class="input-text" bindinput="onInputChange" data-field="email" placeholder="请输入邮箱"/>
   </view>
-<!-- 校区 -->
+<!-- 校区选择 -->
 <view class="section">
-    <text class="stress_index">校区</text>
-    <input value="{{school}}" class="input-text" bindinput="onInputChange" data-field="school" placeholder="示例:玉泉校区"/>
-  </view>
+      <text class="stress_index">选择校区</text>
+      <picker range="{{schools}}" bindchange="bindSchoolChange">
+        <view class="picker">{{school}}</view>
+      </picker>
+    </view>
 <!-- volunteer -->
 <view class="section">
     <text class="stress_index">愿做志愿者?</text>
@@ -73,9 +74,5 @@
       2. 与您联系并提供相关的客户支持；
       3. 改善我们的产品和服务。
       请放心，您的个人信息未经您的同意不会泄露给第三方。
-
-
-
-      注意：如果您选择愿意成为我们的志愿者，请务必按照示例填写准确无误的校区信息，以便您为其他用户提供帮助！
     </text>
 

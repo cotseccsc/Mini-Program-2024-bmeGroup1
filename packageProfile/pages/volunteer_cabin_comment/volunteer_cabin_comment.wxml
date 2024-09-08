@@ -1,0 +1,24 @@
+<!--pages/post/post.wxml-->
+<view class="container">
+  <view class="post-header">
+    <image class="post-avatar" src="{{post.userAvatar}}"></image>
+    <text class="post-username">{{post.username}}</text>
+  </view>
+  <view class="post-content">{{post.content}}</view>
+  <scroll-view class="post-comments" scroll-y>
+    <block wx:for="{{comments}}" wx:key="id">
+      <view class="comment">
+        <image class="comment-avatar" src="{{item.userAvatar}}"></image>
+        <view class="comment-content-wrapper">
+          <text class="comment-username">{{item.username}}</text>
+          <text class="comment-content">{{item.content}}</text>
+        </view>
+      </view>
+    </block>
+  </scroll-view>
+  <view class="new-comment">
+    <textarea placeholder="输入回复内容" bindinput="onInput" class="oninput" value="{{newCommentContent}}"></textarea>
+    <button bindtap="publishComment" class="publish_button">发布回复</button>
+  </view>
+</view>
+

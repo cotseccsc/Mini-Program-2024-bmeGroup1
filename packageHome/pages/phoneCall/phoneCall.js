@@ -171,7 +171,7 @@ Page({
         cancelColor: '#ff0000',
         cancelText: '取消',
         confirmText: '去登录',
-        content: '当前未登录，所以并没有紧急联系人电话，你是否要去登录？',
+        content: '当前未登录，无法获取紧急联系人信息！是否前往登录？',
         showCancel: true,
         title: '当前未登录',
         success: (result) => {
@@ -197,7 +197,7 @@ Page({
         cancelColor: '#ff0000',
         cancelText: '取消',
         confirmText: '去登录',
-        content: '当前未登录，所以并没有紧急联系人电话，你是否要去登录？',
+        content: '当前未登录，无法获取紧急联系人信息！是否前往登录？',
         showCancel: true,
         title: '当前未登录',
         success: (result) => {

@@ -31,7 +31,7 @@
       <!-- 如果出现了返回按钮，则显示这个按钮 -->
   </view> 
   <view wx:if="{{showButton}}">
-    <view  class="notice">请注意，根据您的选择，我们只是对伤者的情况做出了可能判断，请您根据情况参考我们提供的对应措施。无论是什么情况，都请紧急处理后将伤者送医做进一步治疗。</view>
+    <view  class="notice">请注意，我们的判断基于您提供的信息，仅供参考。无论伤情如何，都应立即采取紧急措施，并尽快将伤者送往医院接受专业治疗。</view>
   </view> 
   <!-- <view wx:if="{{list[answerNow].image}}">
     <image src="{{list[answerNow].image}}" mode="widthFix" class="pic_style1" bindtap="return"

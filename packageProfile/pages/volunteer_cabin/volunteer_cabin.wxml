@@ -1,2 +1,54 @@
-<!--pages/volunteer_cabin/volunteer_cabin.wxml-->
-<text>pages/volunteer_cabin/volunteer_cabin.wxml</text>
+<!--index.wxml-->
+<view class="container">
+  <!-- 用户信息 -->
+  <view class="user-info">
+   <view class="menu-btn" bindtap="toggleMenu"> 
+    <view class="menu-btn__burger"></view>
+    <view class="menu-btn__burger"></view>
+    <view class="menu-btn__burger"></view>
+  </view>
+<!-- 左侧边栏按钮 -->
+  <view class="overlay" wx:if="{{menuVisible}}" bindtap="closeMenu"></view>
+  <view class="side-nav" wx:if="{{menuVisible}}">
+    <button type="default" bindtap="navigateToPending" class="side_button">发现好友</button>
+    <button type="default" bindtap="navigateToPending" class="side_button">创作中心</button>
+    <button type="default" bindtap="navigateToPending" class="side_button">我的草稿</button>
+    <button type="default" bindtap="navigateToPending" class="side_button">我的评论</button>
+    <button type="default" bindtap="navigateToPending" class="side_button">浏览记录</button>
+    <button type="default" bindtap="navigateToPending" class="side_button">社区公约</button>
+    <button type="default" bindtap="navigateToPending" class="side_button">设置</button>
+    <button type="default" bindtap="navigateToPending" class="side_button">帮助与客服</button>
+    <button type="default" bindtap="navigateToPending" class="side_button">扫一扫</button>
+  </view>
+    <text class="signintext">
+    {{signInDaysText}}</text>
+    <image class="avatar" src="{{imagesrc}}"></image>
+    <text class="username">用户名：{{username}}</text>
+    <view class="sign-in-section">
+  </view>
+  </view>
+
+  <!-- 交流板块 -->
+<!-- </view class="scroll_container"> -->
+  <scroll-view class="post-list" scroll-y>
+    <block wx:for="{{posts}}" wx:key="id">
+      <view class="post" data-id="{{item.id}}">
+        <view class="post-header">
+          <image class="post-avatar" src="{{item.userAvatar}}"></image>
+          <text class="post-username">{{item.username}}</text>
+        </view>
+        <view class="post-content">{{item.content}}</view>
+        <view class="post-actions">
+          <button bindtap="likePost" data-id="{{item.id}}" class="word_button">点赞 {{item.likes}}</button>
+          <button bindtap="commentPost" data-id="{{item.id}}" class="word_button">评论 {{item.CommentNum}}</button>
+        </view>
+      </view>
+    </block>
+  </scroll-view>
+<!-- </view> -->
+  <!-- 发布帖子 -->
+  <view class="new-post">
+    <textarea class="oninput" placeholder="输入帖子内容" bindinput="onInput" value="{{newPostContent}}"></textarea>
+    <button bindtap="publishPost" class="publish_button">发布帖子</button>
+  </view>
+</view>

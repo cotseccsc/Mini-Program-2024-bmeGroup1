@@ -13,7 +13,13 @@ Page({
     birthday: '',
     email: '',
     school:'',
-    volunteerWilling:''
+    volunteerWilling:'',
+    schools: ['紫金港校区','玉泉校区', '西溪校区', '华家池校区', '之江校区']
+  },
+  bindSchoolChange(event) {
+    this.setData({
+      'school': this.data.schools[event.detail.value]
+    });
   },
 
   onShow: function () {
