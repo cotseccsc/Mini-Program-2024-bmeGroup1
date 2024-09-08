@@ -1,5 +1,22 @@
 <view class="container">
   <text class="title">运动受伤指南</text>
+  
+  <swiper
+  autoplay="true" 
+  interval="3000" 
+  duration="2000"
+  circular="true"
+  easing-function="easeInOutCubic"
+  previous-margin="0px"
+  next-margin="0px"
+  indicator-dots="{{true}}"
+  class="swiper-container">
+  <swiper-item class="swiper-item" wx:for="{{images}}" wx:key="unique">
+    <image src="{{item}}" mode="widthFix"  bindtap="navigateTo" class="swiper-image"  data-target="rolling" />
+  </swiper-item>
+</swiper>
+
+
   <view class="button-container">
     <!-- <button class="btn" data-target="prevention" bindtap="navigateTo">运动损伤的预防方式</button> -->
     <image src="/packageTraining/images/all_the_stuff/闭合性损伤.png" class="pic1"
@@ -16,12 +33,5 @@
     data-target="ankle-injury" bindtap="navigateTo" mode="widthFix"/>
     <image src="/packageTraining/images/all_the_stuff/重力性休克.png"  class="pic7"
     data-target="shock" bindtap="navigateTo" mode="widthFix"/>
-    <!-- <button class="btn" data-target="shock" bindtap="navigateTo">重力性休克</button> -->
-    <!-- <button class="btn" data-target="fracture" bindtap="navigateTo">骨折</button> -->
-    <!-- <button class="btn" data-target="open_injury" bindtap="navigateTo">开放性软组织损伤</button> -->
-    <!-- <button class="btn" data-target="closed_injury" bindtap="navigateTo">闭合性软组织损伤</button> -->
-    <!-- <button class="btn" data-target="concussion" bindtap="navigateTo">脑震荡</button> -->
-    <!-- <button class="btn" data-target="ankle-injury" bindtap="navigateTo">踝关节扭伤</button> -->
-    <!-- <button class="btn" data-target="dislocation" bindtap="navigateTo">关节脱位</button> -->
   </view>
 </view>

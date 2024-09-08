@@ -3,7 +3,7 @@
   <view class="container_1">
 
     <text class="header">准则</text>
-    <view class="steps">
+    <!-- <view class="steps"> -->
 
   <text class="stress">1、动态拉伸：</text>
   <text class="steps">运动前的拉伸应该以动态拉伸为主，这种拉伸方式包括活动性动作，帮助提高关节活动范围和肌肉温度。比如，腿部的高抬腿、跳跃性深蹲、胳膊圈等都是很好的动态拉伸动作。</text>
@@ -14,7 +14,7 @@
   <text class="stress">3、针对性拉伸：</text>
   <text class="steps">根据你要进行的运动类型，针对主要使用的肌肉群进行拉伸。例如，如果你要跑步，重点拉伸大腿前侧、后侧、小腿肌肉等；如果你要做力量训练，可以关注肩部、背部和核心肌群。</text>
 
-  <image src="/packageTraining/images/prevention/freecompress-拉伸-1.jpg" class="pic" mode="aspectFit"></image>
+  <image src="/packageTraining/images/prevention/freecompress-拉伸-1.jpg" class="pic" mode="widthFix"></image>
 
   <text class="stress">4、热身：</text>
   <text class="steps">在进行拉伸前先进行轻度热身，如慢跑、跳绳或原地踏步几分钟，可以提高全身肌肉的温度，准备好进行拉伸。</text>
@@ -30,5 +30,5 @@
     <text class="source">资料来源：@默沙东诊疗手册大众版</text>
   </view>
 </view>
-</view>
+<!-- </view> -->
 </view>

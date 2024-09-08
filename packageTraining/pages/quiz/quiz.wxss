@@ -106,3 +106,13 @@ page{
   position: relative;
   left: 100rpx;
 }
+
+.tips_title{
+  margin-top: 30rpx;
+  display: flex;
+  justify-content: center;
+  color: #293EAF;
+  font-weight: 600;
+  font-family: 微软雅黑;
+  font-size: 36rpx;
+}

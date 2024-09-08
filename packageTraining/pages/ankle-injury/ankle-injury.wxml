@@ -2,7 +2,7 @@
 
 <view class="container">
   <view class="container_1">
-    <view class="steps">
+    <!-- <view class="steps"> -->
     <text class="header">定义</text>
 
   <text class="steps">踝关节扭伤是临床常见的疾病，在关节及韧带损伤中是发病率最高的疾病。</text>
@@ -17,7 +17,7 @@
   <text class="steps">内侧三角韧带损伤时，患者在尝试行足外翻时疼痛症状加剧。经休息后，疼痛和肿胀可能消失。但是，会出现因韧带松弛导致的踝关节不稳、反复扭伤。</text>
 
   <text class="header">治疗方法</text>
-  <text class="steps">应立即抬高受伤的脚，之后要合理的适时热敷和冷敷。一般而言，受伤24-48小时后始用热的处理办法。</text>
+  <text class="steps">应立即抬高受伤脚，之后要合理的适时热敷和冷敷。一般而言，受伤24-48小时之内应使用冷敷的处理办法，受伤24-48小时后才可始用热敷的处理办法。</text>
   <text class="steps">热敷和冷敷都是物理疗法，作用却截然不同。血遇热而活，遇寒则凝，所以在受伤早期宜冷敷，以减少局部血肿;在出血停止以后再热敷，可加速消散伤处周围的瘀血。</text>
   <text class="steps">如果脚踝扭伤十分严重的如骨骼受伤，有骨折或者脱位现象，要及时就医，进行专业的治疗。</text>
 
@@ -27,5 +27,5 @@
 <view class="footer">
   <text class="source">资料来源：@默沙东诊疗手册大众版</text>
 </view>
-</view>
+<!-- </view> -->
 </view>

@@ -1,5 +1,5 @@
 .head-title {
-  background: linear-gradient(to right, #6288ef, #1bf4fc);
+  background: linear-gradient(to right, #2e57c9, #70f5fa);
   height: 300rpx;
   width: 100%;
   box-sizing: border-box;
@@ -44,7 +44,7 @@
   /* 设置默认宽度为0 */
   width: 0%;
   height: 6rpx;
-  background: linear-gradient(to right, #6288ef, #1bf4fc);
+  background: linear-gradient(to right, #2e57c9, #70f5fa);
   border-radius: 3rpx;
   left: 50%;
   transform: translate(-50%);
@@ -61,7 +61,7 @@
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  background-image: linear-gradient(to right, #6288ef, #1bf4fc);
+  background-image: linear-gradient(to right, #2e57c9, #70f5fa);
   transition: 0.3s all linear;
   transition-delay: 0.1s;
 }
@@ -98,11 +98,47 @@
   padding: 20px;
   font-size: 16px;
   line-height: 1.5;
-  background-color: #e7faff;
+  /* background-color: #e7faff; */
+  background-image:
+  radial-gradient(closest-side, rgba(173, 216, 230, 0.3), rgba(173, 216, 230, 0)), /* 浅蓝色 */
+  radial-gradient(closest-side, rgba(100, 149, 237, 0.3), rgba(100, 149, 237, 0)), /* 中浅蓝色 */
+  radial-gradient(closest-side, rgba(65, 105, 225, 0.3), rgba(65, 105, 225, 0)),  /* 中深蓝色 */
+  radial-gradient(closest-side, rgba(0, 0, 139, 0.3), rgba(0, 0, 139, 0));     
+  background-size:
+    130vmax 130vmax,
+    80vmax 80vmax,
+    90vmax 90vmax,
+    110vmax 110vmax,
+    90vmax 90vmax;
+  background-position:
+    -80vmax -80vmax,
+    60vmax 30vmax,
+    40vmax 10vmax,
+    110vmax 10vmax,
+    -10vmax -10vmax;
+  animation: moveGradient 20s infinite linear;
   z-index: 6;
   height: 1550rpx;
 }
 .container_x {
+  background-image:
+  radial-gradient(closest-side, rgba(173, 216, 230, 0.3), rgba(173, 216, 230, 0)), /* 浅蓝色 */
+  radial-gradient(closest-side, rgba(100, 149, 237, 0.3), rgba(100, 149, 237, 0)), /* 中浅蓝色 */
+  radial-gradient(closest-side, rgba(65, 105, 225, 0.3), rgba(65, 105, 225, 0)),  /* 中深蓝色 */
+  radial-gradient(closest-side, rgba(0, 0, 139, 0.3), rgba(0, 0, 139, 0));     
+  background-size:
+    130vmax 130vmax,
+    80vmax 80vmax,
+    90vmax 90vmax,
+    110vmax 110vmax,
+    90vmax 90vmax;
+  background-position:
+    -80vmax -80vmax,
+    60vmax 30vmax,
+    40vmax 10vmax,
+    110vmax 10vmax,
+    -10vmax -10vmax;
+  animation: moveGradient 20s infinite linear;
   padding: 20px;
   font-size: 16px;
   line-height: 1.5;
@@ -111,6 +147,24 @@
   height: 4050rpx;
 }
 .container_y {
+  background-image:
+  radial-gradient(closest-side, rgba(173, 216, 230, 0.3), rgba(173, 216, 230, 0)), /* 浅蓝色 */
+  radial-gradient(closest-side, rgba(100, 149, 237, 0.3), rgba(100, 149, 237, 0)), /* 中浅蓝色 */
+  radial-gradient(closest-side, rgba(65, 105, 225, 0.3), rgba(65, 105, 225, 0)),  /* 中深蓝色 */
+  radial-gradient(closest-side, rgba(0, 0, 139, 0.3), rgba(0, 0, 139, 0));     
+  background-size:
+    130vmax 130vmax,
+    80vmax 80vmax,
+    90vmax 90vmax,
+    110vmax 110vmax,
+    90vmax 90vmax;
+  background-position:
+    -80vmax -80vmax,
+    60vmax 30vmax,
+    40vmax 10vmax,
+    110vmax 10vmax,
+    -10vmax -10vmax;
+  animation: moveGradient 20s infinite linear;
   padding: 20px;
   font-size: 16px;
   line-height: 1.5;
@@ -153,7 +207,8 @@
   border: black;
   text-shadow: 2rpx 2rpx 1rpx rgba(0, 0, 0, 0.2);
   margin-left: 40rpx;
-margin-right: 40rpx;
+  margin-right: 40rpx;
+  font-family: 微软雅黑;
 }
 
 .header {
@@ -171,7 +226,7 @@ margin-right: 40rpx;
   font-size: 40rpx;
 }
 .pic{
-margin-left: 10%;
+/* margin-left: 10%;
 width: 80%;
   margin-top: 50rpx;
   margin-bottom: 50rpx;
@@ -180,7 +235,20 @@ width: 80%;
   display: flex;
   left: 10rpx;
   justify-content: center;
+  box-shadow: 6rpx 6rpx 12rpx rgba(0, 0, 0, 0.5); */
+  position: relative;
+  width: 90%;
+  left: 50%;
+  transform: translate(-50%, -0%);
+  justify-content: center;
+  border-radius: 50rpx;
+  /* left: 30rpx; */
   box-shadow: 6rpx 6rpx 12rpx rgba(0, 0, 0, 0.5);
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  /* margin-top: 50rpx;
+  margin-bottom: 50rpx; */
+   /* margin-left: 5%;   */
 }
 .source{
   margin-top: 60rpx;
@@ -205,3 +273,29 @@ width: 80%;
 
 }
 
+@keyframes moveGradient {
+  0% {
+    background-position:
+      -80vmax -80vmax,
+      60vmax 30vmax,
+      40vmax 10vmax,
+      110vmax 10vmax,
+      -10vmax -10vmax;
+  }
+  50% {
+    background-position:
+      80vmax 80vmax,
+      -60vmax -30vmax,
+      -40vmax -10vmax,
+      -110vmax -10vmax,
+      10vmax 10vmax;
+  }
+  100% {
+    background-position:
+      -80vmax -80vmax,
+      60vmax 30vmax,
+      40vmax 10vmax,
+      110vmax 10vmax,
+      -10vmax -10vmax;
+  }
+}

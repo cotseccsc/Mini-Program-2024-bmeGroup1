@@ -1,5 +1,6 @@
 
   <view class="body">
+    <text class="tips_title">答案正确显示绿色，答案错误显示红色哦</text>
     <view class="question">
         <view class="title">
             {{ answerNow + 1 }}、 {{ list[answerNow].title }}

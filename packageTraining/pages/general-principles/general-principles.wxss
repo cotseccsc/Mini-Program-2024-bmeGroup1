@@ -5,8 +5,7 @@
   line-height: 1.5;
   /* background-color: #e7faff; */
   z-index: 6;
-  height: 2600rpx;
-
+  height: 2700rpx;
   background-image:
   radial-gradient(closest-side, rgba(173, 216, 230, 0.3), rgba(173, 216, 230, 0)), /* 浅蓝色 */
   radial-gradient(closest-side, rgba(100, 149, 237, 0.3), rgba(100, 149, 237, 0)), /* 中浅蓝色 */
@@ -28,6 +27,11 @@
 }
 /* 白色外部框架板块 */
 .container_1{
+/* 加上的代码 */
+/* display: flex; */
+justify-content: center;
+
+  margin-top: 30rpx;
   z-index: 100;
   position: relative;
   top: 100rpx;
@@ -48,8 +52,9 @@
 }
 /* 普通文本 */
 .steps {
-  margin-left: 20rpx;
-  margin-right: 20rpx;
+  text-indent: 2em;
+  margin-left: 40rpx;
+  margin-right: 40rpx;
   margin-bottom: 20rpx;
   z-index: 20;
   display: block;
@@ -65,7 +70,8 @@
   font-weight: 900;
   font-size: 32rpx;
   border: black;
-  text-shadow: 2rpx 2rpx 1rpx rgba(0, 0, 0, 0.3);
+  margin-left: 25rpx;
+  font-family: 微软雅黑;
 }
 /* 第一个总标题 */
 .header1 {
@@ -100,13 +106,16 @@
 /* 第一张图片 */
 .pic_1{
   position: relative;
-  border-radius: 50rpx;
-  display: flex;
-  left: 10rpx;
+  width: 80%;
+  left: 50%;
+  transform: translate(-50%, -0%);
   justify-content: center;
+  border-radius: 50rpx;
+  /* left: 30rpx; */
   box-shadow: 6rpx 6rpx 12rpx rgba(0, 0, 0, 0.5);
-  margin-top: 50rpx;
-  margin-bottom: 50rpx;
+  /* margin-top: 50rpx;
+  margin-bottom: 50rpx; */
+   /* margin-left: 5%;   */
 }
 
 .source{
@@ -114,6 +123,7 @@
   font-weight: 500;
   margin-left: 70rpx;
 }
+
 
 @keyframes moveGradient {
   0% {

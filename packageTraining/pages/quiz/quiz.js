@@ -4,6 +4,7 @@ const QuizState = AV.Object.extend("QuizState");
 const quizState = new QuizState();
 const newQuizState = new QuizState();
 const query = new AV.Query("QuizState");
+const app=getApp();
 
 Page({
 
@@ -24,7 +25,7 @@ Page({
     }, {
       title: "在运动中不慎摔倒导致皮肤擦伤，正确的处理方法是？",
       option: ["立即用酒精消毒", "用肥皂水清洗伤口", "用干净的水冲洗伤口", "用纸巾擦拭伤口"],
-      answer: "D",
+      answer: "C",
       answeredCorrectly: false,
     }, {
       title: "如果在运动中感到头晕，应该采取以下哪种措施？",
@@ -189,10 +190,20 @@ Page({
 
 
     const username = wx.getStorageSync('username');
-    if (username) {
+    if (username && app.globalData.isLogged) {
       query.equalTo("Username", username);
       query.first().then((quizState) => {
         if (quizState) {
+          for(let i=0;i<this.data.list.length;i++)
+          {
+            let istring=i+"";
+            if(!quizState.get(istring)){
+              quizState.set("BeginNum",i);
+              quizState.save();
+              console.log(i);
+              break;
+            }
+          }
           const b = quizState.get("CorrectNum");
           const c = quizState.get("BeginNum");
           const cstring = c+"";
@@ -205,11 +216,6 @@ Page({
               let istring=i+"";
               quizState.set(istring,0);
             }
-                  /*quizState.set("0", 0);
-                  quizState.set("1", 0);
-                  quizState.set("2", 0);
-                  quizState.set("3", 0);
-                  quizState.set("4", 0);*/
                   quizState.save();
             wx.showModal({
               title: "恭喜您已经完成所有题目！",

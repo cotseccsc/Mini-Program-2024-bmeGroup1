@@ -2,11 +2,11 @@
 
 <view class="container">
   <view class="container_1">
-    <view class="steps">
+    <!-- <view class="steps"> -->
 
   <text class="header">定义</text>
   <text class="steps">关节脱位又叫脱臼或脱骱，是指组成关节各骨的关节面失去正常的对合关系。脱位可分为先天性、外伤性、病理性和习惯性脱位四种。如按脱位程度来分，可分为半脱位和全脱位。按脱位后的时间来分，又可分为新鲜脱位和陈旧性脱位（指脱位超过三周以上者）。</text>
-  <image src="/packageTraining/images/detailed_injury/dislocation/dislocation_image_1.png" class="pic" mode="aspectFit"></image>
+  <image src="/packageTraining/images/detailed_injury/dislocation/dislocation_image_1.png" class="pic" mode="widthFix"></image>
   <text class="header">产生原因</text>
 
   <text class="stress">创伤是脱位和其他肌肉骨骼组织损伤的最常见原因。创伤包括：</text>
@@ -15,20 +15,20 @@
   <text class="steps">3.使用过度，多发生于运动员过度训练。</text>
   <text class="steps">脱位的严重程度部分取决于导致脱位的创伤的类型和外力。</text>
   <text class="steps">有些脱位发生在进行某些运动时。</text>
-  <text class="steps">有些疾病更容易导致脱位。举个例子，埃勒斯-当洛二氏综合征，这是一种使关节异常灵活的罕见遗传性结缔组织疾病。患有这种疾病的人容易出现脱位和扭伤。</text>
+  <text class="steps">有些疾病更容易导致脱位。例如埃勒斯-当洛二氏综合征，这是一种使关节异常灵活的罕见遗传性结缔组织疾病。患有这种疾病的人容易出现脱位和扭伤。</text>
   <text class="header">处理方式</text>
   <text class="steps">脱位的严重并发症需要立即治疗。如不治疗，并发症可能加重，变得更疼，更容易导致功能丧失。另外，有些并发症（如骨筋膜室综合征）需要紧急护理。如不治疗，这些并发症可能会导致严重问题甚至死亡。</text>
   <text class="steps">如果患者认为可能有骨折或其他严重损伤，应前往急诊科就诊。若患者不能行走或损伤严重，应用救护车接送。在获得医疗救助之前，患者应按照以下内容执行：</text>
-  <image src="/packageTraining/images/detailed_injury/dislocation/dislocation_image_2.jpg" class="pic"mode="aspectFit"></image>
+  <image src="/packageTraining/images/detailed_injury/dislocation/dislocation_image_2.jpg" class="pic"mode="widthFix"></image>
   <text class="steps">1.用临时夹板、吊带或垫子对患肢进行固定和支撑；</text>
   <text class="steps">2.尽可能将患肢抬高到心脏水平以上，减轻肿胀；</text>
   <text class="steps">3.用冰块（毛巾或衣物包裹）缓解疼痛和肿胀。</text>
   <text class="steps">医生会根据患者的受伤部位和并发症情况，给予不同的清创、复位和固定治疗。</text>
   
-  <image src="/packageTraining/images/detailed_injury/dislocation/dislocation_image_3.jpeg" class="pic"mode="aspectFit"></image>
-  <view class="footer">
+  <image src="/packageTraining/images/detailed_injury/dislocation/dislocation_image_3.jpeg" class="pic"mode="widthFix"></image>
+  <!-- <view class="footer">
     <text class="source">资料来源：@默沙东诊疗手册大众版</text>
-  </view>
+  </view> -->
 </view>
-</view>
+<!-- </view> -->
 </view>

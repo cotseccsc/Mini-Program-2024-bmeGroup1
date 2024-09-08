@@ -2,11 +2,11 @@
 
 <view class="container">
   <view class="container_1">
-    <view class="steps">
+    <!-- <view class="steps"> -->
     <text class="header">定义</text>
 
   <text class="steps">闭合性软组织损伤是指局部皮肤或粘膜完整，无裂口与外界相通，损伤时的出血积聚在组织内，是软组织损伤的一种。</text>
-  <image src="/packageTraining/images/detailed_injury/closed_injury/closed_image_1.jpg" class="pic" mode="aspectFit"></image>
+  <image src="/packageTraining/images/detailed_injury/closed_injury/closed_image_1.jpg" class="pic" mode="widthFix"></image>
 
   <text class="header">临床表现</text>
   <text class="steps">常见有</text>
@@ -18,7 +18,7 @@
     <text class="steps">伤后24或48小时内，主要表现为红、肿、热、痛、功能障碍，炎症反应严重。</text>
     <text class="steps">处理原则：止血、止痛、防肿、制动和减轻炎症反应。</text>
     <text class="steps">处理方法：伤后即刻冷敷、加压包扎、患肢抬高、适当制动。还可使用止痛药物和点穴、针刺治疗。</text>
-    <image src="/packageTraining/images/detailed_injury/closed_injury/closed_image_2.jpg" class="pic" mode="aspectFit"></image>
+    <image src="/packageTraining/images/detailed_injury/closed_injury/closed_image_2.jpg" class="pic" mode="widthFix"></image>
   </view>
   <text class="steps">伤后即刻冷敷、加压包扎、患肢抬高、适当制动。还可使用止痛药物和点穴、针刺治疗。</text>
   <view>
@@ -36,8 +36,8 @@
   </view>
   <!-- 其他治疗步骤省略，可以按照上述格式继续添加 -->
 </view>
-<view class="footer">
+<!-- <view class="footer">
   <text class="source">资料来源：@默沙东诊疗手册大众版</text>
-</view>
-</view>
+</view> -->
+<!-- </view> -->
 </view>
